@@ -6,15 +6,28 @@
 //  Copyright © 2016年 李策. All rights reserved.
 //
 
+/**
+ *  新建PCH后改路径的方法:在build settings 搜索prefix header, 然后在图中 Precompile prefix header菜单处红圈里选为YES , 然后在prefix header菜单右侧双击, 会出来一个路径框, 将pch文件 往这个框里拖, 拖拽后形成这样的一个路径,不过这样的路径换了电脑后就失效了
+ 改成这样会自动找到路径:$(SRCROOT)+pch在当前工程下路径
+ */
 
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
-#import "UIView+Extension.h"
 /**
- *  新建PCH后改路径的方法:在build settings 搜索prefix header, 然后在图中 Precompile prefix header菜单处红圈里选为YES , 然后在prefix header菜单右侧双击, 会出来一个路径框, 将pch文件 往这个框里拖, 拖拽后形成这样的一个路径,不过这样的路径换了电脑后就失效了
-    改成这样会自动找到路径:$(SRCROOT)+pch在当前工程下路径
+ *  工具类
  */
+#import "LCManagerTool.h"
+#import "UIView+Extension.h"
+//设置分级打印   使用插件XcodeColors让打印带颜色 需要配置Xcode环境 XcodeColors才会生效
+#import "CocoaLumberjack.h"
+static const NSUInteger ddLogLevel = DDLogLevelAll;//多个宏可供选择
+
+#define LCLogError(错误信息, ...) DDLogError((@"错误信息 : \n%s [Line %d] \n" 错误信息), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#define LCLogWarn(警告, ...) DDLogWarn((@"警告 : \n%s [Line %d] \n" 警告), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+
+#define LCLogInfo(提示信息, ...) DDLogInfo((@"提示信息 :\n %s [Line %d] \n" 提示信息), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#define LCLogVerbose(详细信息, ...) DDLogVerbose((@"详细信息 : \n%s [Line %d]\n" 详细信息), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
