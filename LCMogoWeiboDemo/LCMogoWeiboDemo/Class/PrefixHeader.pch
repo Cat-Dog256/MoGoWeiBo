@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  LCMogoWeiboDemo
+//
+//  Created by 李策 on 16/4/16.
+//  Copyright © 2016年 李策. All rights reserved.
+//
+
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "UIView+Extension.h"
+/**
+ *  新建PCH后改路径的方法:在build settings 搜索prefix header, 然后在图中 Precompile prefix header菜单处红圈里选为YES , 然后在prefix header菜单右侧双击, 会出来一个路径框, 将pch文件 往这个框里拖, 拖拽后形成这样的一个路径,不过这样的路径换了电脑后就失效了
+    改成这样会自动找到路径:$(SRCROOT)+pch在当前工程下路径
+ */
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

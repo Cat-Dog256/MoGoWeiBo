@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002847251CC1D0BE00691204 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847241CC1D0BE00691204 /* main.m */; };
+		002847301CC1D0BE00691204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0028472F1CC1D0BE00691204 /* Assets.xcassets */; };
+		002847331CC1D0BE00691204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002847311CC1D0BE00691204 /* LaunchScreen.storyboard */; };
+		0028473E1CC1D0BE00691204 /* LCMogoWeiboDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028473D1CC1D0BE00691204 /* LCMogoWeiboDemoTests.m */; };
+		002847491CC1D0BE00691204 /* LCMogoWeiboDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847481CC1D0BE00691204 /* LCMogoWeiboDemoUITests.m */; };
+		0028477C1CC1D0FD00691204 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847581CC1D0FD00691204 /* AppDelegate.m */; };
+		0028477D1CC1D0FD00691204 /* LCDiscorverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028475D1CC1D0FD00691204 /* LCDiscorverTableViewController.m */; };
+		0028477E1CC1D0FD00691204 /* LCHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847631CC1D0FD00691204 /* LCHomeTableViewController.m */; };
+		0028477F1CC1D0FD00691204 /* LCMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847691CC1D0FD00691204 /* LCMessageTableViewController.m */; };
+		002847801CC1D0FD00691204 /* LCPostMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028476F1CC1D0FD00691204 /* LCPostMessageViewController.m */; };
+		002847811CC1D0FD00691204 /* LCPostMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002847701CC1D0FD00691204 /* LCPostMessageViewController.xib */; };
+		002847821CC1D0FD00691204 /* LCProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847761CC1D0FD00691204 /* LCProfileTableViewController.m */; };
+		002847831CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028477B1CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.m */; };
+		0028478F1CC1D10600691204 /* LCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847861CC1D10600691204 /* LCBaseTableViewController.m */; };
+		002847901CC1D10600691204 /* LCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847881CC1D10600691204 /* LCBaseViewController.m */; };
+		002847911CC1D10600691204 /* LCNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028478A1CC1D10600691204 /* LCNavgationController.m */; };
+		002847921CC1D10600691204 /* LCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028478C1CC1D10600691204 /* LCTabBar.m */; };
+		002847931CC1D10600691204 /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028478E1CC1D10600691204 /* LCTabBarController.m */; };
+		002847981CC1D1D500691204 /* LCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847961CC1D1D500691204 /* LCTestViewController.m */; };
+		002847991CC1D1D500691204 /* LCTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002847971CC1D1D500691204 /* LCTestViewController.xib */; };
+		002847A61CC1D25800691204 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028479B1CC1D25800691204 /* Foundation+Log.m */; };
+		002847A71CC1D25800691204 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028479D1CC1D25800691204 /* NSDate+Extension.m */; };
+		002847A81CC1D25800691204 /* NSString+LengthInLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028479F1CC1D25800691204 /* NSString+LengthInLabel.m */; };
+		002847A91CC1D25800691204 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847A11CC1D25800691204 /* UIBarButtonItem+Extension.m */; };
+		002847AA1CC1D25800691204 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847A31CC1D25800691204 /* UIView+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0028473A1CC1D0BE00691204 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002847181CC1D0BE00691204 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0028471F1CC1D0BE00691204;
+			remoteInfo = LCMogoWeiboDemo;
+		};
+		002847451CC1D0BE00691204 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002847181CC1D0BE00691204 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0028471F1CC1D0BE00691204;
+			remoteInfo = LCMogoWeiboDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002847201CC1D0BE00691204 /* LCMogoWeiboDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCMogoWeiboDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		002847241CC1D0BE00691204 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0028472F1CC1D0BE00691204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		002847321CC1D0BE00691204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		002847341CC1D0BE00691204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002847391CC1D0BE00691204 /* LCMogoWeiboDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCMogoWeiboDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0028473D1CC1D0BE00691204 /* LCMogoWeiboDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMogoWeiboDemoTests.m; sourceTree = "<group>"; };
+		0028473F1CC1D0BE00691204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002847441CC1D0BE00691204 /* LCMogoWeiboDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCMogoWeiboDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		002847481CC1D0BE00691204 /* LCMogoWeiboDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMogoWeiboDemoUITests.m; sourceTree = "<group>"; };
+		0028474A1CC1D0BE00691204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002847571CC1D0FD00691204 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		002847581CC1D0FD00691204 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0028475C1CC1D0FD00691204 /* LCDiscorverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDiscorverTableViewController.h; sourceTree = "<group>"; };
+		0028475D1CC1D0FD00691204 /* LCDiscorverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDiscorverTableViewController.m; sourceTree = "<group>"; };
+		002847621CC1D0FD00691204 /* LCHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHomeTableViewController.h; sourceTree = "<group>"; };
+		002847631CC1D0FD00691204 /* LCHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHomeTableViewController.m; sourceTree = "<group>"; };
+		002847681CC1D0FD00691204 /* LCMessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMessageTableViewController.h; sourceTree = "<group>"; };
+		002847691CC1D0FD00691204 /* LCMessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMessageTableViewController.m; sourceTree = "<group>"; };
+		0028476E1CC1D0FD00691204 /* LCPostMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPostMessageViewController.h; sourceTree = "<group>"; };
+		0028476F1CC1D0FD00691204 /* LCPostMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPostMessageViewController.m; sourceTree = "<group>"; };
+		002847701CC1D0FD00691204 /* LCPostMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCPostMessageViewController.xib; sourceTree = "<group>"; };
+		002847751CC1D0FD00691204 /* LCProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCProfileTableViewController.h; sourceTree = "<group>"; };
+		002847761CC1D0FD00691204 /* LCProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCProfileTableViewController.m; sourceTree = "<group>"; };
+		0028477A1CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMoGoWeiBoTabBarController.h; sourceTree = "<group>"; };
+		0028477B1CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMoGoWeiBoTabBarController.m; sourceTree = "<group>"; };
+		002847851CC1D10600691204 /* LCBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseTableViewController.h; sourceTree = "<group>"; };
+		002847861CC1D10600691204 /* LCBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseTableViewController.m; sourceTree = "<group>"; };
+		002847871CC1D10600691204 /* LCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseViewController.h; sourceTree = "<group>"; };
+		002847881CC1D10600691204 /* LCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseViewController.m; sourceTree = "<group>"; };
+		002847891CC1D10600691204 /* LCNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNavgationController.h; sourceTree = "<group>"; };
+		0028478A1CC1D10600691204 /* LCNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNavgationController.m; sourceTree = "<group>"; };
+		0028478B1CC1D10600691204 /* LCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBar.h; sourceTree = "<group>"; };
+		0028478C1CC1D10600691204 /* LCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBar.m; sourceTree = "<group>"; };
+		0028478D1CC1D10600691204 /* LCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarController.h; sourceTree = "<group>"; };
+		0028478E1CC1D10600691204 /* LCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarController.m; sourceTree = "<group>"; };
+		002847951CC1D1D500691204 /* LCTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTestViewController.h; sourceTree = "<group>"; };
+		002847961CC1D1D500691204 /* LCTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTestViewController.m; sourceTree = "<group>"; };
+		002847971CC1D1D500691204 /* LCTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCTestViewController.xib; sourceTree = "<group>"; };
+		0028479B1CC1D25800691204 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		0028479C1CC1D25800691204 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		0028479D1CC1D25800691204 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		0028479E1CC1D25800691204 /* NSString+LengthInLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LengthInLabel.h"; sourceTree = "<group>"; };
+		0028479F1CC1D25800691204 /* NSString+LengthInLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LengthInLabel.m"; sourceTree = "<group>"; };
+		002847A01CC1D25800691204 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		002847A11CC1D25800691204 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		002847A21CC1D25800691204 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		002847A31CC1D25800691204 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		002847AD1CC1DBD800691204 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0028471D1CC1D0BE00691204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002847361CC1D0BE00691204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002847411CC1D0BE00691204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002847171CC1D0BE00691204 = {
+			isa = PBXGroup;
+			children = (
+				002847221CC1D0BE00691204 /* LCMogoWeiboDemo */,
+				0028473C1CC1D0BE00691204 /* LCMogoWeiboDemoTests */,
+				002847471CC1D0BE00691204 /* LCMogoWeiboDemoUITests */,
+				002847211CC1D0BE00691204 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		002847211CC1D0BE00691204 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				002847201CC1D0BE00691204 /* LCMogoWeiboDemo.app */,
+				002847391CC1D0BE00691204 /* LCMogoWeiboDemoTests.xctest */,
+				002847441CC1D0BE00691204 /* LCMogoWeiboDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		002847221CC1D0BE00691204 /* LCMogoWeiboDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0028479A1CC1D25800691204 /* Category */,
+				002847841CC1D10600691204 /* Custom */,
+				002847561CC1D0FD00691204 /* Class */,
+				0028472F1CC1D0BE00691204 /* Assets.xcassets */,
+				002847311CC1D0BE00691204 /* LaunchScreen.storyboard */,
+				002847341CC1D0BE00691204 /* Info.plist */,
+				002847231CC1D0BE00691204 /* Supporting Files */,
+				002847951CC1D1D500691204 /* LCTestViewController.h */,
+				002847961CC1D1D500691204 /* LCTestViewController.m */,
+				002847971CC1D1D500691204 /* LCTestViewController.xib */,
+			);
+			path = LCMogoWeiboDemo;
+			sourceTree = "<group>";
+		};
+		002847231CC1D0BE00691204 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				002847241CC1D0BE00691204 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0028473C1CC1D0BE00691204 /* LCMogoWeiboDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0028473D1CC1D0BE00691204 /* LCMogoWeiboDemoTests.m */,
+				0028473F1CC1D0BE00691204 /* Info.plist */,
+			);
+			path = LCMogoWeiboDemoTests;
+			sourceTree = "<group>";
+		};
+		002847471CC1D0BE00691204 /* LCMogoWeiboDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				002847481CC1D0BE00691204 /* LCMogoWeiboDemoUITests.m */,
+				0028474A1CC1D0BE00691204 /* Info.plist */,
+			);
+			path = LCMogoWeiboDemoUITests;
+			sourceTree = "<group>";
+		};
+		002847561CC1D0FD00691204 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				002847AD1CC1DBD800691204 /* PrefixHeader.pch */,
+				002847571CC1D0FD00691204 /* AppDelegate.h */,
+				002847581CC1D0FD00691204 /* AppDelegate.m */,
+				0028475A1CC1D0FD00691204 /* Discorvier */,
+				002847601CC1D0FD00691204 /* Home */,
+				002847661CC1D0FD00691204 /* Message */,
+				0028476C1CC1D0FD00691204 /* PostMessage */,
+				002847731CC1D0FD00691204 /* Profile */,
+				002847791CC1D0FD00691204 /* TabBarVC */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		0028475A1CC1D0FD00691204 /* Discorvier */ = {
+			isa = PBXGroup;
+			children = (
+				0028475B1CC1D0FD00691204 /* Controllers */,
+				0028475E1CC1D0FD00691204 /* Model */,
+				0028475F1CC1D0FD00691204 /* View */,
+			);
+			path = Discorvier;
+			sourceTree = "<group>";
+		};
+		0028475B1CC1D0FD00691204 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0028475C1CC1D0FD00691204 /* LCDiscorverTableViewController.h */,
+				0028475D1CC1D0FD00691204 /* LCDiscorverTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0028475E1CC1D0FD00691204 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0028475F1CC1D0FD00691204 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		002847601CC1D0FD00691204 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				002847611CC1D0FD00691204 /* Controllers */,
+				002847641CC1D0FD00691204 /* Model */,
+				002847651CC1D0FD00691204 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		002847611CC1D0FD00691204 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				002847621CC1D0FD00691204 /* LCHomeTableViewController.h */,
+				002847631CC1D0FD00691204 /* LCHomeTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		002847641CC1D0FD00691204 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		002847651CC1D0FD00691204 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		002847661CC1D0FD00691204 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				002847671CC1D0FD00691204 /* Controllers */,
+				0028476A1CC1D0FD00691204 /* Model */,
+				0028476B1CC1D0FD00691204 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		002847671CC1D0FD00691204 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				002847681CC1D0FD00691204 /* LCMessageTableViewController.h */,
+				002847691CC1D0FD00691204 /* LCMessageTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0028476A1CC1D0FD00691204 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0028476B1CC1D0FD00691204 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0028476C1CC1D0FD00691204 /* PostMessage */ = {
+			isa = PBXGroup;
+			children = (
+				0028476D1CC1D0FD00691204 /* Controllers */,
+				002847711CC1D0FD00691204 /* Model */,
+				002847721CC1D0FD00691204 /* View */,
+			);
+			path = PostMessage;
+			sourceTree = "<group>";
+		};
+		0028476D1CC1D0FD00691204 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0028476E1CC1D0FD00691204 /* LCPostMessageViewController.h */,
+				0028476F1CC1D0FD00691204 /* LCPostMessageViewController.m */,
+				002847701CC1D0FD00691204 /* LCPostMessageViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		002847711CC1D0FD00691204 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		002847721CC1D0FD00691204 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		002847731CC1D0FD00691204 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				002847741CC1D0FD00691204 /* Controllers */,
+				002847771CC1D0FD00691204 /* Model */,
+				002847781CC1D0FD00691204 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		002847741CC1D0FD00691204 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				002847751CC1D0FD00691204 /* LCProfileTableViewController.h */,
+				002847761CC1D0FD00691204 /* LCProfileTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		002847771CC1D0FD00691204 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		002847781CC1D0FD00691204 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		002847791CC1D0FD00691204 /* TabBarVC */ = {
+			isa = PBXGroup;
+			children = (
+				0028477A1CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.h */,
+				0028477B1CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.m */,
+			);
+			path = TabBarVC;
+			sourceTree = "<group>";
+		};
+		002847841CC1D10600691204 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				002847851CC1D10600691204 /* LCBaseTableViewController.h */,
+				002847861CC1D10600691204 /* LCBaseTableViewController.m */,
+				002847871CC1D10600691204 /* LCBaseViewController.h */,
+				002847881CC1D10600691204 /* LCBaseViewController.m */,
+				002847891CC1D10600691204 /* LCNavgationController.h */,
+				0028478A1CC1D10600691204 /* LCNavgationController.m */,
+				0028478B1CC1D10600691204 /* LCTabBar.h */,
+				0028478C1CC1D10600691204 /* LCTabBar.m */,
+				0028478D1CC1D10600691204 /* LCTabBarController.h */,
+				0028478E1CC1D10600691204 /* LCTabBarController.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		0028479A1CC1D25800691204 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0028479B1CC1D25800691204 /* Foundation+Log.m */,
+				0028479C1CC1D25800691204 /* NSDate+Extension.h */,
+				0028479D1CC1D25800691204 /* NSDate+Extension.m */,
+				0028479E1CC1D25800691204 /* NSString+LengthInLabel.h */,
+				0028479F1CC1D25800691204 /* NSString+LengthInLabel.m */,
+				002847A01CC1D25800691204 /* UIBarButtonItem+Extension.h */,
+				002847A11CC1D25800691204 /* UIBarButtonItem+Extension.m */,
+				002847A21CC1D25800691204 /* UIView+Extension.h */,
+				002847A31CC1D25800691204 /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0028471F1CC1D0BE00691204 /* LCMogoWeiboDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0028474D1CC1D0BE00691204 /* Build configuration list for PBXNativeTarget "LCMogoWeiboDemo" */;
+			buildPhases = (
+				0028471C1CC1D0BE00691204 /* Sources */,
+				0028471D1CC1D0BE00691204 /* Frameworks */,
+				0028471E1CC1D0BE00691204 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LCMogoWeiboDemo;
+			productName = LCMogoWeiboDemo;
+			productReference = 002847201CC1D0BE00691204 /* LCMogoWeiboDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		002847381CC1D0BE00691204 /* LCMogoWeiboDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002847501CC1D0BE00691204 /* Build configuration list for PBXNativeTarget "LCMogoWeiboDemoTests" */;
+			buildPhases = (
+				002847351CC1D0BE00691204 /* Sources */,
+				002847361CC1D0BE00691204 /* Frameworks */,
+				002847371CC1D0BE00691204 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0028473B1CC1D0BE00691204 /* PBXTargetDependency */,
+			);
+			name = LCMogoWeiboDemoTests;
+			productName = LCMogoWeiboDemoTests;
+			productReference = 002847391CC1D0BE00691204 /* LCMogoWeiboDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		002847431CC1D0BE00691204 /* LCMogoWeiboDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002847531CC1D0BE00691204 /* Build configuration list for PBXNativeTarget "LCMogoWeiboDemoUITests" */;
+			buildPhases = (
+				002847401CC1D0BE00691204 /* Sources */,
+				002847411CC1D0BE00691204 /* Frameworks */,
+				002847421CC1D0BE00691204 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				002847461CC1D0BE00691204 /* PBXTargetDependency */,
+			);
+			name = LCMogoWeiboDemoUITests;
+			productName = LCMogoWeiboDemoUITests;
+			productReference = 002847441CC1D0BE00691204 /* LCMogoWeiboDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		002847181CC1D0BE00691204 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "李策";
+				TargetAttributes = {
+					0028471F1CC1D0BE00691204 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8LVWFN8LU3;
+					};
+					002847381CC1D0BE00691204 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8LVWFN8LU3;
+						TestTargetID = 0028471F1CC1D0BE00691204;
+					};
+					002847431CC1D0BE00691204 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8LVWFN8LU3;
+						TestTargetID = 0028471F1CC1D0BE00691204;
+					};
+				};
+			};
+			buildConfigurationList = 0028471B1CC1D0BE00691204 /* Build configuration list for PBXProject "LCMogoWeiboDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 002847171CC1D0BE00691204;
+			productRefGroup = 002847211CC1D0BE00691204 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0028471F1CC1D0BE00691204 /* LCMogoWeiboDemo */,
+				002847381CC1D0BE00691204 /* LCMogoWeiboDemoTests */,
+				002847431CC1D0BE00691204 /* LCMogoWeiboDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0028471E1CC1D0BE00691204 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002847811CC1D0FD00691204 /* LCPostMessageViewController.xib in Resources */,
+				002847331CC1D0BE00691204 /* LaunchScreen.storyboard in Resources */,
+				002847301CC1D0BE00691204 /* Assets.xcassets in Resources */,
+				002847991CC1D1D500691204 /* LCTestViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002847371CC1D0BE00691204 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002847421CC1D0BE00691204 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0028471C1CC1D0BE00691204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002847901CC1D10600691204 /* LCBaseViewController.m in Sources */,
+				0028477C1CC1D0FD00691204 /* AppDelegate.m in Sources */,
+				002847A81CC1D25800691204 /* NSString+LengthInLabel.m in Sources */,
+				0028477E1CC1D0FD00691204 /* LCHomeTableViewController.m in Sources */,
+				002847981CC1D1D500691204 /* LCTestViewController.m in Sources */,
+				002847A71CC1D25800691204 /* NSDate+Extension.m in Sources */,
+				002847AA1CC1D25800691204 /* UIView+Extension.m in Sources */,
+				002847A91CC1D25800691204 /* UIBarButtonItem+Extension.m in Sources */,
+				002847251CC1D0BE00691204 /* main.m in Sources */,
+				002847801CC1D0FD00691204 /* LCPostMessageViewController.m in Sources */,
+				0028477F1CC1D0FD00691204 /* LCMessageTableViewController.m in Sources */,
+				0028477D1CC1D0FD00691204 /* LCDiscorverTableViewController.m in Sources */,
+				0028478F1CC1D10600691204 /* LCBaseTableViewController.m in Sources */,
+				002847921CC1D10600691204 /* LCTabBar.m in Sources */,
+				002847821CC1D0FD00691204 /* LCProfileTableViewController.m in Sources */,
+				002847A61CC1D25800691204 /* Foundation+Log.m in Sources */,
+				002847931CC1D10600691204 /* LCTabBarController.m in Sources */,
+				002847911CC1D10600691204 /* LCNavgationController.m in Sources */,
+				002847831CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002847351CC1D0BE00691204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0028473E1CC1D0BE00691204 /* LCMogoWeiboDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002847401CC1D0BE00691204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002847491CC1D0BE00691204 /* LCMogoWeiboDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0028473B1CC1D0BE00691204 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0028471F1CC1D0BE00691204 /* LCMogoWeiboDemo */;
+			targetProxy = 0028473A1CC1D0BE00691204 /* PBXContainerItemProxy */;
+		};
+		002847461CC1D0BE00691204 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0028471F1CC1D0BE00691204 /* LCMogoWeiboDemo */;
+			targetProxy = 002847451CC1D0BE00691204 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		002847311CC1D0BE00691204 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				002847321CC1D0BE00691204 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0028474B1CC1D0BE00691204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0028474C1CC1D0BE00691204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0028474E1CC1D0BE00691204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LCMogoWeiboDemo/Class/PrefixHeader.pch";
+				INFOPLIST_FILE = LCMogoWeiboDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MoGo.LCMogoWeiboDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0028474F1CC1D0BE00691204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LCMogoWeiboDemo/Class/PrefixHeader.pch";
+				INFOPLIST_FILE = LCMogoWeiboDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MoGo.LCMogoWeiboDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		002847511CC1D0BE00691204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LCMogoWeiboDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MoGo.LCMogoWeiboDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LCMogoWeiboDemo.app/LCMogoWeiboDemo";
+			};
+			name = Debug;
+		};
+		002847521CC1D0BE00691204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LCMogoWeiboDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MoGo.LCMogoWeiboDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LCMogoWeiboDemo.app/LCMogoWeiboDemo";
+			};
+			name = Release;
+		};
+		002847541CC1D0BE00691204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LCMogoWeiboDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MoGo.LCMogoWeiboDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LCMogoWeiboDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		002847551CC1D0BE00691204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LCMogoWeiboDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MoGo.LCMogoWeiboDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LCMogoWeiboDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0028471B1CC1D0BE00691204 /* Build configuration list for PBXProject "LCMogoWeiboDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0028474B1CC1D0BE00691204 /* Debug */,
+				0028474C1CC1D0BE00691204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0028474D1CC1D0BE00691204 /* Build configuration list for PBXNativeTarget "LCMogoWeiboDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0028474E1CC1D0BE00691204 /* Debug */,
+				0028474F1CC1D0BE00691204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002847501CC1D0BE00691204 /* Build configuration list for PBXNativeTarget "LCMogoWeiboDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002847511CC1D0BE00691204 /* Debug */,
+				002847521CC1D0BE00691204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002847531CC1D0BE00691204 /* Build configuration list for PBXNativeTarget "LCMogoWeiboDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002847541CC1D0BE00691204 /* Debug */,
+				002847551CC1D0BE00691204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 002847181CC1D0BE00691204 /* Project object */;
+}
