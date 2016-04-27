@@ -33,10 +33,10 @@
     [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor blueColor] backgroundColor:[UIColor greenColor] forFlag:DDLogFlagVerbose];
     [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor whiteColor] backgroundColor:[UIColor purpleColor] forFlag:DDLogFlagInfo];
     
-    LCLogError(@"错误信息"); // 红色
-    LCLogWarn(@"警告"); // 橙色
-    LCLogInfo(@"提示信息"); // 默认是黑色
-    LCLogVerbose(@"详细信息"); // 默认是黑色
+//    LCLogError(@"错误信息"); // 红色
+//    LCLogWarn(@"警告"); // 橙色
+//    LCLogInfo(@"提示信息"); // 默认是黑色
+//    LCLogVerbose(@"详细信息"); // 默认是黑色
     /**
      *  收集崩溃日志
      */

@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (Extension)
+//设置圆弧
+- (void)setCornerRadius:(CGFloat)cornerRadius;
+//返回一条线view
+- (UIView *)lineV;
 @property (nonatomic, assign) CGFloat x;
 @property (nonatomic, assign) CGFloat y;
 @property (nonatomic, assign) CGFloat width;

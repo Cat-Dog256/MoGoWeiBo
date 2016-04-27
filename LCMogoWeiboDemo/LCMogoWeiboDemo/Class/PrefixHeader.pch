@@ -11,23 +11,159 @@
  改成这样会自动找到路径:$(SRCROOT)+pch在当前工程下路径
  */
 
-
+//http://www.cnblogs.com/taintain1984/archive/2013/05/29/3106006.html
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
-/**
- *  工具类
- */
+//*************************工程经常用头文件导入******************************
+
+//此处导入为多个类公用的，所用类少的情况不要到在这里，减少编译时间
 #import "LCManagerTool.h"
 #import "UIView+Extension.h"
+#import "UIScrollView+LCRefresh.h"
+/**
+ *  计算字符串长度
+ */
+#import "NSString+LengthInLabel.h"
 //设置分级打印   使用插件XcodeColors让打印带颜色 需要配置Xcode环境 XcodeColors才会生效
 #import "CocoaLumberjack.h"
 static const NSUInteger ddLogLevel = DDLogLevelAll;//多个宏可供选择
+
+
+//调试网络请求部分的打印
+#if 0
+#define ReqLog(fmt, ...) NSLog((@"%s [Line %d] \n" fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define ReqLog(...)
+#endif
+
+//调试数据库操作部分的打印
+#if 0
+#define DBLog(fmt, ...) NSLog((@"%s [Line %d] \n" fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define DBLog(...)
+#endif
+
+
 
 #define LCLogError(错误信息, ...) DDLogError((@"错误信息 : \n%s [Line %d] \n" 错误信息), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #define LCLogWarn(警告, ...) DDLogWarn((@"警告 : \n%s [Line %d] \n" 警告), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
 #define LCLogInfo(提示信息, ...) DDLogInfo((@"提示信息 :\n %s [Line %d] \n" 提示信息), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #define LCLogVerbose(详细信息, ...) DDLogVerbose((@"详细信息 : \n%s [Line %d]\n" 详细信息), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+//导入项目baseUI.h
+#import "LCBaseUI.h"
+//颜色 字体等 配置信息
+#import "LCViewConfiguration.h"
+//cmj 项目用到相关业务，接口常量字符串等
+//#import "ZGTXOrderAssistantConst.h"
+//cmj 接口部署
+#import "LCEnvironmentConfig.h"
+
+//*************************工程经常用宏定义*********************************
+
+//获取屏幕 宽度、高度
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+//block中要用到的self,用法直接调用WS（）括号内是别名
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+//--------------------------获取RGB颜色------------------------------------
+// rgb颜色转换（16进制->10进制）
+#define UIColorFromRGB(rgbValue, alp) [UIColor colorWithHexString:rgbValue alpha:alp];
+
+#define kRGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define kRGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+
+//--------------------------检查系统版本------------------------------------
+//相等
+#define kSYSTEM_VERSION_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+//大于
+#define kSYSTEM_VERSION_GREATER_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+//大于等于
+#define kSYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+//小于
+#define kSYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+//小于等于
+#define kSYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+//--------------------------根据手机型号宏定义字体----------------------------
+#define kCANCELFONT [UIDevice isLaterThaniPhone6] ?  [UIFont systemFontOfSize:13.0f] : [UIFont systemFontOfSize:11.0f]
+#define kREASONFONT [UIDevice isLaterThaniPhone6] ?  [UIFont systemFontOfSize:12.0f] : [UIFont systemFontOfSize:10.0f]
+
+
+//--------------------------G－C－D----------------------------------------
+//#define kGLOBAL(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
+//#define kMAIN(block) dispatch_async(dispatch_get_main_queue(),block)
+//
+//*************************单例化一个类*************************************
+// .h文件
+//#define ZGTXSingletonH(name) + (instancetype)sharedInstance;
+//
+//// .m文件
+//#if __has_feature(objc_arc)
+//
+//#define ZGTXSingletonM(name) \
+//static id _instace; \
+//\
+//+ (id)allocWithZone:(struct _NSZone *)zone \
+//{ \
+//static dispatch_once_t onceToken; \
+//dispatch_once(&onceToken, ^{ \
+//_instace = [super allocWithZone:zone]; \
+//}); \
+//return _instace; \
+//} \
+//\
+//+ (instancetype)sharedInstance \
+//{ \
+//static dispatch_once_t onceToken; \
+//dispatch_once(&onceToken, ^{ \
+//_instace = [[self alloc] init]; \
+//}); \
+//return _instace; \
+//} \
+//\
+//- (id)copyWithZone:(NSZone *)zone \
+//{ \
+//return _instace; \
+//}
+//
+//#else
+//
+//#define ZGTXSingletonM(name) \
+//static id _instace; \
+//\
+//+ (id)allocWithZone:(struct _NSZone *)zone \
+//{ \
+//static dispatch_once_t onceToken; \
+//dispatch_once(&onceToken, ^{ \
+//_instace = [super allocWithZone:zone]; \
+//}); \
+//return _instace; \
+//} \
+//\
+//+ (instancetype)sharedInstance \
+//{ \
+//static dispatch_once_t onceToken; \
+//dispatch_once(&onceToken, ^{ \
+//_instace = [[self alloc] init]; \
+//}); \
+//return _instace; \
+//} \
+//\
+//- (id)copyWithZone:(NSZone *)zone \
+//{ \
+//return _instace; \
+//} \
+//\
+//- (oneway void)release { } \
+//- (id)retain { return self; } \
+//- (NSUInteger)retainCount { return 1;} \
+//- (id)autorelease { return self;}
+//
+//#endif
+//
+
+
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

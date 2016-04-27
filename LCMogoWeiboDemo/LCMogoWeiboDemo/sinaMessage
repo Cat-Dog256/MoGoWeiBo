@@ -1,0 +1,17 @@
+App Key：977643691
+App Secret：cd9ed60de55330768bcbf7e9d264e5da
+{
+"access_token" = "2.00j15PRBdmFKEBc0e4acca150rXv9S";
+"expires_in" = 157679999;
+"remind_in" = 157679999;
+respCode = 0;
+uid = 1170999005;
+}
+[;
+
+配置支持http请求
+<key>NSAppTransportSecurity</key>
+<dict>
+<key>NSAllowsArbitraryLoads</key>
+<true/>
+</dict>

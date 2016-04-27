@@ -9,6 +9,22 @@
 #import "UIView+Extension.h"
 
 @implementation UIView (Extension)
+//设置圆弧
+- (void)setCornerRadius:(CGFloat)cornerRadius{
+    
+    self.layer.cornerRadius = cornerRadius;
+    self.layer.masksToBounds = YES;
+}
+
+//返回一条线view
+- (UIView *)lineV{
+    UIView *lineV = [[UIView alloc] init];
+    lineV.userInteractionEnabled = NO;
+    lineV.backgroundColor = kBorderLineColor;
+    lineV.height = kBorderLineThickness;
+    lineV.width = kBorderLineThickness;
+    return lineV;
+}
 
 - (void)setX:(CGFloat)x
 {
