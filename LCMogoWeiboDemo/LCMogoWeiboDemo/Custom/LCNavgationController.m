@@ -13,12 +13,18 @@
 @end
 
 @implementation LCNavgationController
-
+#warning todo 重新注释
 - (void)viewDidLoad {
     [super viewDidLoad];
+    /**
+     状态栏
+     */
+    UIView *statusBarView = [[UIView alloc] initWithFrame:CGRectMake(0, -20, SCREEN_WIDTH, 20)];
+    statusBarView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.0];
+    [self.navigationBar addSubview:statusBarView];
+    
     self.interactivePopGestureRecognizer.delegate = self;
-  
-    // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.
 }
 /**
  * 右滑手势返回
@@ -28,6 +34,7 @@
 }
 #pragma mark**设置导航栏的主题  背景色，字体颜色，大小 ，主题色，只需设置一次**
 +(void)initialize{
+    
     UIBarButtonItem *item = [UIBarButtonItem appearance];
     NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
     dict[NSForegroundColorAttributeName] = [UIColor orangeColor];
@@ -47,13 +54,53 @@
      *  一旦你设置了navigationBar的- (void)setBackgroundImage:(UIImage *)backgroundImage forBarMetrics:(UIBarMetrics)barMetrics接口，那么上面的setBarTintColor接口就不能改变statusBar的背景色，statusBar的背景色就会变成纯黑色。
      */
 //    [navBar setBackgroundImage:[UIImage imageNamed:@"navBackground"] forBarMetrics:UIBarMetricsDefault];
+//  设置透明的导航栏
+    [navBar setBackgroundImage:[self imageWithBgColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0]] forBarMetrics:UIBarMetricsDefault];
+// 设置阴影线为透明
+//    [navBar setShadowImage:[self imageWithBgColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0]]];
+
     
+
 #pragma mark**导航栏颜色,这个会让状态栏和导航栏的颜色一样**
-    navBar.barStyle = UIStatusBarStyleLightContent;
-    [navBar setBarTintColor:[UIColor yellowColor]];
-    navBar.backgroundColor = [UIColor yellowColor];
-    [navBar setTranslucent:NO];
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+
+//    navBar.barStyle = UIStatusBarStyleDefault;
+//    [navBar setTintColor:[UIColor greenColor]];
+//    [navBar setBarTintColor:[UIColor blueColor]];
+//    navBar.barTintColor = [UIColor colorWithHexString:@"f9f9f9"];
+//    navBar.backgroundColor = [UIColor yellowColor];
     
+//    navBar.alpha = 0.3000;
+    /**
+     *  透明度
+     */
+    [navBar setTranslucent:YES];
+    /**
+     *  tintColor: 导航栏的按钮(如返回)颜色
+        titleTextAttributes: 标题颜色
+        barTintColor: 背景颜色
+        translucent: 是否透明
+     */
+    
+    
+}
++ (UIImage *)imageWithBgColor:(UIColor *)color {
+    
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    
+    UIGraphicsBeginImageContext(rect.size);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return image;
     
 }
 - (UIStatusBarStyle)preferredStatusBarStyle{
@@ -65,7 +112,7 @@
     /**
      *  上面的方法在ios9中会有警告,建议使用这个方法,使用这个方法要在project target的Info tab中，插入一个新的key，名字为View controller-based status bar appearance，并将其值设置为YES
      */
-    return UIStatusBarStyleLightContent;
+    return UIStatusBarStyleDefault;
 }
 //这个方法可以在某个VC中控制状态栏的显示与隐藏 info.plist中这个值 View controller-based status bar appearance必须为YES否则无效
 //- (BOOL)prefersStatusBarHidden{

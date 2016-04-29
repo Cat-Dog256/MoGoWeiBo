@@ -13,4 +13,12 @@
  *  自定义Log信息
  */
 + (void)makeCustomLog;
+/**
+ *  过滤到微博正文中的非法字符
+ *
+ *  @param textString 微博正文
+ *
+ *  @return 顾虑后的字符串
+ */
++ (NSString *)filter_tank:(NSString *)textString;
 @end

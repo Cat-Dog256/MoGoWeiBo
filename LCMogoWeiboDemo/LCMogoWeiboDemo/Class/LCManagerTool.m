@@ -101,5 +101,37 @@
         return jsonString;
     return @"{\"location\":\"error\"}";
 }
+//判读邮箱
++ (BOOL) validateEmail: (NSString *) candidate {
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:candidate];
+}
 
++ (NSString *)filter_tank:(NSString *)textString{
+    //表情正则表达式
+    NSString *hanzi = @"[\u4e00-\u9fa5]";
+    NSString *hanzibiaodian = @"[\u3000-\u301e\ufe10-\ufe19\ufe30-\ufe44\ufe50-\ufe6b\uff01-\uffee]";
+    //  \\u4e00-\\u9fa5 代表unicode字符
+    NSString *emopattern = @"\\[[a-zA-Z\\u4e00-\\u9fa5]+\\]";
+    //@正则表达式
+    NSString *atpattern = @"@[0-9a-zA-Z\\u4e00-\\u9fa5]+";
+    //#...#正则表达式
+    NSString *toppattern = @"#[0-9a-zA-Z\\u4e00-\\u9fa5]+#";
+    //url正则表达式
+    NSString *urlpattern = @"\\b(([\\w-]+://?|www[.])[^\\s()<>]+(?:\\([\\w\\d]+\\)|([^[:punct:]\\s]|/)))";
+    //设定总的正则表达式
+    NSString *pattern = [NSString stringWithFormat:@"%@|%@|%@|%@|%@|%@",hanzi,hanzibiaodian,emopattern,atpattern,toppattern,urlpattern];
+    //根据正则表达式设定OC规则
+    NSRegularExpression *regular = [[NSRegularExpression alloc] initWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:nil];
+    //获取匹配结果
+    NSArray *results = [regular matchesInString:textString options:0 range:NSMakeRange(0, textString.length)];
+    //遍历结果
+    NSMutableArray *array = [NSMutableArray array];
+    for (NSTextCheckingResult *result in results) {
+        
+        [array addObject:[textString substringWithRange:result.range]];
+    }
+    return  [array componentsJoinedByString:@""];
+}
 @end

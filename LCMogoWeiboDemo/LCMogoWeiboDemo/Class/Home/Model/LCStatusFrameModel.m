@@ -62,6 +62,11 @@ NSUInteger const MaxMargin = 10;
     /**正文*/
     CGFloat textX = iconX;
     CGFloat textY = MAX(CGRectGetMaxY(self.iconViewF), CGRectGetMaxY(self.timeLabelF)) + BigMargin;
+#warning study 需要正则表达式
+    /**
+     *  需要正则表达式
+     */
+//【‍晚安】借时光之手，暖一束花开。借一方晴空，拥抱阳光。‍亲爱的‍，‍晚安‍
     CGSize textSize = [statusModel.textString sizeWithFont:kMidTextFont maxW:SCREEN_WIDTH - 20];
     self.contentLabelF = CGRectMake(textX, textY, textSize.width, textSize.height);
     /**微博图片*/

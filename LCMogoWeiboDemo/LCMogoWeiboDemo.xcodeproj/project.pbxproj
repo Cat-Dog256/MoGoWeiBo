@@ -20,11 +20,12 @@
 		002847821CC1D0FD00691204 /* LCProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847761CC1D0FD00691204 /* LCProfileTableViewController.m */; };
 		002847831CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028477B1CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.m */; };
 		0028478F1CC1D10600691204 /* LCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847861CC1D10600691204 /* LCBaseTableViewController.m */; };
-		002847911CC1D10600691204 /* LCNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028478A1CC1D10600691204 /* LCNavgationController.m */; };
 		002847921CC1D10600691204 /* LCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028478C1CC1D10600691204 /* LCTabBar.m */; };
 		002847931CC1D10600691204 /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028478E1CC1D10600691204 /* LCTabBarController.m */; };
 		002847981CC1D1D500691204 /* LCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847961CC1D1D500691204 /* LCTestViewController.m */; };
 		002847991CC1D1D500691204 /* LCTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002847971CC1D1D500691204 /* LCTestViewController.xib */; };
+		0072BFDD1CD2C6B800A7E49C /* LCEmotionKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0072BFDC1CD2C6B800A7E49C /* LCEmotionKeyboardView.m */; };
+		0072BFDF1CD2D7A600A7E49C /* EmotionIcons in Resources */ = {isa = PBXBuildFile; fileRef = 0072BFDE1CD2D7A600A7E49C /* EmotionIcons */; };
 		00B83AFC1CC297C200B97B3C /* CatchCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B83AFB1CC297C200B97B3C /* CatchCrash.m */; };
 		00B83AFF1CC2B3D700B97B3C /* LCManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B83AFE1CC2B3D700B97B3C /* LCManagerTool.m */; };
 		00EE2A9E1CD0F51B000C491A /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2A911CD0F51B000C491A /* Foundation+Log.m */; };
@@ -79,6 +80,10 @@
 		00EE2BAE1CD10127000C491A /* LCHearderIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BAD1CD10127000C491A /* LCHearderIconView.m */; };
 		00EE2BBA1CD105C3000C491A /* LCStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BB91CD105C3000C491A /* LCStatusCell.m */; };
 		00EE2BBD1CD108E8000C491A /* LCToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BBC1CD108E8000C491A /* LCToolBar.m */; };
+		00EE2BC01CD112C4000C491A /* LCNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BBF1CD112C4000C491A /* LCNavgationController.m */; };
+		00EE2BC31CD1985D000C491A /* LCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BC21CD1985D000C491A /* LCPlaceholderTextView.m */; };
+		00EE2BC91CD1A7B4000C491A /* LCKeyboardToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BC81CD1A7B4000C491A /* LCKeyboardToolBar.m */; };
+		00EE2C0B1CD1EF05000C491A /* LCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2C0A1CD1EF05000C491A /* LCButton.m */; };
 		C119542B0785F490D788B3EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF72D5814A193FAB106E4F1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -126,8 +131,6 @@
 		0028477B1CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMoGoWeiBoTabBarController.m; sourceTree = "<group>"; };
 		002847851CC1D10600691204 /* LCBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseTableViewController.h; sourceTree = "<group>"; };
 		002847861CC1D10600691204 /* LCBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseTableViewController.m; sourceTree = "<group>"; };
-		002847891CC1D10600691204 /* LCNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNavgationController.h; sourceTree = "<group>"; };
-		0028478A1CC1D10600691204 /* LCNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNavgationController.m; sourceTree = "<group>"; };
 		0028478B1CC1D10600691204 /* LCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBar.h; sourceTree = "<group>"; };
 		0028478C1CC1D10600691204 /* LCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBar.m; sourceTree = "<group>"; };
 		0028478D1CC1D10600691204 /* LCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarController.h; sourceTree = "<group>"; };
@@ -135,6 +138,9 @@
 		002847951CC1D1D500691204 /* LCTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTestViewController.h; sourceTree = "<group>"; };
 		002847961CC1D1D500691204 /* LCTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTestViewController.m; sourceTree = "<group>"; };
 		002847971CC1D1D500691204 /* LCTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCTestViewController.xib; sourceTree = "<group>"; };
+		0072BFDB1CD2C6B800A7E49C /* LCEmotionKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCEmotionKeyboardView.h; sourceTree = "<group>"; };
+		0072BFDC1CD2C6B800A7E49C /* LCEmotionKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCEmotionKeyboardView.m; sourceTree = "<group>"; };
+		0072BFDE1CD2D7A600A7E49C /* EmotionIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EmotionIcons; sourceTree = "<group>"; };
 		00B83AFA1CC297C200B97B3C /* CatchCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatchCrash.h; sourceTree = "<group>"; };
 		00B83AFB1CC297C200B97B3C /* CatchCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatchCrash.m; sourceTree = "<group>"; };
 		00B83AFD1CC2B3D700B97B3C /* LCManagerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCManagerTool.h; sourceTree = "<group>"; };
@@ -241,6 +247,14 @@
 		00EE2BB91CD105C3000C491A /* LCStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCStatusCell.m; sourceTree = "<group>"; };
 		00EE2BBB1CD108E8000C491A /* LCToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCToolBar.h; sourceTree = "<group>"; };
 		00EE2BBC1CD108E8000C491A /* LCToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCToolBar.m; sourceTree = "<group>"; };
+		00EE2BBE1CD112C4000C491A /* LCNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNavgationController.h; sourceTree = "<group>"; };
+		00EE2BBF1CD112C4000C491A /* LCNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNavgationController.m; sourceTree = "<group>"; };
+		00EE2BC11CD1985D000C491A /* LCPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPlaceholderTextView.h; sourceTree = "<group>"; };
+		00EE2BC21CD1985D000C491A /* LCPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPlaceholderTextView.m; sourceTree = "<group>"; };
+		00EE2BC71CD1A7B4000C491A /* LCKeyboardToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCKeyboardToolBar.h; sourceTree = "<group>"; };
+		00EE2BC81CD1A7B4000C491A /* LCKeyboardToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCKeyboardToolBar.m; sourceTree = "<group>"; };
+		00EE2C091CD1EF05000C491A /* LCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCButton.h; sourceTree = "<group>"; };
+		00EE2C0A1CD1EF05000C491A /* LCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCButton.m; sourceTree = "<group>"; };
 		40B33D2B361E085B98F24375 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		95949A388983EA0047060239 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CFF72D5814A193FAB106E4F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -317,6 +331,7 @@
 		002847231CC1D0BE00691204 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0072BFDE1CD2D7A600A7E49C /* EmotionIcons */,
 				002847241CC1D0BE00691204 /* main.m */,
 				00EE2BA01CD0FC0E000C491A /* sinaMessage */,
 			);
@@ -516,8 +531,8 @@
 				002847861CC1D10600691204 /* LCBaseTableViewController.m */,
 				00EE2B9D1CD0FB26000C491A /* LCBaseViewController.h */,
 				00EE2B9E1CD0FB26000C491A /* LCBaseViewController.m */,
-				002847891CC1D10600691204 /* LCNavgationController.h */,
-				0028478A1CC1D10600691204 /* LCNavgationController.m */,
+				00EE2BBE1CD112C4000C491A /* LCNavgationController.h */,
+				00EE2BBF1CD112C4000C491A /* LCNavgationController.m */,
 				0028478B1CC1D10600691204 /* LCTabBar.h */,
 				0028478C1CC1D10600691204 /* LCTabBar.m */,
 				0028478D1CC1D10600691204 /* LCTabBarController.h */,
@@ -532,6 +547,12 @@
 				00EE2B951CD0FA4D000C491A /* LCPicModel.m */,
 				00EE2B971CD0FA5C000C491A /* LCPhtotoImageView.h */,
 				00EE2B981CD0FA5C000C491A /* LCPhtotoImageView.m */,
+				00EE2BC11CD1985D000C491A /* LCPlaceholderTextView.h */,
+				00EE2BC21CD1985D000C491A /* LCPlaceholderTextView.m */,
+				00EE2BC71CD1A7B4000C491A /* LCKeyboardToolBar.h */,
+				00EE2BC81CD1A7B4000C491A /* LCKeyboardToolBar.m */,
+				0072BFDB1CD2C6B800A7E49C /* LCEmotionKeyboardView.h */,
+				0072BFDC1CD2C6B800A7E49C /* LCEmotionKeyboardView.m */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -568,6 +589,8 @@
 				00EE2AAC1CD0F59E000C491A /* LCTableViewCell.m */,
 				00EE2AAD1CD0F59E000C491A /* LCView.h */,
 				00EE2AAE1CD0F59E000C491A /* LCView.m */,
+				00EE2C091CD1EF05000C491A /* LCButton.h */,
+				00EE2C0A1CD1EF05000C491A /* LCButton.m */,
 				00EE2AAF1CD0F59E000C491A /* LCView_LineMethodHeader.h */,
 				00EE2AB01CD0F59E000C491A /* LCViewConfiguration.h */,
 			);
@@ -838,6 +861,7 @@
 				00EE2AF11CD0F5CE000C491A /* jhLoading@2x.gif in Resources */,
 				002847811CC1D0FD00691204 /* LCPostMessageViewController.xib in Resources */,
 				002847331CC1D0BE00691204 /* LaunchScreen.storyboard in Resources */,
+				0072BFDF1CD2D7A600A7E49C /* EmotionIcons in Resources */,
 				00EE2AFA1CD0F5CE000C491A /* loading@3x.gif in Resources */,
 				00EE2AF01CD0F5CE000C491A /* hardLoding@3x.gif in Resources */,
 				002847301CC1D0BE00691204 /* Assets.xcassets in Resources */,
@@ -923,12 +947,15 @@
 				00EE2AE91CD0F5CE000C491A /* LCURLCache.m in Sources */,
 				00EE2B931CD0FA3B000C491A /* LCPhotosView.m in Sources */,
 				00EE2AF71CD0F5CE000C491A /* LCRequsestBase.m in Sources */,
+				00EE2BC01CD112C4000C491A /* LCNavgationController.m in Sources */,
 				00EE2AE61CD0F5CE000C491A /* LCDBConst.m in Sources */,
+				0072BFDD1CD2C6B800A7E49C /* LCEmotionKeyboardView.m in Sources */,
 				00EE2AED1CD0F5CE000C491A /* LCException.m in Sources */,
 				00EE2B8A1CD0F9CA000C491A /* LCResultStatusesModel.m in Sources */,
 				0028477C1CC1D0FD00691204 /* AppDelegate.m in Sources */,
 				00EE2B7B1CD0F9AD000C491A /* LCGetAccessTokenReformer.m in Sources */,
 				00EE2AF61CD0F5CE000C491A /* LCRequestManager.m in Sources */,
+				00EE2BC31CD1985D000C491A /* LCPlaceholderTextView.m in Sources */,
 				00EE2B961CD0FA4D000C491A /* LCPicModel.m in Sources */,
 				00EE2AB31CD0F59E000C491A /* LCTableViewCell.m in Sources */,
 				00EE2AB21CD0F59E000C491A /* LCTableView.m in Sources */,
@@ -960,6 +987,7 @@
 				002847821CC1D0FD00691204 /* LCProfileTableViewController.m in Sources */,
 				00EE2AEA1CD0F5CE000C491A /* LCLoadFaildView.m in Sources */,
 				00EE2AFC1CD0F5CE000C491A /* LCFakeDataParams.m in Sources */,
+				00EE2C0B1CD1EF05000C491A /* LCButton.m in Sources */,
 				00EE2B991CD0FA5C000C491A /* LCPhtotoImageView.m in Sources */,
 				00EE2AEB1CD0F5CE000C491A /* LCNetworkCutView.m in Sources */,
 				00EE2BAE1CD10127000C491A /* LCHearderIconView.m in Sources */,
@@ -974,8 +1002,8 @@
 				00EE2AB11CD0F59E000C491A /* LCLabel.m in Sources */,
 				00EE2AA41CD0F51B000C491A /* UIView+Extension.m in Sources */,
 				00EE2AA01CD0F51B000C491A /* NSString+LengthInLabel.m in Sources */,
-				002847911CC1D10600691204 /* LCNavgationController.m in Sources */,
 				002847831CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.m in Sources */,
+				00EE2BC91CD1A7B4000C491A /* LCKeyboardToolBar.m in Sources */,
 				00EE2AFB1CD0F5CE000C491A /* LCBaseReformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

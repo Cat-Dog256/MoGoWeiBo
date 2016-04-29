@@ -10,7 +10,7 @@
 #define LCBaseUI_h
 #import "LCView.h"
 #import "LCLabel.h"
-
+#import "LCButton.h"
 
 
 #import "LCView_LineMethodHeader.h"

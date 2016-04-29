@@ -74,8 +74,11 @@
  *  中间的加号按钮的点击事件
  */
 - (void)tabBarDidClickPlusButton:(LCTabBar *)tabBar{
+    
     LCPostMessageViewController *sendMessageVC = [[LCPostMessageViewController alloc]init];
-    [self presentViewController:sendMessageVC animated:YES completion:nil];
+    
+    LCNavgationController *nav = [[LCNavgationController alloc]initWithRootViewController:sendMessageVC];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
