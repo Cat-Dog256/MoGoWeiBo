@@ -26,7 +26,6 @@
          self.frame = CGRectMake(0, toolBar_Y, SCREEN_WIDTH, 44);
         [self addTopLineWithTopMargin:0 leftMargin:0 rightMargin:0];
         [self addDownLineWithDownMargin:0 leftMargin:0 rightMargin:0];
-        
         [self setUpButtonWithNormalImage:[UIImage imageNamed:@"compose_camerabutton_background"] highlightedImage:[UIImage imageNamed:@"compose_camerabutton_background_highlighted"] andButtonType:LCKeyboardToolbarButtonTypeCamera];
         [self setUpButtonWithNormalImage:[UIImage imageNamed:@"compose_toolbar_picture"] highlightedImage:[UIImage imageNamed:@"compose_toolbar_picture_highlighted"] andButtonType:LCKeyboardToolbarButtonTypePicture];
         
@@ -43,6 +42,7 @@
     [button setImage:highlightedImage forState:UIControlStateHighlighted];
     [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     button.tag = buttonType;
+    button.backgroundColor = kOrangeColor;
     [self.butsArray addObject:button];
     
     [self addSubview:button];
@@ -64,7 +64,7 @@
 }
 - (void)buttonAction:(UIButton *)button{
     if ([self.delegate respondsToSelector:@selector(keyboardToolbar:didClickButton:)]) {
-        [self.delegate keyboardToolbar:self didClickButton:button.tag];
+        [self.delegate keyboardToolbar:self didClickButton:(int)button.tag];
     }
 }
 - (void)setShowKeyboardButton:(BOOL)showKeyboardButton{

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LCLabel : UILabel
-+ (instancetype)labelWithFont:(int)font text:(NSString *)text;
++ (instancetype)labelWithFont:(UIFont *)font text:(NSString *)text;
 @end

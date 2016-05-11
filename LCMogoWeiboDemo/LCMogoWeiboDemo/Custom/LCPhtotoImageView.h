@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 @class LCPicModel;
+@class LCPhtotoImageView;
+@protocol LCPhtotoImageViewDelegate <NSObject>
+
+- (void)tappedPhotoImageView:(LCPhtotoImageView *)photoImageView;
+
+@end
+
 @interface LCPhtotoImageView : UIImageView
+@property (nonatomic , strong) id<LCPhtotoImageViewDelegate>delegate;
 @property (nonatomic , strong) LCPicModel *picModel;
+@property (nonatomic , assign) int indexTag;
 @end

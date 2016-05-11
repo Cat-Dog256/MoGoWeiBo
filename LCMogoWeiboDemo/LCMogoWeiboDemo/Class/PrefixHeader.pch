@@ -50,14 +50,23 @@ static const NSUInteger ddLogLevel = DDLogLevelAll;//多个宏可供选择
 
 #define LCLogInfo(提示信息, ...) DDLogInfo((@"提示信息 :\n %s [Line %d] \n" 提示信息), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #define LCLogVerbose(详细信息, ...) DDLogVerbose((@"详细信息 : \n%s [Line %d]\n" 详细信息), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+
+
+// RGB颜色
+#define LCColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+// 随机色
+#define LCRandomColor LCColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+
 //导入项目baseUI.h
 #import "LCBaseUI.h"
 //颜色 字体等 配置信息
 #import "LCViewConfiguration.h"
-//cmj 项目用到相关业务，接口常量字符串等
-//#import "ZGTXOrderAssistantConst.h"
-//cmj 接口部署
+// 项目用到相关业务，接口常量字符串等
+// 接口部署
 #import "LCEnvironmentConfig.h"
+
+
 
 //*************************工程经常用宏定义*********************************
 

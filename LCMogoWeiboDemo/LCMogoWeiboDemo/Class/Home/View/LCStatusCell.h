@@ -8,6 +8,15 @@
 
 #import "LCTableViewCell.h"
 #import "LCStatusFrameModel.h"
+@class LCStatusCell;
+@class LCPhtotoImageView;
+@protocol LCStatusCellDelegate<NSObject>
+
+- (void)statusCell:(LCStatusCell *)cell tappedPhotosViewAtPhotoImageView:(LCPhtotoImageView *)photoImageView andCurrentImageIndex:(int)index andImagesArray:(NSArray *)imagesArray andImagesFrameArray:(NSArray *)imgaesFrameArray;
+
+@end
+
 @interface LCStatusCell : LCTableViewCell
+@property (nonatomic , weak) id<LCStatusCellDelegate>cell_delegate;
 @property (nonatomic , strong) LCStatusFrameModel *frameModel;
 @end

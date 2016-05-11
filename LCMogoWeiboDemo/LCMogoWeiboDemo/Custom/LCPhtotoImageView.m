@@ -44,6 +44,10 @@
          */
         self.contentMode = UIViewContentModeScaleAspectFill;
         self.clipsToBounds = YES;
+        
+        self.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction)];
+        [self addGestureRecognizer:tap];
     }
     return self;
 }
@@ -56,11 +60,17 @@
 - (void)setPicModel:(LCPicModel *)picModel{
     _picModel = picModel;
     NSString *picUrl = [picModel thumbnail_pic];
-    [self sd_setImageWithURL:[NSURL URLWithString:picUrl]  placeholderImage:[UIImage imageNamed:@"timeline_image_placeholder"]];
+
     if ([picUrl.lowercaseString hasSuffix:@".gif"]) {
         self.gifView.hidden = NO;
     }else{
         self.gifView.hidden = YES;
+    }
+}
+- (void)tapAction{
+    
+    if ([self.delegate respondsToSelector:@selector(tappedPhotoImageView:)]) {
+        [self.delegate tappedPhotoImageView:self];
     }
 }
 

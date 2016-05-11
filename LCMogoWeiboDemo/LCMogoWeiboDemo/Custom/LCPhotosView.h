@@ -8,7 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class LCPhtotoImageView;
+
+@protocol LCPhotosViewDelegate <NSObject>
+
+- (void)tappedPhotosViewAtPhotoImageView:(LCPhtotoImageView *)photoImageView andCurrentImageIndex:(int)index andImagesArray:(NSArray *)imagesArray andImagesFrameArray:(NSArray *)imagesFrameArray;
+
+@end
+
 @interface LCPhotosView : UIView
 @property (nonatomic , strong) NSArray *photosArray;
+@property (nonatomic , weak) id<LCPhotosViewDelegate>delegate;
 + (CGSize)photosViewSizeWithCount:(int)count;
 @end

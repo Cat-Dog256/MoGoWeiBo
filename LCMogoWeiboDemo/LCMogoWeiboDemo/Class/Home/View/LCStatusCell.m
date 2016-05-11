@@ -14,7 +14,7 @@
  *  间距
  */
 NSUInteger const Big_Margin = 5;
-@interface LCStatusCell ()
+@interface LCStatusCell ()<LCPhotosViewDelegate>
 /**原创微博整体*/
 @property (nonatomic , weak) UIView *originalView;
 /**微博头像*/
@@ -84,6 +84,7 @@ NSUInteger const Big_Margin = 5;
     self.vipView = vipView;
     /**微博图片*/
     LCPhotosView *photoView = [[LCPhotosView alloc]init];
+    photoView.delegate = self;
     [originalView addSubview:photoView];
     
     self.photoView = photoView;
@@ -132,6 +133,7 @@ NSUInteger const Big_Margin = 5;
     self.retweetTextLabel = retweetTextLabel;
     /**转发配图*/
     LCPhotosView *retweetPhotosView = [[LCPhotosView alloc]init];
+    retweetPhotosView.delegate = self;
     [retweetView addSubview:retweetPhotosView];
     self.retweetPhotosView = retweetPhotosView;
 }
@@ -149,7 +151,6 @@ NSUInteger const Big_Margin = 5;
      *  昵称
      */
     self.nameLabel.frame = frameModel.nameLabelF;
-   
     self.nameLabel.text = statusModel.userMessage.name;
     /**vip图片*/
     self.vipView.frame = frameModel.vipViewF;
@@ -252,5 +253,9 @@ NSUInteger const Big_Margin = 5;
     // Drawing code
 }
 */
-
+- (void)tappedPhotosViewAtPhotoImageView:(LCPhtotoImageView *)photoImageView andCurrentImageIndex:(int)index andImagesArray:(NSArray *)imagesArray andImagesFrameArray:(NSArray *)imagesFrameArray{
+    if ([self.cell_delegate respondsToSelector:@selector(statusCell:tappedPhotosViewAtPhotoImageView:andCurrentImageIndex:andImagesArray:andImagesFrameArray:)]) {
+        [self.cell_delegate statusCell:self tappedPhotosViewAtPhotoImageView:photoImageView andCurrentImageIndex:index andImagesArray:imagesArray   andImagesFrameArray:imagesFrameArray];
+    }
+}
 @end

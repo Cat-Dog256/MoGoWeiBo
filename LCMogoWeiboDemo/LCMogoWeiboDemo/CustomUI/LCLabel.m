@@ -15,13 +15,13 @@ kLineAttributeDeclarations
 @implementation LCLabel
 kLineMethodImplementation
 
-+ (instancetype)labelWithFont:(int)font text:(NSString *)text{
++ (instancetype)labelWithFont:(UIFont *)font text:(NSString *)text{
     
     LCLabel *myLabel = [[LCLabel alloc] init];
     
     myLabel.text = text;
     
-    myLabel.font = [UIFont systemFontOfSize:font];
+    myLabel.font = font;
     
     [myLabel sizeToFit];
     

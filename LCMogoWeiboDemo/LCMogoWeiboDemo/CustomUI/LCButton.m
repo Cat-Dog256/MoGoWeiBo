@@ -18,6 +18,8 @@ kLineMethodImplementation
     if (self = [super init]) {
         self.backgroundColor = kBgWhiteColor;
         [self setTitleColor:kMaxBlackColor forState:UIControlStateNormal];
+        self.titleLabel.font = kMidTextFont;
+
     }
     return self;
 }
@@ -25,6 +27,7 @@ kLineMethodImplementation
     if (self = [super initWithCoder:aDecoder]) {
         self.backgroundColor = kBgWhiteColor;
         [self setTitleColor:kMaxBlackColor forState:UIControlStateNormal];
+        self.titleLabel.font = kMidTextFont;
     }
     return self;
 }
@@ -32,6 +35,8 @@ kLineMethodImplementation
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = kBgWhiteColor;
         [self setTitleColor:kMaxBlackColor forState:UIControlStateNormal];
+        self.titleLabel.font = kMidTextFont;
+
     }
     return self;
 }
