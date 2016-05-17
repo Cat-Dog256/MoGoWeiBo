@@ -24,7 +24,10 @@
 		002847931CC1D10600691204 /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028478E1CC1D10600691204 /* LCTabBarController.m */; };
 		002847981CC1D1D500691204 /* LCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847961CC1D1D500691204 /* LCTestViewController.m */; };
 		002847991CC1D1D500691204 /* LCTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002847971CC1D1D500691204 /* LCTestViewController.xib */; };
+		003ED9201CE9AE41008A0C28 /* LCSpecialTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003ED91F1CE9AE41008A0C28 /* LCSpecialTextModel.m */; };
+		003ED9301CEAC19B008A0C28 /* LCSpecialConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 003ED92F1CEAC19B008A0C28 /* LCSpecialConst.m */; };
 		0072BFDF1CD2D7A600A7E49C /* EmotionIcons in Resources */ = {isa = PBXBuildFile; fileRef = 0072BFDE1CD2D7A600A7E49C /* EmotionIcons */; };
+		00841A251CE9776F00983E80 /* LCStatusTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00841A241CE9776F00983E80 /* LCStatusTextView.m */; };
 		008C13C21CE0540700CFFD0D /* LCBigImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C13C11CE0540700CFFD0D /* LCBigImageScrollView.m */; };
 		008C13C81CE0BC6300CFFD0D /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C13C71CE0BC6300CFFD0D /* NSString+Emoji.m */; };
 		00B0E12E1CE2FF160089F99A /* LCAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0E10E1CE2FF160089F99A /* LCAttachment.m */; };
@@ -155,7 +158,13 @@
 		002847951CC1D1D500691204 /* LCTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTestViewController.h; sourceTree = "<group>"; };
 		002847961CC1D1D500691204 /* LCTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTestViewController.m; sourceTree = "<group>"; };
 		002847971CC1D1D500691204 /* LCTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCTestViewController.xib; sourceTree = "<group>"; };
+		003ED91E1CE9AE41008A0C28 /* LCSpecialTextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSpecialTextModel.h; sourceTree = "<group>"; };
+		003ED91F1CE9AE41008A0C28 /* LCSpecialTextModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSpecialTextModel.m; sourceTree = "<group>"; };
+		003ED92E1CEAC19B008A0C28 /* LCSpecialConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSpecialConst.h; sourceTree = "<group>"; };
+		003ED92F1CEAC19B008A0C28 /* LCSpecialConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSpecialConst.m; sourceTree = "<group>"; };
 		0072BFDE1CD2D7A600A7E49C /* EmotionIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EmotionIcons; sourceTree = "<group>"; };
+		00841A231CE9776F00983E80 /* LCStatusTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCStatusTextView.h; sourceTree = "<group>"; };
+		00841A241CE9776F00983E80 /* LCStatusTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCStatusTextView.m; sourceTree = "<group>"; };
 		008C13C01CE0540700CFFD0D /* LCBigImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBigImageScrollView.h; sourceTree = "<group>"; };
 		008C13C11CE0540700CFFD0D /* LCBigImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBigImageScrollView.m; sourceTree = "<group>"; };
 		008C13C61CE0BC6300CFFD0D /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
@@ -834,6 +843,8 @@
 				00EE2B861CD0F9CA000C491A /* LCStatusFrameModel.m */,
 				00EE2B871CD0F9CA000C491A /* LCUserInfoModel.h */,
 				00EE2B881CD0F9CA000C491A /* LCUserInfoModel.m */,
+				003ED91E1CE9AE41008A0C28 /* LCSpecialTextModel.h */,
+				003ED91F1CE9AE41008A0C28 /* LCSpecialTextModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -843,6 +854,10 @@
 			children = (
 				00EE2BB81CD105C3000C491A /* LCStatusCell.h */,
 				00EE2BB91CD105C3000C491A /* LCStatusCell.m */,
+				00841A231CE9776F00983E80 /* LCStatusTextView.h */,
+				00841A241CE9776F00983E80 /* LCStatusTextView.m */,
+				003ED92E1CEAC19B008A0C28 /* LCSpecialConst.h */,
+				003ED92F1CEAC19B008A0C28 /* LCSpecialConst.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -934,7 +949,6 @@
 				TargetAttributes = {
 					0028471F1CC1D0BE00691204 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 8LVWFN8LU3;
 					};
 					002847381CC1D0BE00691204 = {
 						CreatedOnToolsVersion = 7.2;
@@ -1058,6 +1072,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003ED9201CE9AE41008A0C28 /* LCSpecialTextModel.m in Sources */,
 				00B0E1321CE2FF160089F99A /* LCEmojiEmotionView.m in Sources */,
 				00EE2AA31CD0F51B000C491A /* UIScrollView+LCRefresh.m in Sources */,
 				00B0E12E1CE2FF160089F99A /* LCAttachment.m in Sources */,
@@ -1122,6 +1137,7 @@
 				00B0E1361CE2FF160089F99A /* LCEmotionPopView.m in Sources */,
 				00EE2AF51CD0F5CE000C491A /* LCReachabilityManager.m in Sources */,
 				00EE2AF81CD0F5CE000C491A /* LCResponse.m in Sources */,
+				00841A251CE9776F00983E80 /* LCStatusTextView.m in Sources */,
 				008C13C21CE0540700CFFD0D /* LCBigImageScrollView.m in Sources */,
 				00B83AFC1CC297C200B97B3C /* CatchCrash.m in Sources */,
 				00EE2BA41CD0FDE3000C491A /* LCHomeTableViewController.m in Sources */,
@@ -1130,6 +1146,7 @@
 				00B0E13B1CE2FF160089F99A /* LCListEmotionView.m in Sources */,
 				00EE2AB41CD0F59E000C491A /* LCView.m in Sources */,
 				00EE2AEC1CD0F5CE000C491A /* LCShowErrorViewTool.m in Sources */,
+				003ED9301CEAC19B008A0C28 /* LCSpecialConst.m in Sources */,
 				002847931CC1D10600691204 /* LCTabBarController.m in Sources */,
 				00EE2AB11CD0F59E000C491A /* LCLabel.m in Sources */,
 				00EE2AA41CD0F51B000C491A /* UIView+Extension.m in Sources */,
@@ -1270,6 +1287,7 @@
 			baseConfigurationReference = 40B33D2B361E085B98F24375 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LCMogoWeiboDemo/Class/PrefixHeader.pch";
 				INFOPLIST_FILE = LCMogoWeiboDemo/Info.plist;
@@ -1284,6 +1302,7 @@
 			baseConfigurationReference = 95949A388983EA0047060239 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LCMogoWeiboDemo/Class/PrefixHeader.pch";
 				INFOPLIST_FILE = LCMogoWeiboDemo/Info.plist;

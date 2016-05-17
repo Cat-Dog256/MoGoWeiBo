@@ -17,6 +17,10 @@
 
 #import "LCPhtotoImageView.h"
 #import "LCBigImageScrollView.h"
+
+
+
+#import "LCSpecialConst.h"
 @interface LCHomeTableViewController ()<LCBaseReformerDelegate , UITableViewDelegate, UITableViewDataSource , LCBigImageScrollViewDelegate , LCStatusCellDelegate>
 {
     UIView *scrollPanel;
@@ -124,10 +128,32 @@
     [self.listReformer requestDataWithHUDView:self.view];
 
     
-    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(pressSpecialTextOnCellAction:) name:kPressSpecialTextNotification object:nil];
     // Do any additional setup after loading the view.
 }
+/**
+ *  处理特殊文字的点击事件*/
+- (void)pressSpecialTextOnCellAction:(NSNotification *)notification{
+    LCSpecialTextModel *model = notification.userInfo[kPressSpecialTextNotificationUserInfo];
+    switch (model.specialType) {
+        case specialAT:
+            LCLogWarn(@"special@");
+            break;
+        case specialUrl:
+            LCLogWarn(@"specialUrl");
+            /**
+             *  打开link
+             */
+            [LCManagerTool openURL:model.text];
+            break;
+        case specialToptocal:
+            LCLogWarn(@"specialToptocal");
+            break;
+        default:
+            break;
+    }
 
+}
 - (void)statusCell:(LCStatusCell *)cell tappedPhotosViewAtPhotoImageView:(LCPhtotoImageView *)photoImageView andCurrentImageIndex:(int)index andImagesArray:(NSArray *)imagesArray andImagesFrameArray:(NSArray *)imgaesFrameArray{
     for (UIView *view in myScrollView.subviews) {
         [view removeFromSuperview];
@@ -152,7 +178,6 @@
 //    
     for (int i = 0; i < imgaesFrameArray.count; i++) {
        
-        NSLog(@"tmpImageScrollView");
             CGPoint my_contentOffset = CGPointMake(SCREEN_WIDTH * i, 0);
 
             LCBigImageScrollView *tmpImageScrollView = [[LCBigImageScrollView alloc] initWithFrame:(CGRect){my_contentOffset,myScrollView.bounds.size}];
@@ -285,5 +310,9 @@
         view.backgroundColor = [UIColor redColor];
         weakSelf.tableView.tableFooterView = view;
     }
+}
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kPressSpecialTextNotification object:nil];;
 }
 @end

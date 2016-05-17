@@ -60,7 +60,9 @@
             NSString *picUrl = [imageV.picModel thumbnail_pic];
 
             [imageV sd_setImageWithURL:[NSURL URLWithString:picUrl] placeholderImage:[UIImage imageNamed:@"timeline_image_placeholder"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-                [self.imageArray addObject:image];
+                if (image) {
+                    [self.imageArray addObject:image];
+                }
             }];
 
         }else{

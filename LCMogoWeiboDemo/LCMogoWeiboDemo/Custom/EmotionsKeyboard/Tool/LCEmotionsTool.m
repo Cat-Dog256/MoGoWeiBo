@@ -7,12 +7,11 @@
 //
 
 #import "LCEmotionsTool.h"
-#import "LCEmotionModel.h"
 
 // 最近表情的存储路径
 #define LCRecentEmotionsPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"emotions.archive"]
 @implementation LCEmotionsTool
-static NSMutableArray *_emotions;
+static NSMutableArray *_emotions; NSArray *_defaultEmtions; NSArray *_emojiEmtions; NSArray *_lxhEmtions;
 /**
  * 在加载这个类的时候调用一次
  */
@@ -41,5 +40,40 @@ static NSMutableArray *_emotions;
 }
 + (NSMutableArray *)recentlyEmotions{
     return _emotions;
+}
+#pragma mark -- 保证只加载一次
++ (NSArray *)defaultEmotions{
+    if (!_defaultEmtions) {
+        NSString *path = [[NSBundle mainBundle]pathForResource:@"/EmotionIcons/default/info.plist" ofType:nil];
+        _defaultEmtions = [LCEmotionModel mj_objectArrayWithFile:path];
+    }
+    return _defaultEmtions;
+}
++ (NSArray *)emojiEmotions{
+    
+    if (!_emojiEmtions) {
+        NSString *path = [[NSBundle mainBundle]pathForResource:@"/EmotionIcons/emoji/info.plist" ofType:nil];
+        _emojiEmtions = [LCEmotionModel mj_objectArrayWithFile:path];
+    }
+    return _emojiEmtions;
+}
++ (NSArray *)lxhEmotions{
+    if (!_lxhEmtions) {
+        NSString *path = [[NSBundle mainBundle]pathForResource:@"/EmotionIcons/lxh/info.plist" ofType:nil];
+        _lxhEmtions = [LCEmotionModel mj_objectArrayWithFile:path];
+    }
+    return _lxhEmtions;
+}
+
++ (LCEmotionModel *)emotionWithCHS:(NSString *)chs{
+    for (LCEmotionModel *model in [[self class] defaultEmotions]) {
+        if ([model.chs isEqualToString:chs]) {
+            return model;
+        }
+    }
+    for (LCEmotionModel *model in [[self class] lxhEmotions]) {
+        return model;
+    }
+    return nil;
 }
 @end

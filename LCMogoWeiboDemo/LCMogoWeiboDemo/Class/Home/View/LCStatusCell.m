@@ -10,6 +10,7 @@
 #import "LCHearderIconView.h"
 #import "LCPhotosView.h"
 #import "LCToolBar.h"
+#import "LCStatusTextView.h"
 /**
  *  间距
  */
@@ -30,7 +31,7 @@ NSUInteger const Big_Margin = 5;
 /**来源*/
 @property (nonatomic ,weak) LCLabel *sourceLabel;
 /**正文*/
-@property (nonatomic , weak) LCLabel *contentLabel;
+@property (nonatomic , weak) LCStatusTextView *contentLabel;
 
 
 
@@ -38,7 +39,7 @@ NSUInteger const Big_Margin = 5;
 /**转发微博整体*/
 @property (nonatomic , weak) UIView *retweetView;
 /**转发微博正文*/
-@property (nonatomic , weak) UILabel *retweetTextLabel;
+@property (nonatomic , weak) LCStatusTextView *retweetTextLabel;
 /**转发配图*/
 @property (nonatomic , weak) LCPhotosView *retweetPhotosView;
 
@@ -110,9 +111,8 @@ NSUInteger const Big_Margin = 5;
     
     self.sourceLabel = sourceLabel;
     /**正文*/
-    LCLabel *contentLabel = [[LCLabel alloc]init];
+    LCStatusTextView *contentLabel = [[LCStatusTextView alloc]init];
     contentLabel.font = kMidTextFont;
-    contentLabel.numberOfLines = 0;
     [originalView addSubview:contentLabel];
     
     self.contentLabel = contentLabel;
@@ -126,8 +126,7 @@ NSUInteger const Big_Margin = 5;
     //    retweetView.backgroundColor = [UIColor redColor];
     self.retweetView = retweetView;
     /**转发微博正文*/
-    UILabel *retweetTextLabel = [[UILabel alloc]init];
-    retweetTextLabel.numberOfLines = 0;
+    LCStatusTextView *retweetTextLabel = [[LCStatusTextView alloc]init];
     retweetTextLabel.font = kMidTextFont;
     [retweetView addSubview:retweetTextLabel];
     self.retweetTextLabel = retweetTextLabel;
@@ -178,7 +177,7 @@ NSUInteger const Big_Margin = 5;
      *  正文
      */
     self.contentLabel.frame = frameModel.contentLabelF;
-    self.contentLabel.text = statusModel.textString;
+    self.contentLabel.attributedText = statusModel.attributedText;
     
     /**微博图片*/
     self.photoView.frame = frameModel.photoViewF;
@@ -222,8 +221,8 @@ NSUInteger const Big_Margin = 5;
         self.retweetView.frame = frameModel.retweetViewF;
         /**转发微博正文*/
         self.retweetTextLabel.frame = frameModel.retweetTextLabelF;
-        NSString *contentText = [NSString stringWithFormat:@"%@ : %@",statusModel.retweeted_status.userMessage.name , statusModel.retweeted_status.textString];
-        self.retweetTextLabel.text = contentText;
+       
+        self.retweetTextLabel.attributedText = statusModel.retweeted_attributedText;
         /**转发配图*/
         if (statusModel.retweeted_status.pic_urls.count) {
             self.retweetPhotosView.hidden = NO;

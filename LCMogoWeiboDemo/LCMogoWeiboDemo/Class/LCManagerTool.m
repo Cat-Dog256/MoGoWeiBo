@@ -107,7 +107,9 @@
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     return [emailTest evaluateWithObject:candidate];
 }
-
++ (void)openURL:(NSString *)url{
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+}
 + (NSString *)filter_tank:(NSString *)textString{
     //表情正则表达式
     NSString *hanzi = @"[\u4e00-\u9fa5]";

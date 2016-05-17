@@ -72,8 +72,7 @@
 - (LCDefaultEmotionView *)defauleEmotionView{
     if (!_defauleEmotionView) {
         _defauleEmotionView = [[LCDefaultEmotionView alloc]init];
-        NSString *path = [[NSBundle mainBundle]pathForResource:@"/EmotionIcons/default/info.plist" ofType:nil];
-        _defauleEmotionView.emmtionsModelArray = [LCEmotionModel mj_objectArrayWithFile:path];
+        _defauleEmotionView.emmtionsModelArray = [LCEmotionsTool defaultEmotions];
         [self.contentView addSubview:_defauleEmotionView];
     }
     return _defauleEmotionView;
@@ -82,8 +81,8 @@
 - (LCEmojiEmotionView *)emojiEmotionView{
     if (!_emojiEmotionView) {
         _emojiEmotionView = [[LCEmojiEmotionView alloc]init];
-        NSString *path = [[NSBundle mainBundle]pathForResource:@"/EmotionIcons/emoji/info.plist" ofType:nil];
-        _emojiEmotionView.emmtionsModelArray = [LCEmotionModel mj_objectArrayWithFile:path];
+    
+        _emojiEmotionView.emmtionsModelArray = [LCEmotionsTool emojiEmotions];
         [self.contentView addSubview:_emojiEmotionView];
     }
     return _emojiEmotionView;
@@ -92,8 +91,8 @@
 - (LCLxhEmotionView *)lxhEmotionView{
     if (!_lxhEmotionView) {
         _lxhEmotionView = [[LCLxhEmotionView alloc]init];
-        NSString *path = [[NSBundle mainBundle]pathForResource:@"/EmotionIcons/lxh/info.plist" ofType:nil];
-        _lxhEmotionView.emmtionsModelArray = [LCEmotionModel mj_objectArrayWithFile:path];
+        
+        _lxhEmotionView.emmtionsModelArray = [LCEmotionsTool lxhEmotions];
         [self.contentView addSubview:_lxhEmotionView];
     }
     return _lxhEmotionView;

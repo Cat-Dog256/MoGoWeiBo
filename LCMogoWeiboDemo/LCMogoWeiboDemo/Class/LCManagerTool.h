@@ -14,6 +14,12 @@
  */
 + (void)makeCustomLog;
 /**
+ *  打开网址
+ *
+ *  @param url link
+ */
++ (void)openURL:(NSString *)url;
+/**
  *  过滤到微博正文中的非法字符
  *
  *  @param textString 微博正文

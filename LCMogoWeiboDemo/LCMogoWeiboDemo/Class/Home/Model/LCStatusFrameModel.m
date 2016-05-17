@@ -67,7 +67,8 @@ NSUInteger const MaxMargin = 10;
      *  需要正则表达式
      */
 //【‍晚安】借时光之手，暖一束花开。借一方晴空，拥抱阳光。‍亲爱的‍，‍晚安‍
-    CGSize textSize = [statusModel.textString sizeWithFont:kMidTextFont maxW:SCREEN_WIDTH - 20];
+//    CGSize textSize = [statusModel.textString sizeWithFont:kMidTextFont maxW:SCREEN_WIDTH - 20];
+    CGSize textSize = [statusModel.attributedText boundingRectWithSize:CGSizeMake(SCREEN_WIDTH - 20, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin context:nil].size;
     self.contentLabelF = CGRectMake(textX, textY, textSize.width, textSize.height);
     /**微博图片*/
     CGFloat originalH = 0;
@@ -94,8 +95,11 @@ NSUInteger const MaxMargin = 10;
         
         CGFloat retweetTextLabelX = iconX;
         CGFloat retweetTextLabelY = MaxMargin;
-        NSString *contentText = [NSString stringWithFormat:@"%@ : %@",statusModel.retweeted_status.userMessage.name , statusModel.retweeted_status.textString];
-        CGSize retTextSize = [contentText sizeWithFont:kMidTextFont maxW:SCREEN_WIDTH - 20];
+//        NSString *contentText = [NSString stringWithFormat:@"%@ : %@",statusModel.retweeted_status.userMessage.name , statusModel.retweeted_status.textString];
+//        CGSize retTextSize = [contentText sizeWithFont:kMidTextFont maxW:SCREEN_WIDTH - 20];
+        
+        CGSize retTextSize = [statusModel.retweeted_attributedText boundingRectWithSize:CGSizeMake(SCREEN_WIDTH - 20, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin context:nil].size;
+        
         self.retweetTextLabelF = CGRectMake(retweetTextLabelX, retweetTextLabelY, retTextSize.width, retTextSize.height);
         /**转发配图*/
         CGFloat retweetViewH = 0;
