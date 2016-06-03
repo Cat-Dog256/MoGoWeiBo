@@ -25,7 +25,6 @@
     static BOOL isFirst = YES;
     if (![[LCReachabilityManager sharedReachabilityManager] isReachable] && !isFirst) {
         ReqLog(@"没有网而且不是第一次执行");
-#warning todo  注意
     }
     isFirst = NO;
     
@@ -34,6 +33,7 @@
     }
     //如果没有request直接返回
     if (!request) {
+        [HUD hide:YES];
         
         LCResponse *requestErrorResponse = [[LCResponse alloc]init];
         
@@ -80,9 +80,9 @@
     HUD = [[MBProgressHUD alloc] initWithView:view];
     [view addSubview:HUD];
     HUD.removeFromSuperViewOnHide = YES;
-    [HUD setColor:[UIColor clearColor]];
+    [HUD setColor:[UIColor colorWithHexString:@"#333333"]];
     
-    UIImage *image = [UIImage sd_animatedGIFNamed:@"loading"];
+    UIImage *image = [UIImage sd_animatedGIFNamed:@"jhLoading"];
     
     HUD.customView = [[UIImageView alloc] initWithImage:image];
 //    HUD.labelText = @"加载中。。。";

@@ -12,10 +12,20 @@
 #import "LCEmotionKeyboardView.h"
 #import "LCEmotionModel.h"
 #import "NSString+Emoji.h"
-@interface LCPostMessageViewController ()<UITextViewDelegate , LCKeyboardToolBarDelegate>
+
+#import "LCPostMessageReformer.h"
+#import "LCPostMessageHavePhotosReformer.h"
+@interface LCPostMessageViewController ()<UITextViewDelegate , LCKeyboardToolBarDelegate , UIImagePickerControllerDelegate , UINavigationControllerDelegate>
 @property (nonatomic, weak) LCEmotionTextView *messageTextView;
 @property (nonatomic , strong) LCKeyboardToolBar *myKeyboardToolBar;
 @property (nonatomic , strong) LCEmotionKeyboardView *emotionKeyboard;
+
+@property (nonatomic , strong) LCPostMessageReformer *postMessageReformer;
+@property (nonatomic , strong) LCPostMessageHavePhotosReformer *photosReformer;
+
+
+
+@property (nonatomic , strong) NSMutableArray *imageArray;
 /**
  *  切换键盘标记,工具条不动
  */
@@ -23,6 +33,28 @@
 @end
 
 @implementation LCPostMessageViewController
+- (NSMutableArray *)imageArray{
+    if (!_imageArray) {
+        _imageArray = [NSMutableArray array];
+    }
+    return _imageArray;
+}
+- (LCPostMessageReformer *)postMessageReformer{
+    if (!_postMessageReformer) {
+        _postMessageReformer = [[LCPostMessageReformer alloc]init];
+        _postMessageReformer.delegate = self;
+        _postMessageReformer.access_token = @"2.00j15PRBdmFKEBc0e4acca150rXv9S";
+    }
+    return _postMessageReformer;
+}
+- (LCPostMessageHavePhotosReformer *)photosReformer{
+    if (!_photosReformer) {
+        _photosReformer = [[LCPostMessageHavePhotosReformer alloc]init];
+        _photosReformer.delegate = self;
+        _photosReformer.access_token = @"2.00j15PRBdmFKEBc0e4acca150rXv9S";
+    }
+    return _photosReformer;
+}
 - (LCEmotionKeyboardView *)emotionKeyboard{
     if (!_emotionKeyboard) {
         _emotionKeyboard = [[LCEmotionKeyboardView alloc]init];
@@ -58,6 +90,9 @@
 
 #pragma mark --发微博
 - (void)sendMessage{
+    self.photosReformer.status = self.messageTextView.fullText;
+//    self..imagesArray = self.imageArray;
+    [self.photosReformer requestDataWithHUDView:self.view];
     LCLogInfo(@"%@",self.messageTextView.fullText);
 }
 #pragma mark --返回
@@ -139,8 +174,10 @@
     
     switch (buttonType) {
         case LCKeyboardToolbarButtonTypeCamera:
+            [self takePhoto];
             break;
         case LCKeyboardToolbarButtonTypePicture:
+            [self localPhoto];
             break;
         case LCKeyboardToolbarButtonTypeMention:
         break;
@@ -194,6 +231,81 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kLCEmotionKeyboardDidSelectedDeletedNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kLCEmotionKeyboardDidSelectedEmotiomNotification object:nil];;
 }
+
+
+#pragma mark 手机拍照
+-(void)takePhoto
+{
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    imagePicker.delegate = self;
+    imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    imagePicker.allowsEditing = YES;
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
+#pragma mark 获取图库
+-(void)localPhoto
+{
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    [self presentViewController:picker animated:YES completion:nil];
+}
+
+#pragma mark 处理图片
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    
+    [picker dismissViewControllerAnimated:YES completion:^{
+    }];
+    /**
+     *  UIImagePickerControllerEditedImage = <UIImage: 0x7fba95824170> size {748, 496} orientation 0 scale 1.000000,
+     UIImagePickerControllerReferenceURL = assets-library://asset/asset.JPG?id=31225C2F-1039-452B-8AD0-784A1A1A4836&ext=JPG,
+     UIImagePickerControllerCropRect = NSRect: {{0, 0}, {2668, 1772}},
+     UIImagePickerControllerMediaType = public.image,
+     UIImagePickerControllerOriginalImage = <UIImage: 0x7fba958855a0> size {2668, 1772} orientation 0 scale 1.000000
+     */
+   
+    //保存原始图片
+    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    NSLog(@"%@",info);
+    /**
+     *  经过真机测试研究,这里的图片方向应该是根据重力感应获取的拍摄照片时的方向
+     */
+    switch (image.imageOrientation) {
+        case UIImageOrientationUp:
+            LCLogInfo(@"UIImageOrientation -- 上");
+        break;
+        case UIImageOrientationDown:
+            LCLogInfo(@"UIImageOrientation -- 下");
+
+        break;
+        case UIImageOrientationLeft:
+            LCLogInfo(@"UIImageOrientation -- 左");
+
+        break;
+        case UIImageOrientationRight:
+            LCLogInfo(@"UIImageOrientation -- 右");
+            
+            //镜像后的方向
+        case UIImageOrientationUpMirrored:
+            LCLogInfo(@"UIImageOrientationUpMirrored -- 上");
+        break;
+        case UIImageOrientationDownMirrored:
+            LCLogInfo(@"UIImageOrientationUpMirrored -- 下");
+        break;
+        case UIImageOrientationLeftMirrored:
+            LCLogInfo(@"UIImageOrientationUpMirrored -- 左");
+        break;
+        case UIImageOrientationRightMirrored:
+            LCLogInfo(@"UIImageOrientationUpMirrored -- 右");
+        break;
+        default:
+            break;
+    }
+    [self.imageArray addObject:image];
+}
+
 /*
 #pragma mark - Navigation
 
@@ -221,5 +333,9 @@
         self.myKeyboardToolBar.y = Y;
     }];
     
+}
+
+- (void)reformerSuccessWith:(LCBaseReformer *)reformer object:(id)object{
+    LCLogInfo(@"%@",object);
 }
 @end

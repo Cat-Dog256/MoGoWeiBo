@@ -117,7 +117,7 @@
     
     
     [self setNavigtionItem];
-        __weak __typeof(self) weakSelf = self;
+    __weak __typeof(self) weakSelf = self;
     [self.tableView addRefreshHeader:^{
         weakSelf.page = 1;
         NSLog(@"%lu",weakSelf.page);
@@ -207,7 +207,7 @@
 
 }
 
-- (void)reformerSuccessWith:(LCBaseReformer *)reformer{
+- (void)reformerSuccessWith:(LCBaseReformer *)reformer object:(id)object{
     [self removeExceptionFrom:self.view];
     if ([reformer isKindOfClass:[LCStatusesListReformer class]]) {
         if (self.page == 1) {

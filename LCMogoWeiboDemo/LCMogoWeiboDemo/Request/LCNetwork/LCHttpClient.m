@@ -9,6 +9,7 @@
 #import "LCHttpClient.h"
 #import "AFNetworking.h"
 #import "LCConfigHelper.h"
+#import "UIKit+AFNetworking.h"
 @interface LCHttpClient ()
 {
     AFHTTPSessionManager *_HttpSessionManager;
@@ -41,10 +42,10 @@
     NSString *url = [request.UrlString copy];
     NSDictionary *params = request.params;
     HttpRequestMethod requestMethod = request.httpRequestMethod;
-    [self requestWithUrl:url requestMethod:requestMethod params:params expandProperties:nil];
+    [self requestWithUrl:url requestMethod:requestMethod params:params upload:request.constuctingBlock expandProperties:nil];
 }
 
-- (void)requestWithUrl:(NSString *)url requestMethod:(HttpRequestMethod)requestMethod params:(NSDictionary *)params expandProperties:(NSDictionary *)expandDict{
+- (void)requestWithUrl:(NSString *)url requestMethod:(HttpRequestMethod)requestMethod params:(NSDictionary *)params  upload:(AFConstructingBlock)constructingBlock expandProperties:(NSDictionary *)expandDict {
     __weak __typeof(self)weakSelf = self;
     if (requestMethod == POST) {
         [_HttpSessionManager POST:url parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
@@ -75,6 +76,27 @@
             }
         }];
 
+    }else if (requestMethod == POST_UPLOAD){
+//    [_HttpSessionManager.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-type"];
+        /**
+         *  文件上传
+         *
+         *  @param formData data
+         *
+         *  @return 无
+         */
+        [_HttpSessionManager POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+            constructingBlock(formData);
+        } progress:^(NSProgress * _Nonnull uploadProgress) {
+            ReqLog(@"%f",uploadProgress.fractionCompleted);
+           
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            LCResponse *response = [weakSelf successWith:task responseObject:responseObject];
+            weakSelf.requsetSuccess(response);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            LCResponse *response = [weakSelf failureWith:task error:error];
+            weakSelf.requsetFailure(response);
+        }];
     }
 }
 

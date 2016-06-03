@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "LCCacheConst.h"
-
+#import "AFNetworking.h"
+//上传block
+typedef void (^AFConstructingBlock)(id<AFMultipartFormData> formData);
 typedef enum : NSUInteger {
     GET,
     POST,
     PUT,
     DELETE,
+    POST_UPLOAD,
 } HttpRequestMethod;
 @interface LCRequsestBase : NSObject
 /**
@@ -51,8 +54,10 @@ typedef enum : NSUInteger {
  *  缓存过期时间 defult is 0;
  */
 @property (nonatomic) LCCacheExpiredTime cacheExpiredTime;
-
-//@property (nonatomic, copy) AFConstructingBlock constuctingBlock;
+/**
+ *  上传block
+ */
+@property (nonatomic, copy) AFConstructingBlock constuctingBlock;
 
 - (instancetype)initWithRequest:(LCRequsestBase *)request;
 

@@ -1,0 +1,26 @@
+[
+  {
+    "conttrollerName" : "LCHomeTableViewController",
+    "normalImageName" : "tabbar_home",
+    "selectedImageName" : "tabbar_home_selected",
+    "tabBarTitle" : "首页"
+  },
+  {
+    "conttrollerName" : "LCMessageTableViewController",
+    "normalImageName" : "tabbar_message_center",
+    "selectedImageName" : "tabbar_message_center_selected",
+    "tabBarTitle" : "消息"
+  },
+  {
+    "conttrollerName" : "LCDiscorverTableViewController",
+    "normalImageName" : "tabbar_discover",
+    "selectedImageName" : "tabbar_discover_selected",
+    "tabBarTitle" : "发现"
+  },
+  {
+    "conttrollerName" : "LCProfileTableViewController",
+    "normalImageName" : "tabbar_profile",
+    "selectedImageName" : "tabbar_profile_selected",
+    "tabBarTitle" : "我的"
+  }
+]

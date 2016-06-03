@@ -26,9 +26,11 @@
         self.cachePolicy = request.cachePolicy;
         //缓存过期时间
         self.cacheExpiredTime = request.cacheExpiredTime;
+
     }
     return self;
 }
+
 - (instancetype)init
 {
     if (self = [super init]) {

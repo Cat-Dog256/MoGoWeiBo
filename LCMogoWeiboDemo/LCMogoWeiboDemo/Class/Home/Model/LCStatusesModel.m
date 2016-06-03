@@ -180,11 +180,9 @@
     
 }
 - (void)setTextString:(NSString *)textString{
-    //排除这样的数据
-//    NSString *str = @"【‍我‍爱‍录‍透‍社】节目中的‍清新正在一路“泰囧”，节目外的他俩早已转战另一个海岛塞舌尔再享一番暖意阳光。感情升温的魏大勋与李沁，互动越发频繁，不仅在海边嬉戏上演湿身诱惑，一系列唯美大片更是令网友直呼“这真的不是在拍婚纱照吗”？";
-    _textString = [LCManagerTool filter_tank:textString];
-    _attributedText = [self attributedTextWithText:_textString];
-    }
+    _textString = textString;
+    _attributedText = [self attributedTextWithText:textString];
+}
 - (NSAttributedString *)attributedTextWithText:(NSString *)textString{
     NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc]init];
     //表情正则表达式 \\u4e00-\\u9fa5 代表unicode字符
@@ -281,6 +279,9 @@
     }
     
     [attributedText addAttribute:NSFontAttributeName value:kMidTextFont range:NSMakeRange(0, attributedText.length)];
+//    if (self.attributedText.length == 0) {
+//        return attributedText;
+//    }
     [attributedText addAttribute:@"specials" value:specials range:NSMakeRange(0, 1)];
     return attributedText;
 }

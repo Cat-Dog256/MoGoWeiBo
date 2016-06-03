@@ -45,30 +45,39 @@
         // Do any additional setup after loading the view.
 }
 - (void)setuoAllViewControllers{
-    /**
-     首页
-     */
-    LCHomeTableViewController *homeVC = [[LCHomeTableViewController alloc]init];
-    LCNavgationController *homeNav = [[LCNavgationController alloc]initWithRootViewController:homeVC];
-    [self addChildVC:homeNav normalImage:[UIImage imageNamed:@"tabbar_home"] selectImage:[UIImage imageNamed:@"tabbar_home_selected"] tabBarTitle:@"首页"];
-    /**
-     消息
-     */
-    LCMessageTableViewController *messageVC = [[LCMessageTableViewController alloc]init];
-    LCNavgationController *messageNav = [[LCNavgationController alloc]initWithRootViewController:messageVC];
-    [self addChildVC:messageNav normalImage:[UIImage imageNamed:@"tabbar_message_center"] selectImage:[UIImage imageNamed:@"tabbar_message_center_selected"] tabBarTitle:@"消息"];
-    /**
-     发现
-     */
-    LCDiscorverTableViewController *discorverVC = [[LCDiscorverTableViewController alloc]init];
-    LCNavgationController *discorverNav = [[LCNavgationController alloc]initWithRootViewController:discorverVC];
-    [self addChildVC:discorverNav normalImage:[UIImage imageNamed:@"tabbar_discover"] selectImage:[UIImage imageNamed:@"tabbar_discover_selected"] tabBarTitle:@"发现"];
-    /**
-     我的
-     */
-    LCProfileTableViewController *profileVC = [[LCProfileTableViewController alloc]init];
-    LCNavgationController *profileNav = [[LCNavgationController alloc]initWithRootViewController:profileVC];
-    [self addChildVC:profileNav normalImage:[UIImage imageNamed:@"tabbar_profile"] selectImage:[UIImage imageNamed:@"tabbar_profile_selected"] tabBarTitle:@"我的"];
+//    /**
+//     首页
+//     */
+//    LCHomeTableViewController *homeVC = [[LCHomeTableViewController alloc]init];
+//    LCNavgationController *homeNav = [[LCNavgationController alloc]initWithRootViewController:homeVC];
+//    [self addChildVC:homeNav normalImage:[UIImage imageNamed:@"tabbar_home"] selectImage:[UIImage imageNamed:@"tabbar_home_selected"] tabBarTitle:@"首页"];
+//    /**
+//     消息
+//     */
+//    LCMessageTableViewController *messageVC = [[LCMessageTableViewController alloc]init];
+//    LCNavgationController *messageNav = [[LCNavgationController alloc]initWithRootViewController:messageVC];
+//    [self addChildVC:messageNav normalImage:[UIImage imageNamed:@"tabbar_message_center"] selectImage:[UIImage imageNamed:@"tabbar_message_center_selected"] tabBarTitle:@"消息"];
+//    /**
+//     发现
+//     */
+//    LCDiscorverTableViewController *discorverVC = [[LCDiscorverTableViewController alloc]init];
+//    LCNavgationController *discorverNav = [[LCNavgationController alloc]initWithRootViewController:discorverVC];
+//    [self addChildVC:discorverNav normalImage:[UIImage imageNamed:@"tabbar_discover"] selectImage:[UIImage imageNamed:@"tabbar_discover_selected"] tabBarTitle:@"发现"];
+//    /**
+//     我的
+//     */
+//    LCProfileTableViewController *profileVC = [[LCProfileTableViewController alloc]init];
+//    LCNavgationController *profileNav = [[LCNavgationController alloc]initWithRootViewController:profileVC];
+//    [self addChildVC:profileNav normalImage:[UIImage imageNamed:@"tabbar_profile"] selectImage:[UIImage imageNamed:@"tabbar_profile_selected"] tabBarTitle:@"我的"];
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"APPTabBarItemsConfiguration" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    
+    NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    for (NSDictionary *dict in array) {
+        LCNavgationController *VC = [[LCNavgationController alloc]initWithRootViewController:[[NSClassFromString(dict[@"conttrollerName"]) alloc]init]];
+        [self addChildVC:VC normalImage:[UIImage imageNamed:dict[@"normalImageName"]] selectImage:[UIImage imageNamed:dict[@"selectedImageName"]] tabBarTitle:dict[@"tabBarTitle"]];
+ 
+    }
 }
 /**
  *  中间的加号按钮的点击事件

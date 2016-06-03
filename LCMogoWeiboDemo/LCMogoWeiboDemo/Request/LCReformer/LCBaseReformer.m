@@ -8,7 +8,7 @@
 
 #import "LCBaseReformer.h"
 #import "MBProgressHUD.h"
-
+#import "LCParamsNullTool.h"
 
 @interface LCBaseReformer ()
 @property (nonatomic , assign) BOOL refresh;
@@ -18,33 +18,27 @@
 
 #pragma mark 参数是否为空的判断  1、参数   2、参数名  3、错误信息
 - (BOOL)judgeParamsState:(id)param paramName:(NSString *)paramName{
-    if(!param){
-//        [ZGTXParamsNullTool writeToErrorMesLog:@"参数不能为空" paramName:paramName];
+        if(!param){
+        [LCParamsNullTool writeToErrorMesLog:@"参数不能为空" paramName:paramName];
         return NO;
+    }else{
+        if ([param isKindOfClass:[NSString class]]) {
+            NSString *string = param;
+            if (string.length == 0) {
+                [LCParamsNullTool writeToErrorMesLog:@"参数字符串长度为零" paramName:paramName];
+                return NO;
+            }
+        }
+        return YES;
     }
-    return YES;
 }
 #pragma mark 加密相关-------
 //使用AES加密
 - (NSString *)useAESEncrypted:(NSDictionary *)encryptedDic{
-    //将字典转变为json字符串
-//    NSError *parseError = nil;
-//    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:encryptedDic options:NSJSONWritingPrettyPrinted error:&parseError];
-//    NSString *jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    //将字符串加密
-//    NSString *encryptJson = [ZGTXEncryptAndDecryptTool useAESEncrypted:jsonStr];
-//    return (NSString *) CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)encryptJson, NULL, (CFStringRef)@"!*'();:@&=+$,/?%#[]", kCFStringEncodingUTF8));
-    return @"等待学习";
+      return @"等待学习";
 }
 //使用RSA加密
 - (NSString *)useRSAEncrypted:(NSDictionary *)encryptedDic{
-    //将字典转变为json字符串
-//    NSError *parseError = nil;
-//    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:encryptedDic options:NSJSONWritingPrettyPrinted error:&parseError];
-//    NSString *jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-//    //将字符串加密
-//    NSString *encryptJson = [ZGTXEncryptAndDecryptTool useRSAEncrypted:jsonStr];
-//    return (NSString *) CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)encryptJson, NULL, (CFStringRef)@"!*'();:@&=+$,/?%#[]", kCFStringEncodingUTF8));
     
     
     return @"暂时没有实现";
@@ -106,12 +100,6 @@
 - (LCRequsestBase *)prepareRequest
 {
 #warning token 处理重新登录
-//    NSString *tokenId = [NSString getTokenId];
-//    if (tokenId) {
-//        [self.zgRequest.params setObject:tokenId forKey:kTokenId];
-//    }else{
-//        [self reLogin];
-//    }
     return nil;
 }
 
@@ -207,15 +195,14 @@
     //成功后取消错误界面
     
     //成功后回调方法
-    if([self.delegate respondsToSelector:@selector(reformerSuccessWith:)]){
-        [self.delegate reformerSuccessWith:self];
+    if([self.delegate respondsToSelector:@selector(reformerSuccessWith:object:)]){
+        [self.delegate reformerSuccessWith:self object:response.responseObject];
     }
     /**
      *  拿到子类重组的缓存数据
      */
     
     response.responseObject = [self recombinantDataWith:response.responseObject];
-//    NSLog(@"%@",response.responseObject);
     //当request的策略为有缓存的时候，返回的数据字典存到数据库
     if (self.myRequest.cachePolicy != LCRequestCacheNone) {
         if ([self.appCache isExistCache:self.myRequest.identifier]) {//有缓存过期更新 到这一步肯定过期

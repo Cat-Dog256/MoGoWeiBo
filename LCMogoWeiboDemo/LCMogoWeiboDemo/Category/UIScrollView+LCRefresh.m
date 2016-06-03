@@ -49,7 +49,7 @@
             [weakSelf.mj_footer endRefreshing];
         });
     }];
-    UIImage *images = [UIImage sd_animatedGIFNamed:@"hardLoding"];
+    UIImage *images = [UIImage sd_animatedGIFNamed:@"jhLoading"];
     [footer setImages:@[images] forState:MJRefreshStatePulling];
     self.mj_footer = footer;
 }
@@ -81,7 +81,7 @@ static char imagesKey;
     if(scale == 2){
         return @"jhLoading@2x.gif";
     }else if(scale == 3){
-        return @"jhLoading@3x.gif";
+        return @"jhLoading@@3x.gif";
     }
     return @"jhLoading@2x.gif";
 }
@@ -91,11 +91,11 @@ static char imagesKey;
     
     CGFloat scale = [UIScreen mainScreen].scale;
     if(scale == 2){
-        return @"hardLoding@2x.gif";
+        return @"jhLoading@2x.gif";
     }else if(scale == 3){
-        return @"hardLoding@3x.gif";
+        return @"jhLoading@3x.gif";
     }
-    return @"hardLoding@2x.gif";
+    return @"jhLoading@2x.gif";
 }
 
 //这种方式是直接返回一个UIImage对象的数组

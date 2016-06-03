@@ -20,9 +20,9 @@
  *  请求成功回调方法
  *
  *  @param reformer 返回reformer
- *  @param object   有缓存从数据库中返回的数据
+ *  @param object   返回原始数据
  */
-- (void)reformerSuccessWith:(LCBaseReformer *)reformer;
+- (void)reformerSuccessWith:(LCBaseReformer *)reformer object:(id)object;
 /**
  *  请求失败回调方法
  *

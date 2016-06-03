@@ -55,7 +55,6 @@
     [self refreshDataWithRequest:req];
 }
 -(void)requestSuccess:(LCResponse *)response{
-
 #ifdef ENVIRON_DEVELOP
     //封装假数据参数
     self.fakeDataParams.identifier = self.myRequest.identifier;
