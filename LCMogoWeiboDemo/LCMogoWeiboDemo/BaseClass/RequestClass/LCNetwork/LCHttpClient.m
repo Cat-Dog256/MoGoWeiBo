@@ -54,8 +54,8 @@
         /**
          *  JSON转换AFN内置
          */
-        _HttpSessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
-        _HttpSessionManager.requestSerializer=[AFJSONRequestSerializer serializer];
+//        _HttpSessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
+//        _HttpSessionManager.requestSerializer=[AFJSONRequestSerializer serializer];
         /**
          *  最大并发数
          */

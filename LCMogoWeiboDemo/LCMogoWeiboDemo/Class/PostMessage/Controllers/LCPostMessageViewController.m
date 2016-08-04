@@ -90,10 +90,16 @@
 
 #pragma mark --发微博
 - (void)sendMessage{
-    self.photosReformer.status = self.messageTextView.fullText;
-//    self..imagesArray = self.imageArray;
-    [self.photosReformer requestDataWithHUDView:self.view];
+    self.postMessageReformer.status = self.messageTextView.fullText;
+    self.postMessageReformer.imagesArray = self.imageArray;
+    [self.postMessageReformer requestDataWithHUDView:self.view];
     LCLogInfo(@"%@",self.messageTextView.fullText);
+}
+- (void)reformerSuccessWith:(LCBaseReformer *)reformer object:(id)object{
+    LCLogWarn(@"%@",object);
+}
+- (void)reformerFailureWith:(LCBaseReformer *)reformer{
+    LCLogWarn(@"%@",reformer.response.error);
 }
 #pragma mark --返回
 - (void)pressLeftButtonAction:(UIButton *)button{
@@ -333,9 +339,5 @@
         self.myKeyboardToolBar.y = Y;
     }];
     
-}
-
-- (void)reformerSuccessWith:(LCBaseReformer *)reformer object:(id)object{
-    LCLogInfo(@"%@",object);
 }
 @end

@@ -57,7 +57,12 @@
     // setNeedsDisplay会在下一个消息循环时刻，调用drawRect:
     [self setNeedsDisplay];
 }
-
+- (void)setAttributedText:(NSAttributedString *)attributedText{
+    [super setAttributedText:attributedText];
+    
+    
+    [self setNeedsDisplay];
+}
 - (void)setFont:(UIFont *)font
 {
     [super setFont:font];
