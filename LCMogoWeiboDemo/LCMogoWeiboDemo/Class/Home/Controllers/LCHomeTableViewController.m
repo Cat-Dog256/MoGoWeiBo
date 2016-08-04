@@ -159,7 +159,7 @@
         [view removeFromSuperview];
     }
     //转换后的rect
-# warning [imageV superview]?????????
+//# warning [imageV superview]?????????
 //    CGRect convertRect = [[photoImageView superview] convertRect:photoImageView.frame toView:scrollPanel];
     myScrollView.contentSize = CGSizeMake(SCREEN_WIDTH * imagesArray.count, SCREEN_HEIGHT);
     [self.view bringSubviewToFront:scrollPanel];
@@ -209,6 +209,7 @@
 
 - (void)reformerSuccessWith:(LCBaseReformer *)reformer object:(id)object{
     [self removeExceptionFrom:self.view];
+
     if ([reformer isKindOfClass:[LCStatusesListReformer class]]) {
         if (self.page == 1) {
             [self.dataArray removeAllObjects];
@@ -228,15 +229,6 @@
                 [self.listReformer requestDataWithHUDView:nil];
             }];
         }
-    }
-}
-
-- (void)reformerGetAppCacheWith:(LCBaseReformer *)reformer{
-    if ([reformer isKindOfClass:[LCStatusesListReformer class]]) {
-        self.page ++;
-        [self.dataArray addObjectsFromArray:self.listReformer.statusesModels];
-        [self.tableView reloadData];
-//                LCLogVerbose(@"%@",self.listReformer.statusesModels);
     }
 }
 - (void)setNavigtionItem{

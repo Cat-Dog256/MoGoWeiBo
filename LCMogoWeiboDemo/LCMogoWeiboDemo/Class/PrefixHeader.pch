@@ -37,7 +37,7 @@ static const NSUInteger ddLogLevel = DDLogLevelAll;//多个宏可供选择
 #endif
 
 //调试数据库操作部分的打印
-#if 0
+#if 1
 #define DBLog(fmt, ...) NSLog((@"%s [Line %d] \n" fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else
 #   define DBLog(...)

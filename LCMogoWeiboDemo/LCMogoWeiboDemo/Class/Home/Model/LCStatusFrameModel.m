@@ -62,7 +62,6 @@ NSUInteger const MaxMargin = 10;
     /**正文*/
     CGFloat textX = iconX;
     CGFloat textY = MAX(CGRectGetMaxY(self.iconViewF), CGRectGetMaxY(self.timeLabelF)) + BigMargin;
-#warning study 需要正则表达式
     /**
      *  需要正则表达式
      */
@@ -73,7 +72,7 @@ NSUInteger const MaxMargin = 10;
     /**微博图片*/
     CGFloat originalH = 0;
     if (statusModel.pic_urls.count) {
-#warning 计算原创微博配图Size
+//#warning 计算原创微博配图Size
         
         CGSize picSize = [LCPhotosView photosViewSizeWithCount:(int)statusModel.pic_urls.count];
         
@@ -105,7 +104,7 @@ NSUInteger const MaxMargin = 10;
         CGFloat retweetViewH = 0;
         if (statusModel.retweeted_status.pic_urls.count) {
             
-#warning 计算转发微博配图Size
+//#warning 计算转发微博配图Size
             CGSize retPicSize = [LCPhotosView photosViewSizeWithCount:(int)statusModel.retweeted_status.pic_urls.count];
             
             

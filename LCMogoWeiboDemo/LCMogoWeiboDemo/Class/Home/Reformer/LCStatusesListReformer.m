@@ -35,8 +35,8 @@
 {
     //获得准备好的request
     LCRequsestBase *req = [self prepareRequest];
-    req.cacheExpiredTime = LCCacheExpiredTimeDefult;
-    req.cachePolicy = LCRequestCacheNone;
+    req.cacheExpiredTime = LCCacheExpiredTimeForever;
+    req.cachePolicy = LCRequestCacheDB;
     //调用父类方法开始请求
     [self startWithRequest:req withView:view];
 }
@@ -62,6 +62,8 @@
     //取得假数据，并将response.responseDic替换为假数据
     response.responseObject = [self replaceDataFromFakeDataWithIdentifier:self.fakeDataParams];
 #endif
+    NSLog(@"%@",response.responseObject);
+
     //重组数据
     [self recombinantDataWith:response.responseObject];
     [super requestSuccess:response];
@@ -69,13 +71,9 @@
 - (void)requestFailure:(LCResponse *)response{
         [super requestFailure:response];
 }
-#pragma mark**读取缓存数据转换为模型数据**
-- (void)getAppCache:(id)cacheDict{
-    NSArray *array = cacheDict;
-    [self changeDatasToModel:array];
-}
+
 #pragma mark - 从父类继承的方法，主要是重组数据,并把数据转换为模型
-- (id)recombinantDataWith:(NSDictionary *)data
+- (void)recombinantDataWith:(NSDictionary *)data
 {
     [super recombinantDataWith:data];
     //外层model
@@ -84,8 +82,6 @@
     NSArray *statuses = data[@"statuses"];
 
     [self changeDatasToModel:statuses];
-    self.appCache.archivedType = kCacheArchiverArray;
-    return statuses;
 }
 - (void)changeDatasToModel:(NSArray *)dataArray{
     NSArray *statusModelsArray = [LCStatusesModel mj_objectArrayWithKeyValuesArray:dataArray];

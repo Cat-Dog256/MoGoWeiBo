@@ -32,7 +32,7 @@
     if (self = [super initWithFrame:frame]) {
         
      [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(pressEmotionsKeyboard) name:kLCEmotionKeyboardDidSelectedEmotiomNotification object:nil];
-#warning _BSMachError: (os/kern) invalid capability (20)_BSMachError: (os/kern) invalid name (15) 消除这个警告 引起卡顿一下再弹出键盘
+//_BSMachError: (os/kern) invalid capability (20)_BSMachError: (os/kern) invalid name (15) 消除这个警告 引起卡顿一下再弹出键盘
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self setupAllEmotionView];
         });

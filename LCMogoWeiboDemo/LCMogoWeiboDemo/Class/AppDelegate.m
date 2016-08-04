@@ -8,11 +8,70 @@
 
 #import "AppDelegate.h"
 #import "LCMoGoWeiBoTabBarController.h"
+#import "LCDBManager.h"
+#import "LCDBConst.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+- (void)testDBTool{
+    LCDBManager *myDBTool = [LCDBManager sharedManager];
+    [myDBTool createTableWithName:@"account"];
+        NSDictionary *dict = @{@"username":@"唐巧大V",
+                           @"id":@"1",
+                           @"link":@"http://blog.devtang.com"};
+//        [myDBTool putObject:dict withIdentifier:@"dict" objType:@"NSDictonary" intoTable:@"account"];
+//        NSDictionary *accountDict = [myDBTool getObjectByIdentifier:@"dict" fromTable:@"account"];
+    
+    [myDBTool putDictionary:dict withId:@"dict" intoTable:@"account"];
+    NSDictionary *accountDict = [myDBTool getDictionaryById:@"dict" fromTable:@"account"];
+    
+    NSLog(@"%@",accountDict);
+    NSArray *array = @[@{@"username":@"唐巧大V",
+                         @"id":@"1",
+                         @"link":@"http://blog.devtang.com"},
+                       @{@"username":@"李明杰",
+                         @"id":@"2",
+                         @"link":@"http://blog.devtang.com"},
+                       @{@"username":@"欧阳",
+                         @"id":@"3",
+                         @"link":@"http://blog.devtang.com"},
+                       @{@"username":@"潘",
+                         @"id":@"4",
+                         @"link":@"http://blog.devtang.com"},
+                       @{@"username":@"向军",
+                         @"id":@"5",
+                         @"link":@"http://blog.devtang.com"}];
+    //    [myDBTool putObject:array withId:@"array" intoTable:@"account"];
+    //    NSDictionary *accountArray = [myDBTool getObjectById:@"array" fromTable:@"account"];
+    
+    [myDBTool putArray:array withId:@"array" intoTable:@"account"];
+    NSArray *accountArray = [myDBTool getArrayById:@"array" fromTable:@"account"];
+    NSLog(@"%@",accountArray);
+    
+    [myDBTool putString:@"字符串" withId:@"String" intoTable:@"account"];
+    NSString *string = [myDBTool getStringById:@"String" fromTable:@"account"];
+    NSLog(@"%@",string);
+    
+    [myDBTool putNumber:@2016 withId:@"number" intoTable:@"account"];
+    NSNumber *number = [myDBTool getNumberById:@"number" fromTable:@"account"];
+    NSLog(@"%@",number);
+    
+    [myDBTool putBool:NO withId:@"isLogin" intoTable:@"account"];
+    
+    BOOL isLogin = [myDBTool getBoolById:@"isLogin" fromTable:@"account"];
+    NSLog(@"%d",isLogin);
+     NSString *conditionKey1 = [NSString stringWithFormat:@"%@ = ",kUniqueIdentifier];
+    [myDBTool deleteDataFromTable:@"account" singleCondition:@{conditionKey1:@"number"}];
+    NSString *conditionKey2 = [NSString stringWithFormat:@"%@ = ",kUniqueIdentifier];
+
+    [myDBTool updateTable:@"account" setKeyValues:@{@"json":@"一个字符串"} singleCondition:@{conditionKey2 : @"String"}];
+    
+    
+    NSArray *data = [myDBTool selectKeyTypes:@{@"json":@"text"} fromTable:@"account" singleCondition:@{conditionKey2:@"dict"}];
+    NSLog(@"%@",data);
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -25,6 +84,7 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
        self.window.rootViewController = [[LCMoGoWeiBoTabBarController alloc]init];
+//    [self testDBTool];
     [self.window makeKeyAndVisible];
         // Override point for customization after application launch.
     return YES;

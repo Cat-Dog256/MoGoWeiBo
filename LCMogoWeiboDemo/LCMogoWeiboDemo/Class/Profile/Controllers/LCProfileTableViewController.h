@@ -6,8 +6,8 @@
 //  Copyright © 2016年 李策. All rights reserved.
 //
 
-#import "LCBaseTableViewController.h"
+#import "LCBaseViewController.h"
 
-@interface LCProfileTableViewController : LCBaseTableViewController
+@interface LCProfileTableViewController : LCBaseViewController
 
 @end

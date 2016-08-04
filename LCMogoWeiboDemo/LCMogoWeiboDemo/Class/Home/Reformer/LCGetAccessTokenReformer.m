@@ -52,12 +52,11 @@
     [super requestFailure:response];
 }
 #pragma mark - 从父类继承的方法，主要是重组数据用
-- (id)recombinantDataWith:(NSDictionary *)data
+- (void)recombinantDataWith:(NSDictionary *)data
 {
     [super recombinantDataWith:data];
     //外层model
     self.accessTokenmodel = [LCAccessTokenModel mj_objectWithKeyValues:data];
-    return data;
 }
 
 @end

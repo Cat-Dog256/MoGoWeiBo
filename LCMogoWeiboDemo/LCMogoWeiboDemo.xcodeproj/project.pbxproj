@@ -10,7 +10,6 @@
 		001AA14D1CFC085B002D5562 /* LCPostMessageHavePhotosReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 001AA14C1CFC085B002D5562 /* LCPostMessageHavePhotosReformer.m */; };
 		001AA1501CFC0A79002D5562 /* LCPostMessageReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 001AA14F1CFC0A79002D5562 /* LCPostMessageReformer.m */; };
 		001AA1521CFC21C5002D5562 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 001AA1511CFC21C5002D5562 /* test.png */; };
-		001AA1551CFC381A002D5562 /* LCParamsNullTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 001AA1541CFC381A002D5562 /* LCParamsNullTool.m */; };
 		002847251CC1D0BE00691204 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847241CC1D0BE00691204 /* main.m */; };
 		002847301CC1D0BE00691204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0028472F1CC1D0BE00691204 /* Assets.xcassets */; };
 		002847331CC1D0BE00691204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002847311CC1D0BE00691204 /* LaunchScreen.storyboard */; };
@@ -23,9 +22,6 @@
 		002847811CC1D0FD00691204 /* LCPostMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002847701CC1D0FD00691204 /* LCPostMessageViewController.xib */; };
 		002847821CC1D0FD00691204 /* LCProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847761CC1D0FD00691204 /* LCProfileTableViewController.m */; };
 		002847831CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028477B1CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.m */; };
-		0028478F1CC1D10600691204 /* LCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847861CC1D10600691204 /* LCBaseTableViewController.m */; };
-		002847921CC1D10600691204 /* LCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028478C1CC1D10600691204 /* LCTabBar.m */; };
-		002847931CC1D10600691204 /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0028478E1CC1D10600691204 /* LCTabBarController.m */; };
 		002847981CC1D1D500691204 /* LCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002847961CC1D1D500691204 /* LCTestViewController.m */; };
 		002847991CC1D1D500691204 /* LCTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002847971CC1D1D500691204 /* LCTestViewController.xib */; };
 		003ED9201CE9AE41008A0C28 /* LCSpecialTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003ED91F1CE9AE41008A0C28 /* LCSpecialTextModel.m */; };
@@ -61,34 +57,6 @@
 		00EE2AA21CD0F51B000C491A /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2A991CD0F51B000C491A /* UIColor+Extension.m */; };
 		00EE2AA31CD0F51B000C491A /* UIScrollView+LCRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2A9B1CD0F51B000C491A /* UIScrollView+LCRefresh.m */; };
 		00EE2AA41CD0F51B000C491A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2A9D1CD0F51B000C491A /* UIView+Extension.m */; };
-		00EE2AB11CD0F59E000C491A /* LCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2AA81CD0F59E000C491A /* LCLabel.m */; };
-		00EE2AB21CD0F59E000C491A /* LCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2AAA1CD0F59E000C491A /* LCTableView.m */; };
-		00EE2AB31CD0F59E000C491A /* LCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2AAC1CD0F59E000C491A /* LCTableViewCell.m */; };
-		00EE2AB41CD0F59E000C491A /* LCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2AAE1CD0F59E000C491A /* LCView.m */; };
-		00EE2AE61CD0F5CE000C491A /* LCDBConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2ABB1CD0F5CE000C491A /* LCDBConst.m */; };
-		00EE2AE71CD0F5CE000C491A /* LCDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2ABD1CD0F5CE000C491A /* LCDBManager.m */; };
-		00EE2AE81CD0F5CE000C491A /* LCDBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2ABF1CD0F5CE000C491A /* LCDBTool.m */; };
-		00EE2AE91CD0F5CE000C491A /* LCURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2AC11CD0F5CE000C491A /* LCURLCache.m */; };
-		00EE2AEA1CD0F5CE000C491A /* LCLoadFaildView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2AC41CD0F5CE000C491A /* LCLoadFaildView.m */; };
-		00EE2AEB1CD0F5CE000C491A /* LCNetworkCutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2AC61CD0F5CE000C491A /* LCNetworkCutView.m */; };
-		00EE2AEC1CD0F5CE000C491A /* LCShowErrorViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2AC81CD0F5CE000C491A /* LCShowErrorViewTool.m */; };
-		00EE2AED1CD0F5CE000C491A /* LCException.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2ACB1CD0F5CE000C491A /* LCException.m */; };
-		00EE2AEE1CD0F5CE000C491A /* LCExceptionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2ACD1CD0F5CE000C491A /* LCExceptionConst.m */; };
-		00EE2AEF1CD0F5CE000C491A /* hardLoding@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 00EE2ACF1CD0F5CE000C491A /* hardLoding@2x.gif */; };
-		00EE2AF01CD0F5CE000C491A /* hardLoding@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 00EE2AD01CD0F5CE000C491A /* hardLoding@3x.gif */; };
-		00EE2AF11CD0F5CE000C491A /* jhLoading@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 00EE2AD11CD0F5CE000C491A /* jhLoading@2x.gif */; };
-		00EE2AF21CD0F5CE000C491A /* jhLoading@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 00EE2AD21CD0F5CE000C491A /* jhLoading@3x.gif */; };
-		00EE2AF31CD0F5CE000C491A /* LCConfigHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2AD41CD0F5CE000C491A /* LCConfigHelper.m */; };
-		00EE2AF41CD0F5CE000C491A /* LCHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2AD61CD0F5CE000C491A /* LCHttpClient.m */; };
-		00EE2AF51CD0F5CE000C491A /* LCReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2AD81CD0F5CE000C491A /* LCReachabilityManager.m */; };
-		00EE2AF61CD0F5CE000C491A /* LCRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2ADA1CD0F5CE000C491A /* LCRequestManager.m */; };
-		00EE2AF71CD0F5CE000C491A /* LCRequsestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2ADC1CD0F5CE000C491A /* LCRequsestBase.m */; };
-		00EE2AF81CD0F5CE000C491A /* LCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2ADE1CD0F5CE000C491A /* LCResponse.m */; };
-		00EE2AF91CD0F5CE000C491A /* loading@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 00EE2ADF1CD0F5CE000C491A /* loading@2x.gif */; };
-		00EE2AFA1CD0F5CE000C491A /* loading@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 00EE2AE01CD0F5CE000C491A /* loading@3x.gif */; };
-		00EE2AFB1CD0F5CE000C491A /* LCBaseReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2AE31CD0F5CE000C491A /* LCBaseReformer.m */; };
-		00EE2AFC1CD0F5CE000C491A /* LCFakeDataParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2AE51CD0F5CE000C491A /* LCFakeDataParams.m */; };
-		00EE2B5B1CD0F787000C491A /* LCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2B5A1CD0F787000C491A /* LCBaseModel.m */; };
 		00EE2B7B1CD0F9AD000C491A /* LCGetAccessTokenReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2B761CD0F9AD000C491A /* LCGetAccessTokenReformer.m */; };
 		00EE2B7C1CD0F9AD000C491A /* LCStatusesListReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2B781CD0F9AD000C491A /* LCStatusesListReformer.m */; };
 		00EE2B7D1CD0F9AD000C491A /* LCUserInfoReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2B7A1CD0F9AD000C491A /* LCUserInfoReformer.m */; };
@@ -100,16 +68,56 @@
 		00EE2B931CD0FA3B000C491A /* LCPhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2B921CD0FA3B000C491A /* LCPhotosView.m */; };
 		00EE2B961CD0FA4D000C491A /* LCPicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2B951CD0FA4D000C491A /* LCPicModel.m */; };
 		00EE2B991CD0FA5C000C491A /* LCPhtotoImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2B981CD0FA5C000C491A /* LCPhtotoImageView.m */; };
-		00EE2B9F1CD0FB26000C491A /* LCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2B9E1CD0FB26000C491A /* LCBaseViewController.m */; };
 		00EE2BA11CD0FC0E000C491A /* sinaMessage in Resources */ = {isa = PBXBuildFile; fileRef = 00EE2BA01CD0FC0E000C491A /* sinaMessage */; };
 		00EE2BA41CD0FDE3000C491A /* LCHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BA31CD0FDE3000C491A /* LCHomeTableViewController.m */; };
 		00EE2BAE1CD10127000C491A /* LCHearderIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BAD1CD10127000C491A /* LCHearderIconView.m */; };
 		00EE2BBA1CD105C3000C491A /* LCStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BB91CD105C3000C491A /* LCStatusCell.m */; };
 		00EE2BBD1CD108E8000C491A /* LCToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BBC1CD108E8000C491A /* LCToolBar.m */; };
-		00EE2BC01CD112C4000C491A /* LCNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BBF1CD112C4000C491A /* LCNavgationController.m */; };
-		00EE2BC31CD1985D000C491A /* LCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BC21CD1985D000C491A /* LCPlaceholderTextView.m */; };
-		00EE2C0B1CD1EF05000C491A /* LCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2C0A1CD1EF05000C491A /* LCButton.m */; };
 		C119542B0785F490D788B3EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF72D5814A193FAB106E4F1 /* libPods.a */; };
+		D272EEB11D51D5900005E5CB /* APPTabBarItemsConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D272EEB01D51D5900005E5CB /* APPTabBarItemsConfiguration.json */; };
+		D29EB1121D508C32009D2056 /* LCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0A91D508C32009D2056 /* LCBaseModel.m */; };
+		D29EB1141D508C32009D2056 /* LCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0B11D508C32009D2056 /* LCAlertView.m */; };
+		D29EB1151D508C32009D2056 /* LCBaseLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0B41D508C32009D2056 /* LCBaseLine.m */; };
+		D29EB1161D508C32009D2056 /* LCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0B71D508C32009D2056 /* LCButton.m */; };
+		D29EB1171D508C32009D2056 /* LCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0B91D508C32009D2056 /* LCLabel.m */; };
+		D29EB1181D508C32009D2056 /* LCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0BB1D508C32009D2056 /* LCPlaceholderTextView.m */; };
+		D29EB1191D508C32009D2056 /* LCPoint2PointLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0BD1D508C32009D2056 /* LCPoint2PointLine.m */; };
+		D29EB11A1D508C32009D2056 /* LCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0BF1D508C32009D2056 /* LCTableView.m */; };
+		D29EB11B1D508C32009D2056 /* LCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0C11D508C32009D2056 /* LCTableViewCell.m */; };
+		D29EB11C1D508C32009D2056 /* LCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0C31D508C32009D2056 /* LCTextField.m */; };
+		D29EB11D1D508C32009D2056 /* LCTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0C51D508C32009D2056 /* LCTextFieldView.m */; };
+		D29EB11E1D508C32009D2056 /* LCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0C71D508C32009D2056 /* LCTextView.m */; };
+		D29EB11F1D508C32009D2056 /* LCView.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0C91D508C32009D2056 /* LCView.m */; };
+		D29EB1201D508C32009D2056 /* LCNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0CE1D508C32009D2056 /* LCNavgationController.m */; };
+		D29EB1211D508C32009D2056 /* YGTLoginNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0D01D508C32009D2056 /* YGTLoginNavgationController.m */; };
+		D29EB1221D508C32009D2056 /* LCDBConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0D61D508C32009D2056 /* LCDBConst.m */; };
+		D29EB1231D508C32009D2056 /* LCDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0D81D508C32009D2056 /* LCDBManager.m */; };
+		D29EB1251D508C32009D2056 /* LCURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0DC1D508C32009D2056 /* LCURLCache.m */; };
+		D29EB1261D508C32009D2056 /* LCLoadFaildView.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0DF1D508C32009D2056 /* LCLoadFaildView.m */; };
+		D29EB1271D508C32009D2056 /* LCNetworkCutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0E11D508C32009D2056 /* LCNetworkCutView.m */; };
+		D29EB1281D508C32009D2056 /* LCShowErrorViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0E31D508C32009D2056 /* LCShowErrorViewTool.m */; };
+		D29EB1291D508C32009D2056 /* LCException.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0E61D508C32009D2056 /* LCException.m */; };
+		D29EB12A1D508C32009D2056 /* LCExceptionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0E81D508C32009D2056 /* LCExceptionConst.m */; };
+		D29EB12B1D508C32009D2056 /* jhLoading@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = D29EB0EA1D508C32009D2056 /* jhLoading@2x.gif */; };
+		D29EB12C1D508C32009D2056 /* jhLoading@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = D29EB0EB1D508C32009D2056 /* jhLoading@3x.gif */; };
+		D29EB12D1D508C32009D2056 /* LCConfigHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0ED1D508C32009D2056 /* LCConfigHelper.m */; };
+		D29EB12E1D508C32009D2056 /* LCHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0EF1D508C32009D2056 /* LCHttpClient.m */; };
+		D29EB12F1D508C32009D2056 /* LCReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0F11D508C32009D2056 /* LCReachabilityManager.m */; };
+		D29EB1301D508C32009D2056 /* LCRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0F31D508C32009D2056 /* LCRequestManager.m */; };
+		D29EB1311D508C32009D2056 /* LCRequsestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0F51D508C32009D2056 /* LCRequsestBase.m */; };
+		D29EB1321D508C32009D2056 /* LCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0F71D508C32009D2056 /* LCResponse.m */; };
+		D29EB1331D508C32009D2056 /* LCBaseReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0FA1D508C32009D2056 /* LCBaseReformer.m */; };
+		D29EB1341D508C32009D2056 /* LCFakeDataParams.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0FC1D508C32009D2056 /* LCFakeDataParams.m */; };
+		D29EB1351D508C32009D2056 /* LCParamsNullTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0FE1D508C32009D2056 /* LCParamsNullTool.m */; };
+		D29EB1371D508C32009D2056 /* LCAppTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB1021D508C32009D2056 /* LCAppTabBarController.m */; };
+		D29EB1381D508C32009D2056 /* LCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB1041D508C32009D2056 /* LCTabBar.m */; };
+		D29EB1391D508C32009D2056 /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB1061D508C32009D2056 /* LCTabBarController.m */; };
+		D29EB13A1D508C32009D2056 /* LCFileManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB1091D508C32009D2056 /* LCFileManagerTool.m */; };
+		D29EB13B1D508C32009D2056 /* LCGetVersionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB10B1D508C32009D2056 /* LCGetVersionTool.m */; };
+		D29EB13C1D508C32009D2056 /* LCRegularExtTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB10D1D508C32009D2056 /* LCRegularExtTool.m */; };
+		D29EB13D1D508C32009D2056 /* LCShowTopTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB10F1D508C32009D2056 /* LCShowTopTool.m */; };
+		D29EB13E1D508C32009D2056 /* LCStringTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB1111D508C32009D2056 /* LCStringTool.m */; };
+		D29EB13F1D508E61009D2056 /* LCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0AC1D508C32009D2056 /* LCBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,8 +143,6 @@
 		001AA14E1CFC0A79002D5562 /* LCPostMessageReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPostMessageReformer.h; sourceTree = "<group>"; };
 		001AA14F1CFC0A79002D5562 /* LCPostMessageReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPostMessageReformer.m; sourceTree = "<group>"; };
 		001AA1511CFC21C5002D5562 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
-		001AA1531CFC381A002D5562 /* LCParamsNullTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCParamsNullTool.h; sourceTree = "<group>"; };
-		001AA1541CFC381A002D5562 /* LCParamsNullTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCParamsNullTool.m; sourceTree = "<group>"; };
 		002847201CC1D0BE00691204 /* LCMogoWeiboDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCMogoWeiboDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		002847241CC1D0BE00691204 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0028472F1CC1D0BE00691204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -161,12 +167,6 @@
 		002847761CC1D0FD00691204 /* LCProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCProfileTableViewController.m; sourceTree = "<group>"; };
 		0028477A1CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMoGoWeiBoTabBarController.h; sourceTree = "<group>"; };
 		0028477B1CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMoGoWeiBoTabBarController.m; sourceTree = "<group>"; };
-		002847851CC1D10600691204 /* LCBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseTableViewController.h; sourceTree = "<group>"; };
-		002847861CC1D10600691204 /* LCBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseTableViewController.m; sourceTree = "<group>"; };
-		0028478B1CC1D10600691204 /* LCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBar.h; sourceTree = "<group>"; };
-		0028478C1CC1D10600691204 /* LCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBar.m; sourceTree = "<group>"; };
-		0028478D1CC1D10600691204 /* LCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarController.h; sourceTree = "<group>"; };
-		0028478E1CC1D10600691204 /* LCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarController.m; sourceTree = "<group>"; };
 		002847951CC1D1D500691204 /* LCTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTestViewController.h; sourceTree = "<group>"; };
 		002847961CC1D1D500691204 /* LCTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTestViewController.m; sourceTree = "<group>"; };
 		002847971CC1D1D500691204 /* LCTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCTestViewController.xib; sourceTree = "<group>"; };
@@ -233,61 +233,7 @@
 		00EE2A9B1CD0F51B000C491A /* UIScrollView+LCRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LCRefresh.m"; sourceTree = "<group>"; };
 		00EE2A9C1CD0F51B000C491A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		00EE2A9D1CD0F51B000C491A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		00EE2AA61CD0F59E000C491A /* LCBaseUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseUI.h; sourceTree = "<group>"; };
-		00EE2AA71CD0F59E000C491A /* LCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLabel.h; sourceTree = "<group>"; };
-		00EE2AA81CD0F59E000C491A /* LCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLabel.m; sourceTree = "<group>"; };
-		00EE2AA91CD0F59E000C491A /* LCTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTableView.h; sourceTree = "<group>"; };
-		00EE2AAA1CD0F59E000C491A /* LCTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableView.m; sourceTree = "<group>"; };
-		00EE2AAB1CD0F59E000C491A /* LCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTableViewCell.h; sourceTree = "<group>"; };
-		00EE2AAC1CD0F59E000C491A /* LCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableViewCell.m; sourceTree = "<group>"; };
-		00EE2AAD1CD0F59E000C491A /* LCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCView.h; sourceTree = "<group>"; };
-		00EE2AAE1CD0F59E000C491A /* LCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCView.m; sourceTree = "<group>"; };
-		00EE2AAF1CD0F59E000C491A /* LCView_LineMethodHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCView_LineMethodHeader.h; sourceTree = "<group>"; };
-		00EE2AB01CD0F59E000C491A /* LCViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCViewConfiguration.h; sourceTree = "<group>"; };
 		00EE2AB61CD0F5AF000C491A /* LCEnvironmentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCEnvironmentConfig.h; sourceTree = "<group>"; };
-		00EE2AB91CD0F5CE000C491A /* LCCacheConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCacheConst.h; sourceTree = "<group>"; };
-		00EE2ABA1CD0F5CE000C491A /* LCDBConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDBConst.h; sourceTree = "<group>"; };
-		00EE2ABB1CD0F5CE000C491A /* LCDBConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDBConst.m; sourceTree = "<group>"; };
-		00EE2ABC1CD0F5CE000C491A /* LCDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDBManager.h; sourceTree = "<group>"; };
-		00EE2ABD1CD0F5CE000C491A /* LCDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDBManager.m; sourceTree = "<group>"; };
-		00EE2ABE1CD0F5CE000C491A /* LCDBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDBTool.h; sourceTree = "<group>"; };
-		00EE2ABF1CD0F5CE000C491A /* LCDBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDBTool.m; sourceTree = "<group>"; };
-		00EE2AC01CD0F5CE000C491A /* LCURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCURLCache.h; sourceTree = "<group>"; };
-		00EE2AC11CD0F5CE000C491A /* LCURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCURLCache.m; sourceTree = "<group>"; };
-		00EE2AC31CD0F5CE000C491A /* LCLoadFaildView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLoadFaildView.h; sourceTree = "<group>"; };
-		00EE2AC41CD0F5CE000C491A /* LCLoadFaildView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLoadFaildView.m; sourceTree = "<group>"; };
-		00EE2AC51CD0F5CE000C491A /* LCNetworkCutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNetworkCutView.h; sourceTree = "<group>"; };
-		00EE2AC61CD0F5CE000C491A /* LCNetworkCutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNetworkCutView.m; sourceTree = "<group>"; };
-		00EE2AC71CD0F5CE000C491A /* LCShowErrorViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCShowErrorViewTool.h; sourceTree = "<group>"; };
-		00EE2AC81CD0F5CE000C491A /* LCShowErrorViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCShowErrorViewTool.m; sourceTree = "<group>"; };
-		00EE2ACA1CD0F5CE000C491A /* LCException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCException.h; sourceTree = "<group>"; };
-		00EE2ACB1CD0F5CE000C491A /* LCException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCException.m; sourceTree = "<group>"; };
-		00EE2ACC1CD0F5CE000C491A /* LCExceptionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCExceptionConst.h; sourceTree = "<group>"; };
-		00EE2ACD1CD0F5CE000C491A /* LCExceptionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCExceptionConst.m; sourceTree = "<group>"; };
-		00EE2ACF1CD0F5CE000C491A /* hardLoding@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "hardLoding@2x.gif"; sourceTree = "<group>"; };
-		00EE2AD01CD0F5CE000C491A /* hardLoding@3x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "hardLoding@3x.gif"; sourceTree = "<group>"; };
-		00EE2AD11CD0F5CE000C491A /* jhLoading@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "jhLoading@2x.gif"; sourceTree = "<group>"; };
-		00EE2AD21CD0F5CE000C491A /* jhLoading@3x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "jhLoading@3x.gif"; sourceTree = "<group>"; };
-		00EE2AD31CD0F5CE000C491A /* LCConfigHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCConfigHelper.h; sourceTree = "<group>"; };
-		00EE2AD41CD0F5CE000C491A /* LCConfigHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCConfigHelper.m; sourceTree = "<group>"; };
-		00EE2AD51CD0F5CE000C491A /* LCHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHttpClient.h; sourceTree = "<group>"; };
-		00EE2AD61CD0F5CE000C491A /* LCHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHttpClient.m; sourceTree = "<group>"; };
-		00EE2AD71CD0F5CE000C491A /* LCReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCReachabilityManager.h; sourceTree = "<group>"; };
-		00EE2AD81CD0F5CE000C491A /* LCReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCReachabilityManager.m; sourceTree = "<group>"; };
-		00EE2AD91CD0F5CE000C491A /* LCRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRequestManager.h; sourceTree = "<group>"; };
-		00EE2ADA1CD0F5CE000C491A /* LCRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRequestManager.m; sourceTree = "<group>"; };
-		00EE2ADB1CD0F5CE000C491A /* LCRequsestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRequsestBase.h; sourceTree = "<group>"; };
-		00EE2ADC1CD0F5CE000C491A /* LCRequsestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRequsestBase.m; sourceTree = "<group>"; };
-		00EE2ADD1CD0F5CE000C491A /* LCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCResponse.h; sourceTree = "<group>"; };
-		00EE2ADE1CD0F5CE000C491A /* LCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCResponse.m; sourceTree = "<group>"; };
-		00EE2ADF1CD0F5CE000C491A /* loading@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading@2x.gif"; sourceTree = "<group>"; };
-		00EE2AE01CD0F5CE000C491A /* loading@3x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading@3x.gif"; sourceTree = "<group>"; };
-		00EE2AE21CD0F5CE000C491A /* LCBaseReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseReformer.h; sourceTree = "<group>"; };
-		00EE2AE31CD0F5CE000C491A /* LCBaseReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseReformer.m; sourceTree = "<group>"; };
-		00EE2AE41CD0F5CE000C491A /* LCFakeDataParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFakeDataParams.h; sourceTree = "<group>"; };
-		00EE2AE51CD0F5CE000C491A /* LCFakeDataParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFakeDataParams.m; sourceTree = "<group>"; };
-		00EE2B591CD0F787000C491A /* LCBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseModel.h; sourceTree = "<group>"; };
-		00EE2B5A1CD0F787000C491A /* LCBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseModel.m; sourceTree = "<group>"; };
 		00EE2B751CD0F9AD000C491A /* LCGetAccessTokenReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCGetAccessTokenReformer.h; sourceTree = "<group>"; };
 		00EE2B761CD0F9AD000C491A /* LCGetAccessTokenReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCGetAccessTokenReformer.m; sourceTree = "<group>"; };
 		00EE2B771CD0F9AD000C491A /* LCStatusesListReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCStatusesListReformer.h; sourceTree = "<group>"; };
@@ -310,8 +256,6 @@
 		00EE2B951CD0FA4D000C491A /* LCPicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPicModel.m; sourceTree = "<group>"; };
 		00EE2B971CD0FA5C000C491A /* LCPhtotoImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPhtotoImageView.h; sourceTree = "<group>"; };
 		00EE2B981CD0FA5C000C491A /* LCPhtotoImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPhtotoImageView.m; sourceTree = "<group>"; };
-		00EE2B9D1CD0FB26000C491A /* LCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseViewController.h; sourceTree = "<group>"; };
-		00EE2B9E1CD0FB26000C491A /* LCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseViewController.m; sourceTree = "<group>"; };
 		00EE2BA01CD0FC0E000C491A /* sinaMessage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sinaMessage; sourceTree = "<group>"; };
 		00EE2BA21CD0FDE3000C491A /* LCHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHomeTableViewController.h; sourceTree = "<group>"; };
 		00EE2BA31CD0FDE3000C491A /* LCHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHomeTableViewController.m; sourceTree = "<group>"; };
@@ -321,15 +265,101 @@
 		00EE2BB91CD105C3000C491A /* LCStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCStatusCell.m; sourceTree = "<group>"; };
 		00EE2BBB1CD108E8000C491A /* LCToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCToolBar.h; sourceTree = "<group>"; };
 		00EE2BBC1CD108E8000C491A /* LCToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCToolBar.m; sourceTree = "<group>"; };
-		00EE2BBE1CD112C4000C491A /* LCNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNavgationController.h; sourceTree = "<group>"; };
-		00EE2BBF1CD112C4000C491A /* LCNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNavgationController.m; sourceTree = "<group>"; };
-		00EE2BC11CD1985D000C491A /* LCPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPlaceholderTextView.h; sourceTree = "<group>"; };
-		00EE2BC21CD1985D000C491A /* LCPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPlaceholderTextView.m; sourceTree = "<group>"; };
-		00EE2C091CD1EF05000C491A /* LCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCButton.h; sourceTree = "<group>"; };
-		00EE2C0A1CD1EF05000C491A /* LCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCButton.m; sourceTree = "<group>"; };
 		40B33D2B361E085B98F24375 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		95949A388983EA0047060239 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CFF72D5814A193FAB106E4F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D272EEB01D51D5900005E5CB /* APPTabBarItemsConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APPTabBarItemsConfiguration.json; sourceTree = "<group>"; };
+		D29EB0A81D508C32009D2056 /* LCBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseModel.h; sourceTree = "<group>"; };
+		D29EB0A91D508C32009D2056 /* LCBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseModel.m; sourceTree = "<group>"; };
+		D29EB0AB1D508C32009D2056 /* LCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseViewController.h; sourceTree = "<group>"; };
+		D29EB0AC1D508C32009D2056 /* LCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseViewController.m; sourceTree = "<group>"; };
+		D29EB0AE1D508C32009D2056 /* LCEnvironmentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCEnvironmentConfig.h; sourceTree = "<group>"; };
+		D29EB0B01D508C32009D2056 /* LCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAlertView.h; sourceTree = "<group>"; };
+		D29EB0B11D508C32009D2056 /* LCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAlertView.m; sourceTree = "<group>"; };
+		D29EB0B21D508C32009D2056 /* LCAlertView.temp_caseinsensitive_rename.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAlertView.temp_caseinsensitive_rename.h; sourceTree = "<group>"; };
+		D29EB0B31D508C32009D2056 /* LCBaseLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseLine.h; sourceTree = "<group>"; };
+		D29EB0B41D508C32009D2056 /* LCBaseLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseLine.m; sourceTree = "<group>"; };
+		D29EB0B51D508C32009D2056 /* LCBaseUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseUI.h; sourceTree = "<group>"; };
+		D29EB0B61D508C32009D2056 /* LCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCButton.h; sourceTree = "<group>"; };
+		D29EB0B71D508C32009D2056 /* LCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCButton.m; sourceTree = "<group>"; };
+		D29EB0B81D508C32009D2056 /* LCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLabel.h; sourceTree = "<group>"; };
+		D29EB0B91D508C32009D2056 /* LCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLabel.m; sourceTree = "<group>"; };
+		D29EB0BA1D508C32009D2056 /* LCPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPlaceholderTextView.h; sourceTree = "<group>"; };
+		D29EB0BB1D508C32009D2056 /* LCPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPlaceholderTextView.m; sourceTree = "<group>"; };
+		D29EB0BC1D508C32009D2056 /* LCPoint2PointLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPoint2PointLine.h; sourceTree = "<group>"; };
+		D29EB0BD1D508C32009D2056 /* LCPoint2PointLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPoint2PointLine.m; sourceTree = "<group>"; };
+		D29EB0BE1D508C32009D2056 /* LCTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTableView.h; sourceTree = "<group>"; };
+		D29EB0BF1D508C32009D2056 /* LCTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableView.m; sourceTree = "<group>"; };
+		D29EB0C01D508C32009D2056 /* LCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTableViewCell.h; sourceTree = "<group>"; };
+		D29EB0C11D508C32009D2056 /* LCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableViewCell.m; sourceTree = "<group>"; };
+		D29EB0C21D508C32009D2056 /* LCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTextField.h; sourceTree = "<group>"; };
+		D29EB0C31D508C32009D2056 /* LCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTextField.m; sourceTree = "<group>"; };
+		D29EB0C41D508C32009D2056 /* LCTextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTextFieldView.h; sourceTree = "<group>"; };
+		D29EB0C51D508C32009D2056 /* LCTextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTextFieldView.m; sourceTree = "<group>"; };
+		D29EB0C61D508C32009D2056 /* LCTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTextView.h; sourceTree = "<group>"; };
+		D29EB0C71D508C32009D2056 /* LCTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTextView.m; sourceTree = "<group>"; };
+		D29EB0C81D508C32009D2056 /* LCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCView.h; sourceTree = "<group>"; };
+		D29EB0C91D508C32009D2056 /* LCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCView.m; sourceTree = "<group>"; };
+		D29EB0CA1D508C32009D2056 /* LCView_LineMethodHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCView_LineMethodHeader.h; sourceTree = "<group>"; };
+		D29EB0CB1D508C32009D2056 /* LCViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCViewConfiguration.h; sourceTree = "<group>"; };
+		D29EB0CD1D508C32009D2056 /* LCNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNavgationController.h; sourceTree = "<group>"; };
+		D29EB0CE1D508C32009D2056 /* LCNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNavgationController.m; sourceTree = "<group>"; };
+		D29EB0CF1D508C32009D2056 /* YGTLoginNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGTLoginNavgationController.h; sourceTree = "<group>"; };
+		D29EB0D01D508C32009D2056 /* YGTLoginNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGTLoginNavgationController.m; sourceTree = "<group>"; };
+		D29EB0D11D508C32009D2056 /* YGTNavConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGTNavConfiguration.h; sourceTree = "<group>"; };
+		D29EB0D41D508C32009D2056 /* LCCacheConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCacheConst.h; sourceTree = "<group>"; };
+		D29EB0D51D508C32009D2056 /* LCDBConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDBConst.h; sourceTree = "<group>"; };
+		D29EB0D61D508C32009D2056 /* LCDBConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDBConst.m; sourceTree = "<group>"; };
+		D29EB0D71D508C32009D2056 /* LCDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDBManager.h; sourceTree = "<group>"; };
+		D29EB0D81D508C32009D2056 /* LCDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDBManager.m; sourceTree = "<group>"; };
+		D29EB0DB1D508C32009D2056 /* LCURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCURLCache.h; sourceTree = "<group>"; };
+		D29EB0DC1D508C32009D2056 /* LCURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCURLCache.m; sourceTree = "<group>"; };
+		D29EB0DE1D508C32009D2056 /* LCLoadFaildView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLoadFaildView.h; sourceTree = "<group>"; };
+		D29EB0DF1D508C32009D2056 /* LCLoadFaildView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLoadFaildView.m; sourceTree = "<group>"; };
+		D29EB0E01D508C32009D2056 /* LCNetworkCutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNetworkCutView.h; sourceTree = "<group>"; };
+		D29EB0E11D508C32009D2056 /* LCNetworkCutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNetworkCutView.m; sourceTree = "<group>"; };
+		D29EB0E21D508C32009D2056 /* LCShowErrorViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCShowErrorViewTool.h; sourceTree = "<group>"; };
+		D29EB0E31D508C32009D2056 /* LCShowErrorViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCShowErrorViewTool.m; sourceTree = "<group>"; };
+		D29EB0E51D508C32009D2056 /* LCException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCException.h; sourceTree = "<group>"; };
+		D29EB0E61D508C32009D2056 /* LCException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCException.m; sourceTree = "<group>"; };
+		D29EB0E71D508C32009D2056 /* LCExceptionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCExceptionConst.h; sourceTree = "<group>"; };
+		D29EB0E81D508C32009D2056 /* LCExceptionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCExceptionConst.m; sourceTree = "<group>"; };
+		D29EB0EA1D508C32009D2056 /* jhLoading@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "jhLoading@2x.gif"; sourceTree = "<group>"; };
+		D29EB0EB1D508C32009D2056 /* jhLoading@3x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "jhLoading@3x.gif"; sourceTree = "<group>"; };
+		D29EB0EC1D508C32009D2056 /* LCConfigHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCConfigHelper.h; sourceTree = "<group>"; };
+		D29EB0ED1D508C32009D2056 /* LCConfigHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCConfigHelper.m; sourceTree = "<group>"; };
+		D29EB0EE1D508C32009D2056 /* LCHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHttpClient.h; sourceTree = "<group>"; };
+		D29EB0EF1D508C32009D2056 /* LCHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHttpClient.m; sourceTree = "<group>"; };
+		D29EB0F01D508C32009D2056 /* LCReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCReachabilityManager.h; sourceTree = "<group>"; };
+		D29EB0F11D508C32009D2056 /* LCReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCReachabilityManager.m; sourceTree = "<group>"; };
+		D29EB0F21D508C32009D2056 /* LCRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRequestManager.h; sourceTree = "<group>"; };
+		D29EB0F31D508C32009D2056 /* LCRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRequestManager.m; sourceTree = "<group>"; };
+		D29EB0F41D508C32009D2056 /* LCRequsestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRequsestBase.h; sourceTree = "<group>"; };
+		D29EB0F51D508C32009D2056 /* LCRequsestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRequsestBase.m; sourceTree = "<group>"; };
+		D29EB0F61D508C32009D2056 /* LCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCResponse.h; sourceTree = "<group>"; };
+		D29EB0F71D508C32009D2056 /* LCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCResponse.m; sourceTree = "<group>"; };
+		D29EB0F91D508C32009D2056 /* LCBaseReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseReformer.h; sourceTree = "<group>"; };
+		D29EB0FA1D508C32009D2056 /* LCBaseReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseReformer.m; sourceTree = "<group>"; };
+		D29EB0FB1D508C32009D2056 /* LCFakeDataParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFakeDataParams.h; sourceTree = "<group>"; };
+		D29EB0FC1D508C32009D2056 /* LCFakeDataParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFakeDataParams.m; sourceTree = "<group>"; };
+		D29EB0FD1D508C32009D2056 /* LCParamsNullTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCParamsNullTool.h; sourceTree = "<group>"; };
+		D29EB0FE1D508C32009D2056 /* LCParamsNullTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCParamsNullTool.m; sourceTree = "<group>"; };
+		D29EB1011D508C32009D2056 /* LCAppTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAppTabBarController.h; sourceTree = "<group>"; };
+		D29EB1021D508C32009D2056 /* LCAppTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAppTabBarController.m; sourceTree = "<group>"; };
+		D29EB1031D508C32009D2056 /* LCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBar.h; sourceTree = "<group>"; };
+		D29EB1041D508C32009D2056 /* LCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBar.m; sourceTree = "<group>"; };
+		D29EB1051D508C32009D2056 /* LCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarController.h; sourceTree = "<group>"; };
+		D29EB1061D508C32009D2056 /* LCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarController.m; sourceTree = "<group>"; };
+		D29EB1081D508C32009D2056 /* LCFileManagerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFileManagerTool.h; sourceTree = "<group>"; };
+		D29EB1091D508C32009D2056 /* LCFileManagerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFileManagerTool.m; sourceTree = "<group>"; };
+		D29EB10A1D508C32009D2056 /* LCGetVersionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCGetVersionTool.h; sourceTree = "<group>"; };
+		D29EB10B1D508C32009D2056 /* LCGetVersionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCGetVersionTool.m; sourceTree = "<group>"; };
+		D29EB10C1D508C32009D2056 /* LCRegularExtTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRegularExtTool.h; sourceTree = "<group>"; };
+		D29EB10D1D508C32009D2056 /* LCRegularExtTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRegularExtTool.m; sourceTree = "<group>"; };
+		D29EB10E1D508C32009D2056 /* LCShowTopTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCShowTopTool.h; sourceTree = "<group>"; };
+		D29EB10F1D508C32009D2056 /* LCShowTopTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCShowTopTool.m; sourceTree = "<group>"; };
+		D29EB1101D508C32009D2056 /* LCStringTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCStringTool.h; sourceTree = "<group>"; };
+		D29EB1111D508C32009D2056 /* LCStringTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCStringTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,9 +425,8 @@
 		002847221CC1D0BE00691204 /* LCMogoWeiboDemo */ = {
 			isa = PBXGroup;
 			children = (
-				00EE2AB71CD0F5CE000C491A /* Request */,
+				D29EB0A61D508C32009D2056 /* BaseClass */,
 				00EE2AB51CD0F5AF000C491A /* Config */,
-				00EE2AA51CD0F59E000C491A /* CustomUI */,
 				00EE2A901CD0F51B000C491A /* Category */,
 				002847841CC1D10600691204 /* Custom */,
 				002847561CC1D0FD00691204 /* Class */,
@@ -449,10 +478,6 @@
 				002847581CC1D0FD00691204 /* AppDelegate.m */,
 				00B83AFD1CC2B3D700B97B3C /* LCManagerTool.h */,
 				00B83AFE1CC2B3D700B97B3C /* LCManagerTool.m */,
-				001AA1531CFC381A002D5562 /* LCParamsNullTool.h */,
-				001AA1541CFC381A002D5562 /* LCParamsNullTool.m */,
-				00EE2B591CD0F787000C491A /* LCBaseModel.h */,
-				00EE2B5A1CD0F787000C491A /* LCBaseModel.m */,
 				002847601CC1D0FD00691204 /* Home */,
 				0028475A1CC1D0FD00691204 /* Discorvier */,
 				002847661CC1D0FD00691204 /* Message */,
@@ -616,16 +641,6 @@
 				00B0E10B1CE2FF160089F99A /* EmotionsKeyboard */,
 				00B83AFA1CC297C200B97B3C /* CatchCrash.h */,
 				00B83AFB1CC297C200B97B3C /* CatchCrash.m */,
-				002847851CC1D10600691204 /* LCBaseTableViewController.h */,
-				002847861CC1D10600691204 /* LCBaseTableViewController.m */,
-				00EE2B9D1CD0FB26000C491A /* LCBaseViewController.h */,
-				00EE2B9E1CD0FB26000C491A /* LCBaseViewController.m */,
-				00EE2BBE1CD112C4000C491A /* LCNavgationController.h */,
-				00EE2BBF1CD112C4000C491A /* LCNavgationController.m */,
-				0028478B1CC1D10600691204 /* LCTabBar.h */,
-				0028478C1CC1D10600691204 /* LCTabBar.m */,
-				0028478D1CC1D10600691204 /* LCTabBarController.h */,
-				0028478E1CC1D10600691204 /* LCTabBarController.m */,
 				00EE2BBB1CD108E8000C491A /* LCToolBar.h */,
 				00EE2BBC1CD108E8000C491A /* LCToolBar.m */,
 				00EE2BAC1CD10127000C491A /* LCHearderIconView.h */,
@@ -638,8 +653,6 @@
 				00EE2B981CD0FA5C000C491A /* LCPhtotoImageView.m */,
 				008C13C01CE0540700CFFD0D /* LCBigImageScrollView.h */,
 				008C13C11CE0540700CFFD0D /* LCBigImageScrollView.m */,
-				00EE2BC11CD1985D000C491A /* LCPlaceholderTextView.h */,
-				00EE2BC21CD1985D000C491A /* LCPlaceholderTextView.m */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -730,120 +743,12 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		00EE2AA51CD0F59E000C491A /* CustomUI */ = {
-			isa = PBXGroup;
-			children = (
-				00EE2AA61CD0F59E000C491A /* LCBaseUI.h */,
-				00EE2AA71CD0F59E000C491A /* LCLabel.h */,
-				00EE2AA81CD0F59E000C491A /* LCLabel.m */,
-				00EE2AA91CD0F59E000C491A /* LCTableView.h */,
-				00EE2AAA1CD0F59E000C491A /* LCTableView.m */,
-				00EE2AAB1CD0F59E000C491A /* LCTableViewCell.h */,
-				00EE2AAC1CD0F59E000C491A /* LCTableViewCell.m */,
-				00EE2AAD1CD0F59E000C491A /* LCView.h */,
-				00EE2AAE1CD0F59E000C491A /* LCView.m */,
-				00EE2C091CD1EF05000C491A /* LCButton.h */,
-				00EE2C0A1CD1EF05000C491A /* LCButton.m */,
-				00EE2AAF1CD0F59E000C491A /* LCView_LineMethodHeader.h */,
-				00EE2AB01CD0F59E000C491A /* LCViewConfiguration.h */,
-			);
-			path = CustomUI;
-			sourceTree = "<group>";
-		};
 		00EE2AB51CD0F5AF000C491A /* Config */ = {
 			isa = PBXGroup;
 			children = (
 				00EE2AB61CD0F5AF000C491A /* LCEnvironmentConfig.h */,
 			);
 			path = Config;
-			sourceTree = "<group>";
-		};
-		00EE2AB71CD0F5CE000C491A /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				00EE2AB81CD0F5CE000C491A /* LCCache */,
-				00EE2AC21CD0F5CE000C491A /* LCErrorView */,
-				00EE2AC91CD0F5CE000C491A /* LCException */,
-				00EE2ACE1CD0F5CE000C491A /* LCNetwork */,
-				00EE2AE11CD0F5CE000C491A /* LCReformer */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		00EE2AB81CD0F5CE000C491A /* LCCache */ = {
-			isa = PBXGroup;
-			children = (
-				00EE2AB91CD0F5CE000C491A /* LCCacheConst.h */,
-				00EE2ABA1CD0F5CE000C491A /* LCDBConst.h */,
-				00EE2ABB1CD0F5CE000C491A /* LCDBConst.m */,
-				00EE2ABC1CD0F5CE000C491A /* LCDBManager.h */,
-				00EE2ABD1CD0F5CE000C491A /* LCDBManager.m */,
-				00EE2ABE1CD0F5CE000C491A /* LCDBTool.h */,
-				00EE2ABF1CD0F5CE000C491A /* LCDBTool.m */,
-				00EE2AC01CD0F5CE000C491A /* LCURLCache.h */,
-				00EE2AC11CD0F5CE000C491A /* LCURLCache.m */,
-			);
-			path = LCCache;
-			sourceTree = "<group>";
-		};
-		00EE2AC21CD0F5CE000C491A /* LCErrorView */ = {
-			isa = PBXGroup;
-			children = (
-				00EE2AC31CD0F5CE000C491A /* LCLoadFaildView.h */,
-				00EE2AC41CD0F5CE000C491A /* LCLoadFaildView.m */,
-				00EE2AC51CD0F5CE000C491A /* LCNetworkCutView.h */,
-				00EE2AC61CD0F5CE000C491A /* LCNetworkCutView.m */,
-				00EE2AC71CD0F5CE000C491A /* LCShowErrorViewTool.h */,
-				00EE2AC81CD0F5CE000C491A /* LCShowErrorViewTool.m */,
-			);
-			path = LCErrorView;
-			sourceTree = "<group>";
-		};
-		00EE2AC91CD0F5CE000C491A /* LCException */ = {
-			isa = PBXGroup;
-			children = (
-				00EE2ACA1CD0F5CE000C491A /* LCException.h */,
-				00EE2ACB1CD0F5CE000C491A /* LCException.m */,
-				00EE2ACC1CD0F5CE000C491A /* LCExceptionConst.h */,
-				00EE2ACD1CD0F5CE000C491A /* LCExceptionConst.m */,
-			);
-			path = LCException;
-			sourceTree = "<group>";
-		};
-		00EE2ACE1CD0F5CE000C491A /* LCNetwork */ = {
-			isa = PBXGroup;
-			children = (
-				00EE2ACF1CD0F5CE000C491A /* hardLoding@2x.gif */,
-				00EE2AD01CD0F5CE000C491A /* hardLoding@3x.gif */,
-				00EE2AD11CD0F5CE000C491A /* jhLoading@2x.gif */,
-				00EE2AD21CD0F5CE000C491A /* jhLoading@3x.gif */,
-				00EE2AD31CD0F5CE000C491A /* LCConfigHelper.h */,
-				00EE2AD41CD0F5CE000C491A /* LCConfigHelper.m */,
-				00EE2AD51CD0F5CE000C491A /* LCHttpClient.h */,
-				00EE2AD61CD0F5CE000C491A /* LCHttpClient.m */,
-				00EE2AD71CD0F5CE000C491A /* LCReachabilityManager.h */,
-				00EE2AD81CD0F5CE000C491A /* LCReachabilityManager.m */,
-				00EE2AD91CD0F5CE000C491A /* LCRequestManager.h */,
-				00EE2ADA1CD0F5CE000C491A /* LCRequestManager.m */,
-				00EE2ADB1CD0F5CE000C491A /* LCRequsestBase.h */,
-				00EE2ADC1CD0F5CE000C491A /* LCRequsestBase.m */,
-				00EE2ADD1CD0F5CE000C491A /* LCResponse.h */,
-				00EE2ADE1CD0F5CE000C491A /* LCResponse.m */,
-				00EE2ADF1CD0F5CE000C491A /* loading@2x.gif */,
-				00EE2AE01CD0F5CE000C491A /* loading@3x.gif */,
-			);
-			path = LCNetwork;
-			sourceTree = "<group>";
-		};
-		00EE2AE11CD0F5CE000C491A /* LCReformer */ = {
-			isa = PBXGroup;
-			children = (
-				00EE2AE21CD0F5CE000C491A /* LCBaseReformer.h */,
-				00EE2AE31CD0F5CE000C491A /* LCBaseReformer.m */,
-				00EE2AE41CD0F5CE000C491A /* LCFakeDataParams.h */,
-				00EE2AE51CD0F5CE000C491A /* LCFakeDataParams.m */,
-			);
-			path = LCReformer;
 			sourceTree = "<group>";
 		};
 		00EE2B741CD0F9AD000C491A /* Reformer */ = {
@@ -906,6 +811,209 @@
 				CFF72D5814A193FAB106E4F1 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D29EB0A61D508C32009D2056 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				D29EB0A71D508C32009D2056 /* BaseModel */,
+				D29EB0AA1D508C32009D2056 /* BaseVC */,
+				D29EB0AD1D508C32009D2056 /* Config */,
+				D29EB0AF1D508C32009D2056 /* CustomUI */,
+				D29EB0CC1D508C32009D2056 /* NavgationVC */,
+				D29EB0D21D508C32009D2056 /* RequestClass */,
+				D29EB0FF1D508C32009D2056 /* TabBarVC */,
+				D29EB1071D508C32009D2056 /* Tool */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		D29EB0A71D508C32009D2056 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				D29EB0A81D508C32009D2056 /* LCBaseModel.h */,
+				D29EB0A91D508C32009D2056 /* LCBaseModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		D29EB0AA1D508C32009D2056 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				D29EB0AB1D508C32009D2056 /* LCBaseViewController.h */,
+				D29EB0AC1D508C32009D2056 /* LCBaseViewController.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		D29EB0AD1D508C32009D2056 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D29EB0AE1D508C32009D2056 /* LCEnvironmentConfig.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D29EB0AF1D508C32009D2056 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				D29EB0B01D508C32009D2056 /* LCAlertView.h */,
+				D29EB0B11D508C32009D2056 /* LCAlertView.m */,
+				D29EB0B21D508C32009D2056 /* LCAlertView.temp_caseinsensitive_rename.h */,
+				D29EB0B31D508C32009D2056 /* LCBaseLine.h */,
+				D29EB0B41D508C32009D2056 /* LCBaseLine.m */,
+				D29EB0B51D508C32009D2056 /* LCBaseUI.h */,
+				D29EB0B61D508C32009D2056 /* LCButton.h */,
+				D29EB0B71D508C32009D2056 /* LCButton.m */,
+				D29EB0B81D508C32009D2056 /* LCLabel.h */,
+				D29EB0B91D508C32009D2056 /* LCLabel.m */,
+				D29EB0BA1D508C32009D2056 /* LCPlaceholderTextView.h */,
+				D29EB0BB1D508C32009D2056 /* LCPlaceholderTextView.m */,
+				D29EB0BC1D508C32009D2056 /* LCPoint2PointLine.h */,
+				D29EB0BD1D508C32009D2056 /* LCPoint2PointLine.m */,
+				D29EB0BE1D508C32009D2056 /* LCTableView.h */,
+				D29EB0BF1D508C32009D2056 /* LCTableView.m */,
+				D29EB0C01D508C32009D2056 /* LCTableViewCell.h */,
+				D29EB0C11D508C32009D2056 /* LCTableViewCell.m */,
+				D29EB0C21D508C32009D2056 /* LCTextField.h */,
+				D29EB0C31D508C32009D2056 /* LCTextField.m */,
+				D29EB0C41D508C32009D2056 /* LCTextFieldView.h */,
+				D29EB0C51D508C32009D2056 /* LCTextFieldView.m */,
+				D29EB0C61D508C32009D2056 /* LCTextView.h */,
+				D29EB0C71D508C32009D2056 /* LCTextView.m */,
+				D29EB0C81D508C32009D2056 /* LCView.h */,
+				D29EB0C91D508C32009D2056 /* LCView.m */,
+				D29EB0CA1D508C32009D2056 /* LCView_LineMethodHeader.h */,
+				D29EB0CB1D508C32009D2056 /* LCViewConfiguration.h */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		D29EB0CC1D508C32009D2056 /* NavgationVC */ = {
+			isa = PBXGroup;
+			children = (
+				D29EB0CD1D508C32009D2056 /* LCNavgationController.h */,
+				D29EB0CE1D508C32009D2056 /* LCNavgationController.m */,
+				D29EB0CF1D508C32009D2056 /* YGTLoginNavgationController.h */,
+				D29EB0D01D508C32009D2056 /* YGTLoginNavgationController.m */,
+				D29EB0D11D508C32009D2056 /* YGTNavConfiguration.h */,
+			);
+			path = NavgationVC;
+			sourceTree = "<group>";
+		};
+		D29EB0D21D508C32009D2056 /* RequestClass */ = {
+			isa = PBXGroup;
+			children = (
+				D29EB0D31D508C32009D2056 /* LCCache */,
+				D29EB0DD1D508C32009D2056 /* LCErrorView */,
+				D29EB0E41D508C32009D2056 /* LCException */,
+				D29EB0E91D508C32009D2056 /* LCNetwork */,
+				D29EB0F81D508C32009D2056 /* LCReformer */,
+			);
+			path = RequestClass;
+			sourceTree = "<group>";
+		};
+		D29EB0D31D508C32009D2056 /* LCCache */ = {
+			isa = PBXGroup;
+			children = (
+				D29EB0D41D508C32009D2056 /* LCCacheConst.h */,
+				D29EB0D51D508C32009D2056 /* LCDBConst.h */,
+				D29EB0D61D508C32009D2056 /* LCDBConst.m */,
+				D29EB0D71D508C32009D2056 /* LCDBManager.h */,
+				D29EB0D81D508C32009D2056 /* LCDBManager.m */,
+				D29EB0DB1D508C32009D2056 /* LCURLCache.h */,
+				D29EB0DC1D508C32009D2056 /* LCURLCache.m */,
+			);
+			path = LCCache;
+			sourceTree = "<group>";
+		};
+		D29EB0DD1D508C32009D2056 /* LCErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				D29EB0DE1D508C32009D2056 /* LCLoadFaildView.h */,
+				D29EB0DF1D508C32009D2056 /* LCLoadFaildView.m */,
+				D29EB0E01D508C32009D2056 /* LCNetworkCutView.h */,
+				D29EB0E11D508C32009D2056 /* LCNetworkCutView.m */,
+				D29EB0E21D508C32009D2056 /* LCShowErrorViewTool.h */,
+				D29EB0E31D508C32009D2056 /* LCShowErrorViewTool.m */,
+			);
+			path = LCErrorView;
+			sourceTree = "<group>";
+		};
+		D29EB0E41D508C32009D2056 /* LCException */ = {
+			isa = PBXGroup;
+			children = (
+				D29EB0E51D508C32009D2056 /* LCException.h */,
+				D29EB0E61D508C32009D2056 /* LCException.m */,
+				D29EB0E71D508C32009D2056 /* LCExceptionConst.h */,
+				D29EB0E81D508C32009D2056 /* LCExceptionConst.m */,
+			);
+			path = LCException;
+			sourceTree = "<group>";
+		};
+		D29EB0E91D508C32009D2056 /* LCNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				D29EB0EA1D508C32009D2056 /* jhLoading@2x.gif */,
+				D29EB0EB1D508C32009D2056 /* jhLoading@3x.gif */,
+				D29EB0EC1D508C32009D2056 /* LCConfigHelper.h */,
+				D29EB0ED1D508C32009D2056 /* LCConfigHelper.m */,
+				D29EB0EE1D508C32009D2056 /* LCHttpClient.h */,
+				D29EB0EF1D508C32009D2056 /* LCHttpClient.m */,
+				D29EB0F01D508C32009D2056 /* LCReachabilityManager.h */,
+				D29EB0F11D508C32009D2056 /* LCReachabilityManager.m */,
+				D29EB0F21D508C32009D2056 /* LCRequestManager.h */,
+				D29EB0F31D508C32009D2056 /* LCRequestManager.m */,
+				D29EB0F41D508C32009D2056 /* LCRequsestBase.h */,
+				D29EB0F51D508C32009D2056 /* LCRequsestBase.m */,
+				D29EB0F61D508C32009D2056 /* LCResponse.h */,
+				D29EB0F71D508C32009D2056 /* LCResponse.m */,
+			);
+			path = LCNetwork;
+			sourceTree = "<group>";
+		};
+		D29EB0F81D508C32009D2056 /* LCReformer */ = {
+			isa = PBXGroup;
+			children = (
+				D29EB0F91D508C32009D2056 /* LCBaseReformer.h */,
+				D29EB0FA1D508C32009D2056 /* LCBaseReformer.m */,
+				D29EB0FB1D508C32009D2056 /* LCFakeDataParams.h */,
+				D29EB0FC1D508C32009D2056 /* LCFakeDataParams.m */,
+				D29EB0FD1D508C32009D2056 /* LCParamsNullTool.h */,
+				D29EB0FE1D508C32009D2056 /* LCParamsNullTool.m */,
+			);
+			path = LCReformer;
+			sourceTree = "<group>";
+		};
+		D29EB0FF1D508C32009D2056 /* TabBarVC */ = {
+			isa = PBXGroup;
+			children = (
+				D272EEB01D51D5900005E5CB /* APPTabBarItemsConfiguration.json */,
+				D29EB1011D508C32009D2056 /* LCAppTabBarController.h */,
+				D29EB1021D508C32009D2056 /* LCAppTabBarController.m */,
+				D29EB1031D508C32009D2056 /* LCTabBar.h */,
+				D29EB1041D508C32009D2056 /* LCTabBar.m */,
+				D29EB1051D508C32009D2056 /* LCTabBarController.h */,
+				D29EB1061D508C32009D2056 /* LCTabBarController.m */,
+			);
+			path = TabBarVC;
+			sourceTree = "<group>";
+		};
+		D29EB1071D508C32009D2056 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D29EB1081D508C32009D2056 /* LCFileManagerTool.h */,
+				D29EB1091D508C32009D2056 /* LCFileManagerTool.m */,
+				D29EB10A1D508C32009D2056 /* LCGetVersionTool.h */,
+				D29EB10B1D508C32009D2056 /* LCGetVersionTool.m */,
+				D29EB10C1D508C32009D2056 /* LCRegularExtTool.h */,
+				D29EB10D1D508C32009D2056 /* LCRegularExtTool.m */,
+				D29EB10E1D508C32009D2056 /* LCShowTopTool.h */,
+				D29EB10F1D508C32009D2056 /* LCShowTopTool.m */,
+				D29EB1101D508C32009D2056 /* LCStringTool.h */,
+				D29EB1111D508C32009D2056 /* LCStringTool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1016,21 +1124,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00EE2AF11CD0F5CE000C491A /* jhLoading@2x.gif in Resources */,
 				002847811CC1D0FD00691204 /* LCPostMessageViewController.xib in Resources */,
 				002847331CC1D0BE00691204 /* LaunchScreen.storyboard in Resources */,
+				D29EB12B1D508C32009D2056 /* jhLoading@2x.gif in Resources */,
+				D29EB12C1D508C32009D2056 /* jhLoading@3x.gif in Resources */,
 				0072BFDF1CD2D7A600A7E49C /* EmotionIcons in Resources */,
-				00EE2AFA1CD0F5CE000C491A /* loading@3x.gif in Resources */,
-				00EE2AF01CD0F5CE000C491A /* hardLoding@3x.gif in Resources */,
 				007D09181CFE53B600063D97 /* APPTabBarItemsConfiguration.json in Resources */,
+				D272EEB11D51D5900005E5CB /* APPTabBarItemsConfiguration.json in Resources */,
 				002847301CC1D0BE00691204 /* Assets.xcassets in Resources */,
-				00EE2AF91CD0F5CE000C491A /* loading@2x.gif in Resources */,
 				002847991CC1D1D500691204 /* LCTestViewController.xib in Resources */,
 				001AA1521CFC21C5002D5562 /* test.png in Resources */,
 				00B0E1371CE2FF160089F99A /* LCEmotionPopView.xib in Resources */,
-				00EE2AEF1CD0F5CE000C491A /* hardLoding@2x.gif in Resources */,
 				00EE2BA11CD0FC0E000C491A /* sinaMessage in Resources */,
-				00EE2AF21CD0F5CE000C491A /* jhLoading@3x.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1103,46 +1208,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29EB13F1D508E61009D2056 /* LCBaseViewController.m in Sources */,
+				D29EB1211D508C32009D2056 /* YGTLoginNavgationController.m in Sources */,
 				003ED9201CE9AE41008A0C28 /* LCSpecialTextModel.m in Sources */,
 				00B0E1321CE2FF160089F99A /* LCEmojiEmotionView.m in Sources */,
 				00EE2AA31CD0F51B000C491A /* UIScrollView+LCRefresh.m in Sources */,
+				D29EB1261D508C32009D2056 /* LCLoadFaildView.m in Sources */,
+				D29EB13E1D508C32009D2056 /* LCStringTool.m in Sources */,
+				D29EB1161D508C32009D2056 /* LCButton.m in Sources */,
+				D29EB11B1D508C32009D2056 /* LCTableViewCell.m in Sources */,
 				00B0E12E1CE2FF160089F99A /* LCAttachment.m in Sources */,
 				00B0E1341CE2FF160089F99A /* LCEmotionKeyboardToolBar.m in Sources */,
-				00EE2AE71CD0F5CE000C491A /* LCDBManager.m in Sources */,
-				00EE2AE91CD0F5CE000C491A /* LCURLCache.m in Sources */,
 				00EE2B931CD0FA3B000C491A /* LCPhotosView.m in Sources */,
-				00EE2AF71CD0F5CE000C491A /* LCRequsestBase.m in Sources */,
-				00EE2BC01CD112C4000C491A /* LCNavgationController.m in Sources */,
-				00EE2AE61CD0F5CE000C491A /* LCDBConst.m in Sources */,
-				00EE2AED1CD0F5CE000C491A /* LCException.m in Sources */,
+				D29EB1301D508C32009D2056 /* LCRequestManager.m in Sources */,
+				D29EB1271D508C32009D2056 /* LCNetworkCutView.m in Sources */,
 				00B0E12F1CE2FF160089F99A /* LCEmotionModel.m in Sources */,
+				D29EB12F1D508C32009D2056 /* LCReachabilityManager.m in Sources */,
 				00EE2B8A1CD0F9CA000C491A /* LCResultStatusesModel.m in Sources */,
+				D29EB1321D508C32009D2056 /* LCResponse.m in Sources */,
 				001AA1501CFC0A79002D5562 /* LCPostMessageReformer.m in Sources */,
+				D29EB1251D508C32009D2056 /* LCURLCache.m in Sources */,
+				D29EB12A1D508C32009D2056 /* LCExceptionConst.m in Sources */,
+				D29EB1191D508C32009D2056 /* LCPoint2PointLine.m in Sources */,
+				D29EB1391D508C32009D2056 /* LCTabBarController.m in Sources */,
 				0028477C1CC1D0FD00691204 /* AppDelegate.m in Sources */,
 				00EE2B7B1CD0F9AD000C491A /* LCGetAccessTokenReformer.m in Sources */,
-				00EE2AF61CD0F5CE000C491A /* LCRequestManager.m in Sources */,
-				00EE2BC31CD1985D000C491A /* LCPlaceholderTextView.m in Sources */,
+				D29EB1381D508C32009D2056 /* LCTabBar.m in Sources */,
 				00B0E1331CE2FF160089F99A /* LCEmotionButton.m in Sources */,
 				00EE2B961CD0FA4D000C491A /* LCPicModel.m in Sources */,
+				D29EB1291D508C32009D2056 /* LCException.m in Sources */,
 				00B0E13D1CE2FF160089F99A /* LCRecentlyEmotionView.m in Sources */,
 				00B0E1311CE2FF160089F99A /* LCDefaultEmotionView.m in Sources */,
-				00EE2AB31CD0F59E000C491A /* LCTableViewCell.m in Sources */,
-				00EE2AB21CD0F59E000C491A /* LCTableView.m in Sources */,
 				008C13C81CE0BC6300CFFD0D /* NSString+Emoji.m in Sources */,
-				001AA1551CFC381A002D5562 /* LCParamsNullTool.m in Sources */,
 				002847981CC1D1D500691204 /* LCTestViewController.m in Sources */,
-				00EE2AF41CD0F5CE000C491A /* LCHttpClient.m in Sources */,
 				00EE2BBA1CD105C3000C491A /* LCStatusCell.m in Sources */,
+				D29EB1141D508C32009D2056 /* LCAlertView.m in Sources */,
 				00EE2B8D1CD0F9CA000C491A /* LCUserInfoModel.m in Sources */,
 				00EE2AA11CD0F51B000C491A /* UIBarButtonItem+Extension.m in Sources */,
-				00EE2B9F1CD0FB26000C491A /* LCBaseViewController.m in Sources */,
 				002847251CC1D0BE00691204 /* main.m in Sources */,
 				002847801CC1D0FD00691204 /* LCPostMessageViewController.m in Sources */,
 				00EE2A9E1CD0F51B000C491A /* Foundation+Log.m in Sources */,
-				00EE2B5B1CD0F787000C491A /* LCBaseModel.m in Sources */,
+				D29EB1351D508C32009D2056 /* LCParamsNullTool.m in Sources */,
 				0028477F1CC1D0FD00691204 /* LCMessageTableViewController.m in Sources */,
 				00B0E1381CE2FF160089F99A /* LCEmotionsPageView.m in Sources */,
+				D29EB11A1D508C32009D2056 /* LCTableView.m in Sources */,
+				D29EB13C1D508C32009D2056 /* LCRegularExtTool.m in Sources */,
+				D29EB1341D508C32009D2056 /* LCFakeDataParams.m in Sources */,
 				00B0E1351CE2FF160089F99A /* LCEmotionKeyboardView.m in Sources */,
+				D29EB1331D508C32009D2056 /* LCBaseReformer.m in Sources */,
+				D29EB12D1D508C32009D2056 /* LCConfigHelper.m in Sources */,
 				00EE2A9F1CD0F51B000C491A /* NSDate+Extension.m in Sources */,
 				00EE2AA21CD0F51B000C491A /* UIColor+Extension.m in Sources */,
 				00B0E1301CE2FF160089F99A /* LCEmotionsTool.m in Sources */,
@@ -1151,43 +1265,45 @@
 				00B0E13A1CE2FF160089F99A /* LCKeyboardToolBar.m in Sources */,
 				00EE2B8C1CD0F9CA000C491A /* LCStatusFrameModel.m in Sources */,
 				00EE2B891CD0F9CA000C491A /* LCAccessTokenModel.m in Sources */,
-				0028478F1CC1D10600691204 /* LCBaseTableViewController.m in Sources */,
-				00EE2AE81CD0F5CE000C491A /* LCDBTool.m in Sources */,
 				00EE2B7D1CD0F9AD000C491A /* LCUserInfoReformer.m in Sources */,
+				D29EB1371D508C32009D2056 /* LCAppTabBarController.m in Sources */,
+				D29EB1201D508C32009D2056 /* LCNavgationController.m in Sources */,
 				00EE2B8B1CD0F9CA000C491A /* LCStatusesModel.m in Sources */,
-				002847921CC1D10600691204 /* LCTabBar.m in Sources */,
+				D29EB13B1D508C32009D2056 /* LCGetVersionTool.m in Sources */,
 				00EE2BBD1CD108E8000C491A /* LCToolBar.m in Sources */,
-				00EE2AEE1CD0F5CE000C491A /* LCExceptionConst.m in Sources */,
-				00EE2AF31CD0F5CE000C491A /* LCConfigHelper.m in Sources */,
+				D29EB11C1D508C32009D2056 /* LCTextField.m in Sources */,
+				D29EB13D1D508C32009D2056 /* LCShowTopTool.m in Sources */,
 				002847821CC1D0FD00691204 /* LCProfileTableViewController.m in Sources */,
+				D29EB1311D508C32009D2056 /* LCRequsestBase.m in Sources */,
 				00B0E1391CE2FF160089F99A /* LCEmotionTextView.m in Sources */,
-				00EE2AEA1CD0F5CE000C491A /* LCLoadFaildView.m in Sources */,
-				00EE2AFC1CD0F5CE000C491A /* LCFakeDataParams.m in Sources */,
-				00EE2C0B1CD1EF05000C491A /* LCButton.m in Sources */,
+				D29EB1281D508C32009D2056 /* LCShowErrorViewTool.m in Sources */,
+				D29EB1121D508C32009D2056 /* LCBaseModel.m in Sources */,
 				00EE2B991CD0FA5C000C491A /* LCPhtotoImageView.m in Sources */,
-				00EE2AEB1CD0F5CE000C491A /* LCNetworkCutView.m in Sources */,
+				D29EB1171D508C32009D2056 /* LCLabel.m in Sources */,
+				D29EB12E1D508C32009D2056 /* LCHttpClient.m in Sources */,
 				00EE2BAE1CD10127000C491A /* LCHearderIconView.m in Sources */,
 				00B0E1361CE2FF160089F99A /* LCEmotionPopView.m in Sources */,
-				00EE2AF51CD0F5CE000C491A /* LCReachabilityManager.m in Sources */,
-				00EE2AF81CD0F5CE000C491A /* LCResponse.m in Sources */,
 				00841A251CE9776F00983E80 /* LCStatusTextView.m in Sources */,
+				D29EB11F1D508C32009D2056 /* LCView.m in Sources */,
+				D29EB1181D508C32009D2056 /* LCPlaceholderTextView.m in Sources */,
 				008C13C21CE0540700CFFD0D /* LCBigImageScrollView.m in Sources */,
+				D29EB11D1D508C32009D2056 /* LCTextFieldView.m in Sources */,
 				00B83AFC1CC297C200B97B3C /* CatchCrash.m in Sources */,
+				D29EB1151D508C32009D2056 /* LCBaseLine.m in Sources */,
 				00EE2BA41CD0FDE3000C491A /* LCHomeTableViewController.m in Sources */,
 				00B83AFF1CC2B3D700B97B3C /* LCManagerTool.m in Sources */,
 				00B0E1401CE2FFEF0089F99A /* LCEmotionsConst.m in Sources */,
 				00B0E13B1CE2FF160089F99A /* LCListEmotionView.m in Sources */,
-				00EE2AB41CD0F59E000C491A /* LCView.m in Sources */,
-				00EE2AEC1CD0F5CE000C491A /* LCShowErrorViewTool.m in Sources */,
+				D29EB13A1D508C32009D2056 /* LCFileManagerTool.m in Sources */,
+				D29EB11E1D508C32009D2056 /* LCTextView.m in Sources */,
 				003ED9301CEAC19B008A0C28 /* LCSpecialConst.m in Sources */,
-				002847931CC1D10600691204 /* LCTabBarController.m in Sources */,
-				00EE2AB11CD0F59E000C491A /* LCLabel.m in Sources */,
 				00EE2AA41CD0F51B000C491A /* UIView+Extension.m in Sources */,
 				00EE2AA01CD0F51B000C491A /* NSString+LengthInLabel.m in Sources */,
 				002847831CC1D0FD00691204 /* LCMoGoWeiBoTabBarController.m in Sources */,
-				00EE2AFB1CD0F5CE000C491A /* LCBaseReformer.m in Sources */,
 				00B0E13C1CE2FF160089F99A /* LCLxhEmotionView.m in Sources */,
 				001AA14D1CFC085B002D5562 /* LCPostMessageHavePhotosReformer.m in Sources */,
+				D29EB1231D508C32009D2056 /* LCDBManager.m in Sources */,
+				D29EB1221D508C32009D2056 /* LCDBConst.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
