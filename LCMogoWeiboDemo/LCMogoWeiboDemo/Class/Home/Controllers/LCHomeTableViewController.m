@@ -21,7 +21,7 @@
 
 
 #import "LCSpecialConst.h"
-@interface LCHomeTableViewController ()<LCBaseReformerDelegate , UITableViewDelegate, UITableViewDataSource , LCBigImageScrollViewDelegate , LCStatusCellDelegate>
+@interface LCHomeTableViewController ()<LCBaseReformerDelegate , UITableViewDelegate, UITableViewDataSource , LCBigImageScrollViewDelegate , LCStatusCellDelegate, UITabBarControllerDelegate>
 {
     UIView *scrollPanel;
     CGRect imgRect;
@@ -31,7 +31,6 @@
 }
 @property (nonatomic , strong) LCUserInfoReformer *userReformer;
 @property (nonatomic , strong) LCStatusesListReformer *listReformer;
-@property (nonatomic , strong) LCTableView *tableView;
 @property (nonatomic , strong) NSMutableArray *dataArray;
 @property (nonatomic , assign) NSUInteger page;
 @end
@@ -66,6 +65,7 @@
 //        _tableView.isAllowShowNullView = YES;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 //        _tableView.promptStr = @"没有数据";
+        _tableView.scrollsToTop = YES;
         [self.view addSubview:_tableView];
     }
     return _tableView;
@@ -129,7 +129,36 @@
 
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(pressSpecialTextOnCellAction:) name:kPressSpecialTextNotification object:nil];
+   // self.tabBarController.delegate = self;
     // Do any additional setup after loading the view.
+    
+}
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    
+    if (tabBarController.selectedIndex == 0) {
+        
+    }
+}
+- (BOOL)checkIsDoubleClick:(UIViewController *)viewController
+{
+    static UIViewController *lastViewController = nil;
+    static NSTimeInterval lastClickTime = 0;
+    
+    if (lastViewController != viewController) {
+        lastViewController = viewController;
+        lastClickTime = [NSDate timeIntervalSinceReferenceDate];
+        
+        return NO;
+    }
+    
+    NSTimeInterval clickTime = [NSDate timeIntervalSinceReferenceDate];
+    if (clickTime - lastClickTime > 0.5 ) {
+        lastClickTime = clickTime;
+        return NO;
+    }
+    
+    lastClickTime = clickTime;
+    return YES;
 }
 /**
  *  处理特殊文字的点击事件*/

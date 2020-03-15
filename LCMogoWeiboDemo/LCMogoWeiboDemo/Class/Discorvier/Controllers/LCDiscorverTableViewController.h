@@ -7,6 +7,8 @@
 //
 
 #import "LCBaseViewController.h"
+                     
+@class LCDiscorverTableViewController;
 
 @interface LCDiscorverTableViewController : LCBaseViewController
 

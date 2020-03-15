@@ -31,6 +31,10 @@
 		00841A251CE9776F00983E80 /* LCStatusTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00841A241CE9776F00983E80 /* LCStatusTextView.m */; };
 		008C13C21CE0540700CFFD0D /* LCBigImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C13C11CE0540700CFFD0D /* LCBigImageScrollView.m */; };
 		008C13C81CE0BC6300CFFD0D /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C13C71CE0BC6300CFFD0D /* NSString+Emoji.m */; };
+		009EE805241E1F9200BFB6AC /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009EE804241E1F9200BFB6AC /* TestViewController.m */; };
+		009EE80F241E1FC400BFB6AC /* NewTopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 009EE809241E1FC400BFB6AC /* NewTopModel.m */; };
+		009EE810241E1FC400BFB6AC /* NewResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 009EE80A241E1FC400BFB6AC /* NewResponseModel.m */; };
+		009EE811241E1FC400BFB6AC /* NewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 009EE80B241E1FC400BFB6AC /* NewDataModel.m */; };
 		00B0E12E1CE2FF160089F99A /* LCAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0E10E1CE2FF160089F99A /* LCAttachment.m */; };
 		00B0E12F1CE2FF160089F99A /* LCEmotionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0E1101CE2FF160089F99A /* LCEmotionModel.m */; };
 		00B0E1301CE2FF160089F99A /* LCEmotionsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0E1131CE2FF160089F99A /* LCEmotionsTool.m */; };
@@ -73,7 +77,7 @@
 		00EE2BAE1CD10127000C491A /* LCHearderIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BAD1CD10127000C491A /* LCHearderIconView.m */; };
 		00EE2BBA1CD105C3000C491A /* LCStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BB91CD105C3000C491A /* LCStatusCell.m */; };
 		00EE2BBD1CD108E8000C491A /* LCToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE2BBC1CD108E8000C491A /* LCToolBar.m */; };
-		C119542B0785F490D788B3EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF72D5814A193FAB106E4F1 /* libPods.a */; };
+		82370CD04469DC7833E532C5 /* Pods_LCMogoWeiboDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DCFFE06841714FBB0578A0 /* Pods_LCMogoWeiboDemo.framework */; };
 		D272EEB11D51D5900005E5CB /* APPTabBarItemsConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D272EEB01D51D5900005E5CB /* APPTabBarItemsConfiguration.json */; };
 		D29EB1121D508C32009D2056 /* LCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0A91D508C32009D2056 /* LCBaseModel.m */; };
 		D29EB1141D508C32009D2056 /* LCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EB0B11D508C32009D2056 /* LCAlertView.m */; };
@@ -182,6 +186,14 @@
 		008C13C11CE0540700CFFD0D /* LCBigImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBigImageScrollView.m; sourceTree = "<group>"; };
 		008C13C61CE0BC6300CFFD0D /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
 		008C13C71CE0BC6300CFFD0D /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		009EE803241E1F9100BFB6AC /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		009EE804241E1F9200BFB6AC /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		009EE809241E1FC400BFB6AC /* NewTopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTopModel.m; sourceTree = "<group>"; };
+		009EE80A241E1FC400BFB6AC /* NewResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewResponseModel.m; sourceTree = "<group>"; };
+		009EE80B241E1FC400BFB6AC /* NewDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDataModel.m; sourceTree = "<group>"; };
+		009EE80C241E1FC400BFB6AC /* NewResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewResponseModel.h; sourceTree = "<group>"; };
+		009EE80D241E1FC400BFB6AC /* NewTopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTopModel.h; sourceTree = "<group>"; };
+		009EE80E241E1FC400BFB6AC /* NewDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDataModel.h; sourceTree = "<group>"; };
 		00B0E10D1CE2FF160089F99A /* LCAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAttachment.h; sourceTree = "<group>"; };
 		00B0E10E1CE2FF160089F99A /* LCAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAttachment.m; sourceTree = "<group>"; };
 		00B0E10F1CE2FF160089F99A /* LCEmotionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCEmotionModel.h; sourceTree = "<group>"; };
@@ -265,9 +277,8 @@
 		00EE2BB91CD105C3000C491A /* LCStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCStatusCell.m; sourceTree = "<group>"; };
 		00EE2BBB1CD108E8000C491A /* LCToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCToolBar.h; sourceTree = "<group>"; };
 		00EE2BBC1CD108E8000C491A /* LCToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCToolBar.m; sourceTree = "<group>"; };
-		40B33D2B361E085B98F24375 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		95949A388983EA0047060239 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		CFF72D5814A193FAB106E4F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8AE8277253248F1A48875A /* Pods-LCMogoWeiboDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCMogoWeiboDemo.debug.xcconfig"; path = "Target Support Files/Pods-LCMogoWeiboDemo/Pods-LCMogoWeiboDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C26A8767DC7C172D43288DE6 /* Pods-LCMogoWeiboDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCMogoWeiboDemo.release.xcconfig"; path = "Target Support Files/Pods-LCMogoWeiboDemo/Pods-LCMogoWeiboDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D272EEB01D51D5900005E5CB /* APPTabBarItemsConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APPTabBarItemsConfiguration.json; sourceTree = "<group>"; };
 		D29EB0A81D508C32009D2056 /* LCBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseModel.h; sourceTree = "<group>"; };
 		D29EB0A91D508C32009D2056 /* LCBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseModel.m; sourceTree = "<group>"; };
@@ -360,6 +371,7 @@
 		D29EB10F1D508C32009D2056 /* LCShowTopTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCShowTopTool.m; sourceTree = "<group>"; };
 		D29EB1101D508C32009D2056 /* LCStringTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCStringTool.h; sourceTree = "<group>"; };
 		D29EB1111D508C32009D2056 /* LCStringTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCStringTool.m; sourceTree = "<group>"; };
+		E5DCFFE06841714FBB0578A0 /* Pods_LCMogoWeiboDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCMogoWeiboDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,7 +379,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C119542B0785F490D788B3EF /* libPods.a in Frameworks */,
+				82370CD04469DC7833E532C5 /* Pods_LCMogoWeiboDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,8 +419,8 @@
 				0028473C1CC1D0BE00691204 /* LCMogoWeiboDemoTests */,
 				002847471CC1D0BE00691204 /* LCMogoWeiboDemoUITests */,
 				002847211CC1D0BE00691204 /* Products */,
-				028A270F1BD5466E3CDF8395 /* Pods */,
-				09684D8FD7633180C743A776 /* Frameworks */,
+				1FDE5989116492C11690DB85 /* Pods */,
+				65DAAED778723424CAB30705 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -491,6 +503,7 @@
 		0028475A1CC1D0FD00691204 /* Discorvier */ = {
 			isa = PBXGroup;
 			children = (
+				009EE808241E1FC400BFB6AC /* Model */,
 				0028475B1CC1D0FD00691204 /* Controllers */,
 			);
 			path = Discorvier;
@@ -499,6 +512,8 @@
 		0028475B1CC1D0FD00691204 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				009EE803241E1F9100BFB6AC /* TestViewController.h */,
+				009EE804241E1F9200BFB6AC /* TestViewController.m */,
 				0028475C1CC1D0FD00691204 /* LCDiscorverTableViewController.h */,
 				0028475D1CC1D0FD00691204 /* LCDiscorverTableViewController.m */,
 			);
@@ -657,6 +672,19 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
+		009EE808241E1FC400BFB6AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				009EE809241E1FC400BFB6AC /* NewTopModel.m */,
+				009EE80A241E1FC400BFB6AC /* NewResponseModel.m */,
+				009EE80B241E1FC400BFB6AC /* NewDataModel.m */,
+				009EE80C241E1FC400BFB6AC /* NewResponseModel.h */,
+				009EE80D241E1FC400BFB6AC /* NewTopModel.h */,
+				009EE80E241E1FC400BFB6AC /* NewDataModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		00B0E10B1CE2FF160089F99A /* EmotionsKeyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -796,19 +824,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		028A270F1BD5466E3CDF8395 /* Pods */ = {
+		1FDE5989116492C11690DB85 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				40B33D2B361E085B98F24375 /* Pods.debug.xcconfig */,
-				95949A388983EA0047060239 /* Pods.release.xcconfig */,
+				AB8AE8277253248F1A48875A /* Pods-LCMogoWeiboDemo.debug.xcconfig */,
+				C26A8767DC7C172D43288DE6 /* Pods-LCMogoWeiboDemo.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		09684D8FD7633180C743A776 /* Frameworks */ = {
+		65DAAED778723424CAB30705 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CFF72D5814A193FAB106E4F1 /* libPods.a */,
+				E5DCFFE06841714FBB0578A0 /* Pods_LCMogoWeiboDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1023,12 +1051,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0028474D1CC1D0BE00691204 /* Build configuration list for PBXNativeTarget "LCMogoWeiboDemo" */;
 			buildPhases = (
-				01E93BD8F4140437242F9C8B /* Check Pods Manifest.lock */,
+				F14EE783101990E8EA75075C /* [CP] Check Pods Manifest.lock */,
 				0028471C1CC1D0BE00691204 /* Sources */,
 				0028471D1CC1D0BE00691204 /* Frameworks */,
 				0028471E1CC1D0BE00691204 /* Resources */,
-				8FF1EF38D0AE21C46F4E4F73 /* Embed Pods Frameworks */,
-				6AAC03C56D092C74DE111508 /* Copy Pods Resources */,
+				8B14546D7237D2EF2B676EE1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1157,49 +1184,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01E93BD8F4140437242F9C8B /* Check Pods Manifest.lock */ = {
+		8B14546D7237D2EF2B676EE1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LCMogoWeiboDemo/Pods-LCMogoWeiboDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/RegexKitLite/RegexKitLite.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RegexKitLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LCMogoWeiboDemo/Pods-LCMogoWeiboDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6AAC03C56D092C74DE111508 /* Copy Pods Resources */ = {
+		F14EE783101990E8EA75075C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LCMogoWeiboDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8FF1EF38D0AE21C46F4E4F73 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1233,7 +1269,9 @@
 				D29EB1191D508C32009D2056 /* LCPoint2PointLine.m in Sources */,
 				D29EB1391D508C32009D2056 /* LCTabBarController.m in Sources */,
 				0028477C1CC1D0FD00691204 /* AppDelegate.m in Sources */,
+				009EE80F241E1FC400BFB6AC /* NewTopModel.m in Sources */,
 				00EE2B7B1CD0F9AD000C491A /* LCGetAccessTokenReformer.m in Sources */,
+				009EE811241E1FC400BFB6AC /* NewDataModel.m in Sources */,
 				D29EB1381D508C32009D2056 /* LCTabBar.m in Sources */,
 				00B0E1331CE2FF160089F99A /* LCEmotionButton.m in Sources */,
 				00EE2B961CD0FA4D000C491A /* LCPicModel.m in Sources */,
@@ -1245,6 +1283,7 @@
 				00EE2BBA1CD105C3000C491A /* LCStatusCell.m in Sources */,
 				D29EB1141D508C32009D2056 /* LCAlertView.m in Sources */,
 				00EE2B8D1CD0F9CA000C491A /* LCUserInfoModel.m in Sources */,
+				009EE805241E1F9200BFB6AC /* TestViewController.m in Sources */,
 				00EE2AA11CD0F51B000C491A /* UIBarButtonItem+Extension.m in Sources */,
 				002847251CC1D0BE00691204 /* main.m in Sources */,
 				002847801CC1D0FD00691204 /* LCPostMessageViewController.m in Sources */,
@@ -1295,6 +1334,7 @@
 				00B83AFF1CC2B3D700B97B3C /* LCManagerTool.m in Sources */,
 				00B0E1401CE2FFEF0089F99A /* LCEmotionsConst.m in Sources */,
 				00B0E13B1CE2FF160089F99A /* LCListEmotionView.m in Sources */,
+				009EE810241E1FC400BFB6AC /* NewResponseModel.m in Sources */,
 				D29EB13A1D508C32009D2056 /* LCFileManagerTool.m in Sources */,
 				D29EB11E1D508C32009D2056 /* LCTextView.m in Sources */,
 				003ED9301CEAC19B008A0C28 /* LCSpecialConst.m in Sources */,
@@ -1435,7 +1475,7 @@
 		};
 		0028474E1CC1D0BE00691204 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40B33D2B361E085B98F24375 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = AB8AE8277253248F1A48875A /* Pods-LCMogoWeiboDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1450,7 +1490,7 @@
 		};
 		0028474F1CC1D0BE00691204 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95949A388983EA0047060239 /* Pods.release.xcconfig */;
+			baseConfigurationReference = C26A8767DC7C172D43288DE6 /* Pods-LCMogoWeiboDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

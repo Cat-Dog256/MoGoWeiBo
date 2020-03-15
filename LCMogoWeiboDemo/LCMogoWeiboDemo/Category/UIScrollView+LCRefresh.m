@@ -14,7 +14,7 @@
     
     __weak UIScrollView *weakSelf = self;
     
-    MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingBlock:^{
+    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         //执行block
         if(headerRefreshBlock){
             headerRefreshBlock();
@@ -23,9 +23,9 @@
             [weakSelf.mj_header endRefreshing];
         });
     }];
-    UIImage *images = [UIImage sd_animatedGIFNamed:@"jhLoading"];
-    [header setImages:@[images] forState:MJRefreshStatePulling];
-    header.automaticallyChangeAlpha = YES;
+//    UIImage *images = [UIImage sd_animatedGIFNamed:@"jhLoading"];
+//    [header setImages:@[images] forState:MJRefreshStatePulling];
+//    header.automaticallyChangeAlpha = YES;
     
     self.mj_header = header;
 }
@@ -40,7 +40,7 @@
 - (void)addRefreshFooter:(void(^)())footerRefreshBlock{
     
     __weak UIScrollView *weakSelf = self;
-       MJRefreshBackGifFooter *footer = [MJRefreshBackGifFooter footerWithRefreshingBlock:^{
+       MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         //执行block
         if(footerRefreshBlock){
             footerRefreshBlock();
@@ -49,8 +49,8 @@
             [weakSelf.mj_footer endRefreshing];
         });
     }];
-    UIImage *images = [UIImage sd_animatedGIFNamed:@"jhLoading"];
-    [footer setImages:@[images] forState:MJRefreshStatePulling];
+//    UIImage *images = [UIImage sd_animatedGIFNamed:@"jhLoading"];
+//    [footer setImages:@[images] forState:MJRefreshStatePulling];
     self.mj_footer = footer;
 }
 - (void)removeRefreshFooter{

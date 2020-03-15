@@ -11,5 +11,5 @@
 typedef void (^buttonAction)(LCButton *button);
 @interface LCButton : UIButton
 - (instancetype)initWithFrame:(CGRect)frame titleLabelFont:(CGFloat)font text:(NSString *)text buttonAction:(buttonAction)btnAction;
-
+- (void)addAction:(buttonAction)btnAction;
 @end

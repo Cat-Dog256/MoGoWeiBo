@@ -9,5 +9,6 @@
 #import "LCBaseViewController.h"
 
 @interface LCHomeTableViewController : LCBaseViewController
+@property (nonatomic , strong) LCTableView *tableView;
 
 @end

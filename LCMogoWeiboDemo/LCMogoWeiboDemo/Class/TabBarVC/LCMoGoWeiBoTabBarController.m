@@ -15,7 +15,7 @@
 #import "LCProfileTableViewController.h"
 
 #import "LCNavgationController.h"
-@interface LCMoGoWeiBoTabBarController ()<LCTabBarDelegate>
+@interface LCMoGoWeiBoTabBarController ()<LCTabBarDelegate,UITabBarControllerDelegate>
 
 @end
 
@@ -23,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.delegate = self;
     /**
      如果tabBar是类似微博这种比较特殊的形式,就需要用自定义的tabBar来替换掉系统的TabBar,如果是正常的直接注释掉这句
      */
@@ -31,7 +32,6 @@
 #pragma mark**使用KVC改掉系统的TabBar**
     [self setValue:tabBar forKeyPath:@"tabBar"];
     
-
     /**
      *  第一步:设置title字体大小,颜色
      */
@@ -88,6 +88,42 @@
     
     LCNavgationController *nav = [[LCNavgationController alloc]initWithRootViewController:sendMessageVC];
     [self presentViewController:nav animated:YES completion:nil];
+}
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    UIViewController *Vc = ((LCNavgationController *)viewController).viewControllers.firstObject;
+    if ([Vc isKindOfClass:[LCHomeTableViewController class]]) {
+        if ([self checkIsDoubleClick:viewController]) {
+            LCHomeTableViewController *homeVc = (LCHomeTableViewController *)Vc;
+            [homeVc.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:(UITableViewScrollPositionTop) animated:YES];
+            //[[NSNotificationCenter defaultCenter] postNotificationName:kDoubleClickTabItemNotification object:nil];
+        }
+    }
+    
+    return YES;
+}
+- (BOOL)checkIsDoubleClick:(UIViewController *)viewController
+{
+    static UIViewController *lastViewController = nil;
+    static NSTimeInterval lastClickTime = 0;
+    
+    if (lastViewController != viewController) {
+        lastViewController = viewController;
+        lastClickTime = [NSDate timeIntervalSinceReferenceDate];
+        
+        return NO;
+    }
+    
+    NSTimeInterval clickTime = [NSDate timeIntervalSinceReferenceDate];
+    if (clickTime - lastClickTime > 0.5 ) {
+        lastClickTime = clickTime;
+        return NO;
+    }
+    
+    lastClickTime = clickTime;
+    return YES;
+}
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

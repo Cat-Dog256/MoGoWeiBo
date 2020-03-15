@@ -26,12 +26,12 @@ PODS:
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - MBProgressHUD (0.9.2)
-  - MJExtension (3.0.10)
-  - MJRefresh (3.1.0)
+  - MJExtension (3.0.15.1)
+  - MJRefresh (3.1.17)
   - RegexKitLite (4.0)
-  - SDWebImage (3.7.5):
-    - SDWebImage/Core (= 3.7.5)
-  - SDWebImage/Core (3.7.5)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -39,18 +39,31 @@ DEPENDENCIES:
   - FMDB (~> 2.6.2)
   - MBProgressHUD (~> 0.9.2)
   - MJExtension (~> 3.0.10)
-  - MJRefresh (~> 3.1.0)
+  - MJRefresh (~> 3.1.1)
   - RegexKitLite (~> 4.0)
   - SDWebImage (~> 3.7.5)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - CocoaLumberjack
+    - FMDB
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - RegexKitLite
+    - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
-  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
-  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
-  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 0baedfde417f12ad208d899d340da5cdd0423358
+
+COCOAPODS: 1.9.0

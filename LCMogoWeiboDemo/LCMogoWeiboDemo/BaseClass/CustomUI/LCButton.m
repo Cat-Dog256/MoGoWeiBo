@@ -31,6 +31,10 @@ kLineMethodImplementation
     }
      return self;
 }
+- (void)addAction:(buttonAction)btnAction{
+    [self addTarget:self action:@selector(pressButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    self.btnAction = btnAction;
+}
 - (void)pressButtonAction:(LCButton *)button{
     self.btnAction(button);
 }
